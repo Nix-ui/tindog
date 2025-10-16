@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fb68c5dd56193f3c71b5608a686456516cdab2e6",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-16T18:11:28.000Z",
       "message": "feat: validación de raza obligatoria en registro de mascota (prueba 4 Jest)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/fb68c5dd56193f3c71b5608a686456516cdab2e6"
     },
     "stats": {
       "total": 17,
@@ -72,6 +72,25 @@
     },
     "coverage": 100,
     "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T18:22:18.000Z",
+      "message": "feat: asociación correcta de mascota a dueño en el modelo (prueba 5 Jest)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 23,
+      "deletions": 2,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   }

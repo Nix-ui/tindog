@@ -59,5 +59,20 @@ describe('PetRegistrationPresenter', () => {
         expect(onSuccess).not.toHaveBeenCalled();
         expect(onError).toHaveBeenCalledWith("La raza de la mascota es obligatoria");
     });
+    test('asocia la mascota al dueño correctamente en el modelo', async () => {
+        const validPet = {
+            name: "Max",
+            age: 3,
+            breed: "Beagle",
+            ownerId: "user456"
+        };
+        await presenter.handleRegisterPet(validPet);
+        const ownerPets = model.getPetsByOwner("user456");
+        expect(ownerPets).toEqual(
+            expect.arrayContaining([
+                expect.objectContaining({ name: "Max", breed: "Beagle", age: 3, ownerId: "user456"})
+            ])
+        );
+    });
 
 });
