@@ -55,4 +55,15 @@ describe('Registro de mascota', () => {
         expect(pets).to.deep.include({ name: 'Max', age: 3, breed: 'Beagle', ownerId: 'owner456' });
     });
   });
+  it('Muestra multiples errores si hay varios campos inválidos', () => {
+    cy.get('input[name="name"]').clear();
+    cy.get('input[name="age"]').clear().type('-1');
+    cy.get('input[name="breed"]').clear();
+    cy.get('input[name="ownerId"]').clear();
+    cy.get('button[type="submit"]').click();
+    cy.contains('El nombre es obligatorio').should('be.visible');
+    cy.contains('La edad debe ser positiva').should('be.visible');
+    cy.contains('La raza es obligatoria').should('be.visible');
+    cy.contains('El ID del dueño es obligatorio').should('be.visible');
+  });
 });

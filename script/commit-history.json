@@ -190,17 +190,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0c53c3d3cc047ba85740db9be20b99652a7d2f15",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-16T19:42:36.000Z",
       "message": "validar y asocia la mascota al dueño correctamente en el modelo (Rebanada 6, cypress)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/0c53c3d3cc047ba85740db9be20b99652a7d2f15"
     },
     "stats": {
       "total": 90,
       "additions": 58,
       "deletions": 32,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T19:50:36.000Z",
+      "message": "feat: validación y mensaje de error para varios campos en el registro de mascota (rebanada 7, Cypress)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 34,
+      "deletions": 9,
       "date": "2025-10-16"
     },
     "coverage": 100,
