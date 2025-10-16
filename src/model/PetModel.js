@@ -15,4 +15,4 @@ class PetModel {
     return this.ownerPets[ownerId] || [];
   }
 }
-module.exports = { PetModel };
+export default PetModel;

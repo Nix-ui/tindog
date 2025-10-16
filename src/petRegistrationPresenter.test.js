@@ -1,5 +1,5 @@
 const { PetRegistrationPresenter } = require('../src/presenter/PetRegistrationPresenter');
-const { PetModel } = require('../src/model/PetModel');
+import PetModel from './model/PetModel.js';
 describe('PetRegistrationPresenter', () => {
     let presenter;
     let model;

@@ -76,17 +76,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "54fd7bef0fae502c90cb4a54bf39c81c4347ed9d",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-16T18:22:18.000Z",
       "message": "feat: asociación correcta de mascota a dueño en el modelo (prueba 5 Jest)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/54fd7bef0fae502c90cb4a54bf39c81c4347ed9d"
     },
     "stats": {
       "total": 25,
       "additions": 23,
       "deletions": 2,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T18:53:29.000Z",
+      "message": "feat: registro exitoso de mascota con datos válidos (rebanada 1, Cypress y MVP)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 89,
+      "additions": 60,
+      "deletions": 29,
       "date": "2025-10-16"
     },
     "coverage": 100,

@@ -1,15 +1,23 @@
-import sumar from "./sumador";
+import registerPet from "./model/petModelInstance.js";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
+const nameInput = document.querySelector('input[name="name"]');
+const ageInput = document.querySelector('input[name="age"]');
+const breedInput = document.querySelector('input[name="breed"]');
+const ownerInput = document.querySelector('input[name="ownerId"]');
+const form = document.getElementById("petForm");
+const messageDiv = document.getElementById("message");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const petData = {
+    name: nameInput.value,
+    age: Number(ageInput.value),
+    breed: breedInput.value,
+    ownerId: ownerInput.value
+  };
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  registerPet(petData);
+
+  messageDiv.innerHTML = "<p>¡Mascota registrada con éxito!</p>";
 });
