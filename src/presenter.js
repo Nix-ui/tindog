@@ -9,22 +9,23 @@ const messageDiv = document.getElementById("message");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-
   if (!nameInput.value.trim()) {
     messageDiv.innerHTML = "<p>El nombre es obligatorio</p>";
     messageDiv.style.color = "red";
     return;
   }
-
+  if (Number(ageInput.value) < 0) {
+    messageDiv.innerHTML = "<p>La edad debe ser positiva</p>";
+    messageDiv.style.color = "red";
+    return;
+  }
   const petData = {
     name: nameInput.value,
     age: Number(ageInput.value),
     breed: breedInput.value,
     ownerId: ownerInput.value
   };
-
   registerPet(petData);
-
   messageDiv.innerHTML = "<p>¡Mascota registrada con éxito!</p>";
   messageDiv.style.color = "green";
 });
