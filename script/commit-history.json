@@ -209,17 +209,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fcce5e7785799c92d3e3af57ebefba1b7b36bfc8",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-16T19:50:36.000Z",
       "message": "feat: validación y mensaje de error para varios campos en el registro de mascota (rebanada 7, Cypress)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/fcce5e7785799c92d3e3af57ebefba1b7b36bfc8"
     },
     "stats": {
       "total": 43,
       "additions": 34,
       "deletions": 9,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T20:22:00.000Z",
+      "message": "feat: se creo el disenio del UI (style.css)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 153,
+      "additions": 145,
+      "deletions": 8,
       "date": "2025-10-16"
     },
     "coverage": 100,
