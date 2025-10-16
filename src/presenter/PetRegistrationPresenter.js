@@ -1,13 +1,16 @@
 class PetRegistrationPresenter {
-  constructor(model, { onSuccess, onError }) {
-    this.model = model;
-    this.onSuccess = onSuccess;
-    this.onError = onError;
-  }
-
-  async handleRegisterPet(formData) {
-    const pet = this.model.registerPet(formData);
-    this.onSuccess(pet);
-  }
+    constructor(model, { onSuccess, onError }) {
+        this.model = model;
+        this.onSuccess = onSuccess;
+        this.onError = onError;
+    }
+    async handleRegisterPet(formData) {
+        if (!formData.name || formData.name.trim() === "") {
+            this.onError("El nombre de la mascota es obligatorio.");
+            return;
+        }
+        const pet = this.model.registerPet(formData);
+        this.onSuccess(pet);
+    }
 }
 module.exports = { PetRegistrationPresenter };
