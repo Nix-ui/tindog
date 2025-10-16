@@ -13,6 +13,10 @@ class PetRegistrationPresenter {
       this.onError("La edad debe ser positiva");
       return;
     }
+    if (!formData.breed || formData.breed.trim() === "") {
+      this.onError("La raza de la mascota es obligatoria");
+      return;
+    }
     const pet = this.model.registerPet(formData);
     this.onSuccess(pet);
   }
