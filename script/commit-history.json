@@ -1,0 +1,21 @@
+[
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T17:47:30.000Z",
+      "message": "feat: registrar mascota con datos válidos paso la prueba en jest",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 13894,
+      "additions": 4169,
+      "deletions": 9725,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
