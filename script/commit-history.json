@@ -95,17 +95,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4c3b4f2280ab55e806c93197f2c897475c84f912",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-16T18:53:29.000Z",
       "message": "feat: registro exitoso de mascota con datos válidos (rebanada 1, Cypress y MVP)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/4c3b4f2280ab55e806c93197f2c897475c84f912"
     },
     "stats": {
       "total": 89,
       "additions": 60,
       "deletions": 29,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T19:07:36.000Z",
+      "message": "feat: validación y mensaje de error para nombre vacío en registro de mascota (rebanada 2, Cypress)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 18,
+      "deletions": 3,
       "date": "2025-10-16"
     },
     "coverage": 100,

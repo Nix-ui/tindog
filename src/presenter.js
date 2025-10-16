@@ -10,6 +10,12 @@ const messageDiv = document.getElementById("message");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
+  if (!nameInput.value.trim()) {
+    messageDiv.innerHTML = "<p>El nombre es obligatorio</p>";
+    messageDiv.style.color = "red";
+    return;
+  }
+
   const petData = {
     name: nameInput.value,
     age: Number(ageInput.value),
@@ -20,4 +26,5 @@ form.addEventListener("submit", (event) => {
   registerPet(petData);
 
   messageDiv.innerHTML = "<p>¡Mascota registrada con éxito!</p>";
+  messageDiv.style.color = "green";
 });

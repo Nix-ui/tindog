@@ -11,4 +11,12 @@ describe('Registro de mascota', () => {
     cy.get('button[type="submit"]').click();
     cy.contains('¡Mascota registrada con éxito!').should('be.visible');
   });
+  it('Muestra error si el nombre está vacío', () => {
+    cy.get('input[name="name"]').clear();
+    cy.get('input[name="age"]').clear().type('2');
+    cy.get('input[name="breed"]').clear().type('Labrador');
+    cy.get('input[name="ownerId"]').clear().type('user123');
+    cy.get('button[type="submit"]').click();
+    cy.contains('El nombre es obligatorio').should('be.visible');
+  });
 });
