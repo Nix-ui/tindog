@@ -36,5 +36,17 @@ describe('PetRegistrationPresenter', () => {
         expect(onSuccess).not.toHaveBeenCalled();
         expect(onError).toHaveBeenCalledWith("El nombre de la mascota es obligatorio.");
     });
+    test('debe mostrar error si la edad es negativa', async () => {
+        const invalidPet = {
+            name: "Rocky",
+            age: -1,
+            breed: "Boxer",
+            ownerId: "user123"
+        };
+        await presenter.handleRegisterPet(invalidPet);
+        expect(onSuccess).not.toHaveBeenCalled();
+        expect(onError).toHaveBeenCalledWith("La edad debe ser positiva");
+    });
+    
 
 });

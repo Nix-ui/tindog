@@ -19,12 +19,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8f04bae2c0b64b74b0b611e5032ed9b6547c5212",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-16T18:01:47.000Z",
       "message": "feat: validación de nombre obligatorio en registro de mascota (prueba 2 Jest)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/8f04bae2c0b64b74b0b611e5032ed9b6547c5212"
     },
     "stats": {
       "total": 81,
@@ -34,6 +34,25 @@
     },
     "coverage": 100,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T18:07:48.000Z",
+      "message": "feat: validación de edad positiva en registro de mascota (prueba 3 Jest)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 27,
+      "deletions": 11,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }
