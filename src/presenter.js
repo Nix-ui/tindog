@@ -24,6 +24,11 @@ form.addEventListener("submit", (event) => {
     messageDiv.style.color = "red";
     return;
   }
+  if (!ownerInput.value.trim()) {
+    messageDiv.innerHTML = "<p>El ID del dueño es obligatorio</p>";
+    messageDiv.style.color = "red";
+    return;
+  }
   const petData = {
     name: nameInput.value,
     age: Number(ageInput.value),

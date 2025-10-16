@@ -35,4 +35,12 @@ describe('Registro de mascota', () => {
     cy.get('button[type="submit"]').click();
     cy.contains('La raza es obligatoria').should('be.visible');
   });
+  it('Muestra error si el ID del dueño está vacío', () => {
+    cy.get('input[name="name"]').clear().type('Rocky');
+    cy.get('input[name="age"]').clear().type('2');
+    cy.get('input[name="breed"]').clear().type('Boxer');
+    cy.get('input[name="ownerId"]').clear();
+    cy.get('button[type="submit"]').click();
+    cy.contains('El ID del dueño es obligatorio').should('be.visible');
+  });
 });
