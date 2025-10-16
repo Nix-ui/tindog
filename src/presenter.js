@@ -19,6 +19,11 @@ form.addEventListener("submit", (event) => {
     messageDiv.style.color = "red";
     return;
   }
+  if (!breedInput.value.trim()) {
+    messageDiv.innerHTML = "<p>La raza es obligatoria</p>";
+    messageDiv.style.color = "red";
+    return;
+  }
   const petData = {
     name: nameInput.value,
     age: Number(ageInput.value),

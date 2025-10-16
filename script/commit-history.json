@@ -133,17 +133,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c7912c43467bc19d87ad48f9d63dfceb1e53cec2",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-16T19:13:06.000Z",
       "message": "feat: validación y mensaje de error para edad negativa en registro de mascota (rebanada 3, Cypress)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/c7912c43467bc19d87ad48f9d63dfceb1e53cec2"
     },
     "stats": {
       "total": 17,
       "additions": 13,
       "deletions": 4,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T19:19:10.000Z",
+      "message": "feat: validación y mensaje de error para raza vacia en registro de mascota (rebanada 4, Cypress)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 14,
+      "deletions": 1,
       "date": "2025-10-16"
     },
     "coverage": 100,
