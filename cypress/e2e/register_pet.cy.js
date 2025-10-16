@@ -43,4 +43,16 @@ describe('Registro de mascota', () => {
     cy.get('button[type="submit"]').click();
     cy.contains('El ID del dueño es obligatorio').should('be.visible');
   });
+  it('Asocia la mascota al dueño correctamente en el modelo', () => {
+    cy.get('input[name="name"]').clear().type('Max');
+    cy.get('input[name="age"]').clear().type('3');
+    cy.get('input[name="breed"]').clear().type('Beagle');
+    cy.get('input[name="ownerId"]').clear().type('owner456');
+    cy.get('button[type="submit"]').click();
+    cy.contains('¡Mascota registrada con éxito!').should('be.visible');
+    cy.window().its('registerPet').then((registerPet) => {
+      const pets = registerPet.getPetsByOwner('owner456');
+        expect(pets).to.deep.include({ name: 'Max', age: 3, breed: 'Beagle', ownerId: 'owner456' });
+    });
+  });
 });

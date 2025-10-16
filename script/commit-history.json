@@ -171,17 +171,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "38c043bc0562830ee05d2bf3f9ef2bf5ef9f7aa8",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-16T19:28:50.000Z",
       "message": "feat: validación y mensaje de error para id del duenio vacio en registro de mascota (rebanada 5, Cypress)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/38c043bc0562830ee05d2bf3f9ef2bf5ef9f7aa8"
     },
     "stats": {
       "total": 17,
       "additions": 15,
       "deletions": 2,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T19:42:36.000Z",
+      "message": "validar y asocia la mascota al dueño correctamente en el modelo (Rebanada 6, cypress)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 90,
+      "additions": 58,
+      "deletions": 32,
       "date": "2025-10-16"
     },
     "coverage": 100,
