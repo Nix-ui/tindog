@@ -228,18 +228,54 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "628c9710851b1a0ad14760d1ee2a5a91a9e83163",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-16T20:22:00.000Z",
       "message": "feat: se creo el disenio del UI (style.css)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/628c9710851b1a0ad14760d1ee2a5a91a9e83163"
     },
     "stats": {
       "total": 153,
       "additions": 145,
       "deletions": 8,
       "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T04:42:09.000Z",
+      "message": "feat: Se puden crear mascotas",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 66,
+      "additions": 57,
+      "deletions": 9,
+      "date": "2025-10-18"
+    },
+    "coverage": 5.91,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T16:30:07.000Z",
+      "message": "feat: Se puden crear mascotas",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 200,
+      "additions": 191,
+      "deletions": 9,
+      "date": "2025-10-18"
     },
     "coverage": 100,
     "test_count": 6,
