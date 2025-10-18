@@ -340,12 +340,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "117d2b164e8351967d45fc27f31d494f54bd656c",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T16:20:14.000Z",
       "message": "feat:Navegador de rutas funcional y navbar",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/117d2b164e8351967d45fc27f31d494f54bd656c"
     },
     "stats": {
       "total": 188,
@@ -459,6 +459,25 @@
       "total": 188,
       "additions": 162,
       "deletions": 26,
+      "date": "2025-10-18"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T20:11:46.000Z",
+      "message": "feat: Se puede registrar y ver un cambio en tiempo real",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 148,
+      "additions": 130,
+      "deletions": 18,
       "date": "2025-10-18"
     },
     "coverage": 34.63,

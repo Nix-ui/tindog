@@ -6,6 +6,8 @@ import PetDetails from './myPetDetails.js';
 const cardGenerator = new CardGenerator();
 
 export default function myPetsTemplate() {
+    if(localStorage.getItem('pets')) petData.push(...JSON.parse(localStorage.getItem('pets')));
+    
     const pets = petData.map(pet => new PetModel(
         pet.id, 
         pet.name, 

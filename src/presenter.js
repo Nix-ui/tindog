@@ -7,5 +7,4 @@ document.addEventListener('DOMContentLoaded', ()=>{
 document.addEventListener('view-details', (id) => {
   const petId = id.detail;
   window.location.href = `/pet/${petId}`;
-  
 });

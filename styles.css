@@ -911,3 +911,19 @@ label { font-size: 1rem; font-weight: 500; line-height: 1.5; }
   color: white;
   box-shadow: var(--shadow-md);
 }
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.register-form{
+  width: 60%;
+  width: 60%;
+  background-color: var(--indigo-50);
+  backdrop-filter: blur(40px); 
+  border-radius: var(--radius-2xl); 
+  padding: 1rem; 
+  box-shadow: var(--shadow-xl); 
+  margin-bottom: 1.5rem;
+}

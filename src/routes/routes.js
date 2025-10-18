@@ -29,7 +29,7 @@ class Router {
         this.appContainer = appContainer;
         this.navbar = new NavBar(document.querySelector('.tindog-nav'), [
             { path: 'mypets', label: 'Mis mascotas' },
-            { path: 'Registrar Mascota', label: 'Registrar mascota' }
+            { path: 'registerpet', label: 'Registrar mascota' }
         ]);
     }
 
