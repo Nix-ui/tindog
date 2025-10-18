@@ -245,12 +245,12 @@
     "test_count": 6
   },
   {
-    "sha": "HEAD",
+    "sha": "3e97dec6cf7cbe5bea2e7cfd0a80b6ff1312a469",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T04:42:09.000Z",
       "message": "feat: Se puden crear mascotas",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/3e97dec6cf7cbe5bea2e7cfd0a80b6ff1312a469"
     },
     "stats": {
       "total": 66,
@@ -264,12 +264,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d9928711b4f7ec9f13535dc3579ad4d857c83a14",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T16:30:07.000Z",
       "message": "feat: Se puden crear mascotas",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d9928711b4f7ec9f13535dc3579ad4d857c83a14"
     },
     "stats": {
       "total": 200,
@@ -279,6 +279,25 @@
     },
     "coverage": 100,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T17:14:45.000Z",
+      "message": "feat:Se Crean tarjetas para las mascotas",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 1975,
+      "additions": 1808,
+      "deletions": 167,
+      "date": "2025-10-18"
+    },
+    "coverage": 31.58,
+    "test_count": 8,
     "failed_tests": 0,
     "conclusion": "success"
   }

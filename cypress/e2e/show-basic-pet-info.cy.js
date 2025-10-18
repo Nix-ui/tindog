@@ -1,4 +1,8 @@
 describe("Mostrar informacion basica de una mascota", () => {
+    it('Deberia Mostrar una Card de una mascota', () => {
+        cy.visit('/');
+        cy.get("#pet-card-5").should('be.visible');
+    })
     it('Deberia mostrar a mis mascotas', () => {
         cy.visit('/');
         cy.get("#pet-name-3").should('contain', 'Nina');
@@ -12,9 +16,5 @@ describe("Mostrar informacion basica de una mascota", () => {
         cy.get("#pet-shelter-3").should('contain', '🏠 Andrea Pérez');
         cy.get("#view-pet-details-3").should('contain', 'Ver más');
     });
-    it('Deberia ver la informacion Resumida de la mascota', () => {
-        cy.visit('/');
-        cy.get("#view-pet-details-5").click();
-        cy.get("#pet-view-full-card-5").should('be.visible');
-    });
+    
 })

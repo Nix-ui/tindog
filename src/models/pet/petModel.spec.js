@@ -7,4 +7,10 @@ describe("Modelo de Mascotas", () => {
         const pet = new PetModel('Nina', 'Barrio San Pedro, Santa Cruz', '1 año', 'Beagle', 'Pequeño', 'Curiosa y energética, perfecta para familias activas.', '🏠 Andrea Pérez');
         expect(pet).toBeInstanceOf(PetModel);
     });
+    it("Deberia crear un card de la mascota",()=>{
+        const pet = new PetModel('Nina', 'Barrio San Pedro, Santa Cruz', '1 año', 'Beagle', 'Pequeño', 'Curiosa y energética, perfecta para familias activas.', '🏠 Andrea Pérez');
+        const cardGenerator = new CardGenerator();
+        const card = cardGenerator.create('pet', pet);
+        expect(card).toBeInstanceOf(PetCard);
+    })
 })
