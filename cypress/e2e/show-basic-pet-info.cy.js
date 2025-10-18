@@ -22,4 +22,30 @@ describe("Mostrar informacion basica de una mascota", () => {
         cy.get("#view-pet-details-5").click();
         cy.get("#pet-detail-card-5").should('be.visible');
     });
+    it('Deberia mostrar la informacion Completa', () => {
+        let pet = {
+        "id": 7,
+        "name": "Coco",
+        "address": "Av. 6 de Agosto 321, La Paz",
+        "isLiked": false,
+        "age": 1,
+        "breed": "Corgi Galés",
+        "size": "Pequeño",
+        "description": "Leal y divertido, adora jugar con otros perros.",
+        "owner": "Camila Rodríguez",
+        "image": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b6"
+        }
+        cy.visit('/');
+        cy.get("#view-pet-details-7").click();
+        cy.get("#pet-detail-card-7").should('be.visible');
+        cy.get("#pet-name-7").should('contain', pet.name);
+        cy.get("#pet-address-7").should('contain', pet.address);
+        cy.get("#pet-ages-7").invoke('text').should('contain', pet.age);
+        cy.get("#pet-breed-size-7").within(() => {
+            cy.get("#pet-breed-7").should('contain', pet.breed);
+            cy.get("#pet-size-7").should('contain', pet.size);
+        })
+        cy.get("#pet-description-7").should('contain', pet.description);
+        cy.get("#pet-shelter-7").should('contain', pet.owner);
+    });
 })

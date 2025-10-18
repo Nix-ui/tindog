@@ -820,6 +820,60 @@ label { font-size: 1rem; font-weight: 500; line-height: 1.5; }
   }
 }
 
-/* ═══════════════════════════════════════════════════════════════════
-   FIN DE ESTILOS TINDOG
-   ═══════════════════════════════════════════════════════════════════ */
+/* Estilos para el diálogo de detalles */
+.pet-detail-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
+.pet-detail-card {
+    max-width: 36rem; /* Reducido de 48rem */
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 1rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.pet-detail-image-container {
+    position: relative;
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+.pet-detail-image {
+    width: 100%;
+    height: 16rem; /* Reducido de 20rem */
+    object-fit: cover;
+}
+
+.pet-detail-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.pet-detail-like {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem; /* Cambiado de right a left */
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+}

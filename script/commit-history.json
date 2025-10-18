@@ -302,12 +302,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "466f5ca8a76034f0add07e90f990da7ce74df388",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T14:17:11.000Z",
       "message": "feat: Se muestra la carta de la mascota escogida",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/466f5ca8a76034f0add07e90f990da7ce74df388"
     },
     "stats": {
       "total": 234,
@@ -317,6 +317,25 @@
     },
     "coverage": 26.06,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T14:24:43.000Z",
+      "message": "feat: Se Muestra la informacion Completa de una mascota elegida",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 138,
+      "additions": 130,
+      "deletions": 8,
+      "date": "2025-10-18"
+    },
+    "coverage": 28.21,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   },
@@ -376,12 +395,12 @@
     "test_count": 9
   },
   {
-    "sha": "HEAD",
+    "sha": "01dd910658e882d622b192652b50c357c02275ea",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T17:19:24.000Z",
       "message": "rebase: phase 5",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/01dd910658e882d622b192652b50c357c02275ea"
     },
     "stats": {
       "total": 234,
@@ -390,7 +409,24 @@
       "date": "2025-10-18"
     },
     "coverage": 34.45,
-    "test_count": 11,
+    "test_count": 11
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T17:20:30.000Z",
+      "message": "rebase: phase 6",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 138,
+      "additions": 130,
+      "deletions": 8,
+      "date": "2025-10-18"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
   }

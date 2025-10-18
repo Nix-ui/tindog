@@ -151,12 +151,19 @@ export default class PetCard extends BasicCard {
      * @param {Event} e 
      * @returns 
      */
-    handleClick(e){
+    handleClick(e) {
         const target = e.target.closest('[data-action]');
         if(!target) return;
+        
         const action = target.dataset.action;
-        if(action === 'like') this.toggleLike();
-        if(action === 'view-details') this.onViewDetails(target.dataset.petId);
+        const petId = target.dataset.petId;
+        
+        if(action === 'like') {
+            this.toggleLike();
+        }
+        if(action === 'view-details') {
+            this.onViewDetails(petId);
+        }
 
         super.handleClick(e);
     }
@@ -176,9 +183,10 @@ export default class PetCard extends BasicCard {
             isLiked: this.isLiked,
             data: this.data
         });
+        alert(this.isLiked ? 'Agregado a favoritos' : 'Quitado de favoritos');
     }
 
-    onViewDetails(petId){
+    onViewDetails(petId) {
         this.events.emit('view-details', petId);
     }
 

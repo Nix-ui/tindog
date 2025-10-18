@@ -7,3 +7,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
     if(route === 'mypets') return; 
   });
 });
+
+document.addEventListener('view-details', (id) => {
+  const petId = id.detail;
+  window.location.href = `/pet/${petId}`;
+  
+});
