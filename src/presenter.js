@@ -1,11 +1,7 @@
-import { initRouter } from "./routes/routes";
+import router from "./routes/routes";
 
 document.addEventListener('DOMContentLoaded', ()=>{
-  initRouter();
-  window.addEventListener('route-changed', (e) => {
-    const route = e.detail;
-    if(route === 'mypets') return; 
-  });
+  router.init();
 });
 
 document.addEventListener('view-details', (id) => {

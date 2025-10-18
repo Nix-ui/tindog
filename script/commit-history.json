@@ -321,17 +321,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "787d17c6333505b97ed6ed1ebb0ce268e723e1af",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T14:24:43.000Z",
       "message": "feat: Se Muestra la informacion Completa de una mascota elegida",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/787d17c6333505b97ed6ed1ebb0ce268e723e1af"
     },
     "stats": {
       "total": 138,
       "additions": 130,
       "deletions": 8,
+      "date": "2025-10-18"
+    },
+    "coverage": 28.21,
+    "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T16:20:14.000Z",
+      "message": "feat:Navegador de rutas funcional y navbar",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 188,
+      "additions": 162,
+      "deletions": 26,
       "date": "2025-10-18"
     },
     "coverage": 28.21,
@@ -412,17 +431,34 @@
     "test_count": 11
   },
   {
-    "sha": "HEAD",
+    "sha": "68cd3c9bebffabba75e112ea7b1965668513f6aa",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T17:20:30.000Z",
       "message": "rebase: phase 6",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/68cd3c9bebffabba75e112ea7b1965668513f6aa"
     },
     "stats": {
       "total": 138,
       "additions": 130,
       "deletions": 8,
+      "date": "2025-10-18"
+    },
+    "coverage": 34.63,
+    "test_count": 14
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T17:22:29.000Z",
+      "message": "rebase: phase completed",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 188,
+      "additions": 162,
+      "deletions": 26,
       "date": "2025-10-18"
     },
     "coverage": 34.63,

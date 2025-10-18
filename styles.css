@@ -877,3 +877,37 @@ label { font-size: 1rem; font-weight: 500; line-height: 1.5; }
     cursor: pointer;
     z-index: 10;
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   NAVBAR PERSONALIZADO TINDOG
+   ═══════════════════════════════════════════════════════════════════ */
+.tindog-nav {
+  display: flex;
+  align-items: center;
+}
+
+.tindog-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.tindog-nav-list a {
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-xl);
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.tindog-nav-list a:hover {
+  color: var(--text-gray-800);
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.tindog-nav-list a.active {
+  background: linear-gradient(to right, var(--tindog-indigo), var(--tindog-amber));
+  color: white;
+  box-shadow: var(--shadow-md);
+}
