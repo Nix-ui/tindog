@@ -17,4 +17,9 @@ describe("Mostrar informacion basica de una mascota", () => {
         cy.get("#pet-shelter-3").should('contain', '🏠 Andrea Pérez');
         cy.get("#view-pet-details-3").should('contain', 'Ver más');
     });
+    it('Deberia ver la informacion emergente de la mascota', () => {
+        cy.visit('/');
+        cy.get("#view-pet-details-5").click();
+        cy.get("#pet-detail-card-5").should('be.visible');
+    });
 })

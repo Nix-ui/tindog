@@ -264,12 +264,31 @@
     "conclusion": "success"
   },
   {
-    "sha": "0e7a9024da5282cc4e3e019bfc17ca80dd91b9e3",
+    "sha": "41b30fa023bd29e3732610e6a57ca02e4a830356",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T04:49:56.000Z",
+      "message": "feat:Se Crean tarjetas para las mascotas",
+      "url": "https://github.com/Nix-ui/tindog/commit/41b30fa023bd29e3732610e6a57ca02e4a830356"
+    },
+    "stats": {
+      "total": 15294,
+      "additions": 5618,
+      "deletions": 9676,
+      "date": "2025-10-18"
+    },
+    "coverage": 23.12,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "635b9b5b222db67c2afcb561f080e24bfb1fbdfb",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T04:57:08.000Z",
       "message": "feat: Se Creab multiples cartas de mascotas",
-      "url": "https://github.com/Nix-ui/tindog/commit/0e7a9024da5282cc4e3e019bfc17ca80dd91b9e3"
+      "url": "https://github.com/Nix-ui/tindog/commit/635b9b5b222db67c2afcb561f080e24bfb1fbdfb"
     },
     "stats": {
       "total": 13,
@@ -279,6 +298,25 @@
     },
     "coverage": 24.19,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T14:17:11.000Z",
+      "message": "feat: Se muestra la carta de la mascota escogida",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 234,
+      "additions": 226,
+      "deletions": 8,
+      "date": "2025-10-18"
+    },
+    "coverage": 26.06,
+    "test_count": 6,
     "failed_tests": 0,
     "conclusion": "success"
   },
@@ -321,12 +359,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fbd195e4b22bb324350d8bbf43f88a1099ecc89e",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T17:17:09.000Z",
       "message": "rebase: phase 4",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/fbd195e4b22bb324350d8bbf43f88a1099ecc89e"
     },
     "stats": {
       "total": 13,
@@ -335,7 +373,24 @@
       "date": "2025-10-18"
     },
     "coverage": 32.54,
-    "test_count": 9,
+    "test_count": 9
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T17:19:24.000Z",
+      "message": "rebase: phase 5",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 234,
+      "additions": 226,
+      "deletions": 8,
+      "date": "2025-10-18"
+    },
+    "coverage": 34.45,
+    "test_count": 11,
     "failed_tests": 0,
     "conclusion": "success"
   }

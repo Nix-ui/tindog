@@ -186,5 +186,4 @@ export default class CardGenerator extends EventEmitter{
 
         this.emit('container:cleared', { container: target });
     }
-
 }
