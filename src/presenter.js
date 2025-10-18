@@ -1,15 +1,10 @@
-import sumar from "./sumador";
+import router from "./routes/routes";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
-const div = document.querySelector("#resultado-div");
+document.addEventListener('DOMContentLoaded', ()=>{
+  router.init();
+});
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
-
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+document.addEventListener('view-details', (id) => {
+  const petId = id.detail;
+  window.location.href = `/pet/${petId}`;
 });

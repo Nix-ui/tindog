@@ -1,0 +1,488 @@
+[
+  {
+    "sha": "c9c9f93e9592954a2bd3ca0a19e7ad8c301df58e",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T17:47:30.000Z",
+      "message": "feat: registrar mascota con datos válidos paso la prueba en jest",
+      "url": "https://github.com/Nix-ui/tindog/commit/c9c9f93e9592954a2bd3ca0a19e7ad8c301df58e"
+    },
+    "stats": {
+      "total": 13894,
+      "additions": 4169,
+      "deletions": 9725,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8f04bae2c0b64b74b0b611e5032ed9b6547c5212",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T18:01:47.000Z",
+      "message": "feat: validación de nombre obligatorio en registro de mascota (prueba 2 Jest)",
+      "url": "https://github.com/Nix-ui/tindog/commit/8f04bae2c0b64b74b0b611e5032ed9b6547c5212"
+    },
+    "stats": {
+      "total": 81,
+      "additions": 47,
+      "deletions": 34,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "677f18b5a65142b225deec4dd1364fd68c0464bd",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T18:07:48.000Z",
+      "message": "feat: validación de edad positiva en registro de mascota (prueba 3 Jest)",
+      "url": "https://github.com/Nix-ui/tindog/commit/677f18b5a65142b225deec4dd1364fd68c0464bd"
+    },
+    "stats": {
+      "total": 38,
+      "additions": 27,
+      "deletions": 11,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "fb68c5dd56193f3c71b5608a686456516cdab2e6",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T18:11:28.000Z",
+      "message": "feat: validación de raza obligatoria en registro de mascota (prueba 4 Jest)",
+      "url": "https://github.com/Nix-ui/tindog/commit/fb68c5dd56193f3c71b5608a686456516cdab2e6"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 16,
+      "deletions": 1,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "54fd7bef0fae502c90cb4a54bf39c81c4347ed9d",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T18:22:18.000Z",
+      "message": "feat: asociación correcta de mascota a dueño en el modelo (prueba 5 Jest)",
+      "url": "https://github.com/Nix-ui/tindog/commit/54fd7bef0fae502c90cb4a54bf39c81c4347ed9d"
+    },
+    "stats": {
+      "total": 25,
+      "additions": 23,
+      "deletions": 2,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "4c3b4f2280ab55e806c93197f2c897475c84f912",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T18:53:29.000Z",
+      "message": "feat: registro exitoso de mascota con datos válidos (rebanada 1, Cypress y MVP)",
+      "url": "https://github.com/Nix-ui/tindog/commit/4c3b4f2280ab55e806c93197f2c897475c84f912"
+    },
+    "stats": {
+      "total": 89,
+      "additions": 60,
+      "deletions": 29,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "0c3f39c084b31f2c4ae57d6deb4fbbbc025b65ec",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T19:07:36.000Z",
+      "message": "feat: validación y mensaje de error para nombre vacío en registro de mascota (rebanada 2, Cypress)",
+      "url": "https://github.com/Nix-ui/tindog/commit/0c3f39c084b31f2c4ae57d6deb4fbbbc025b65ec"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 18,
+      "deletions": 3,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c7912c43467bc19d87ad48f9d63dfceb1e53cec2",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T19:13:06.000Z",
+      "message": "feat: validación y mensaje de error para edad negativa en registro de mascota (rebanada 3, Cypress)",
+      "url": "https://github.com/Nix-ui/tindog/commit/c7912c43467bc19d87ad48f9d63dfceb1e53cec2"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 13,
+      "deletions": 4,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "96c360b437b9208809bdea2756696161c38059cd",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T19:19:10.000Z",
+      "message": "feat: validación y mensaje de error para raza vacia en registro de mascota (rebanada 4, Cypress)",
+      "url": "https://github.com/Nix-ui/tindog/commit/96c360b437b9208809bdea2756696161c38059cd"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 14,
+      "deletions": 1,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "38c043bc0562830ee05d2bf3f9ef2bf5ef9f7aa8",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T19:28:50.000Z",
+      "message": "feat: validación y mensaje de error para id del duenio vacio en registro de mascota (rebanada 5, Cypress)",
+      "url": "https://github.com/Nix-ui/tindog/commit/38c043bc0562830ee05d2bf3f9ef2bf5ef9f7aa8"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 15,
+      "deletions": 2,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "0c53c3d3cc047ba85740db9be20b99652a7d2f15",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T19:42:36.000Z",
+      "message": "validar y asocia la mascota al dueño correctamente en el modelo (Rebanada 6, cypress)",
+      "url": "https://github.com/Nix-ui/tindog/commit/0c53c3d3cc047ba85740db9be20b99652a7d2f15"
+    },
+    "stats": {
+      "total": 90,
+      "additions": 58,
+      "deletions": 32,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "fcce5e7785799c92d3e3af57ebefba1b7b36bfc8",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T19:50:36.000Z",
+      "message": "feat: validación y mensaje de error para varios campos en el registro de mascota (rebanada 7, Cypress)",
+      "url": "https://github.com/Nix-ui/tindog/commit/fcce5e7785799c92d3e3af57ebefba1b7b36bfc8"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 34,
+      "deletions": 9,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "628c9710851b1a0ad14760d1ee2a5a91a9e83163",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-16T20:22:00.000Z",
+      "message": "feat: se creo el disenio del UI (style.css)",
+      "url": "https://github.com/Nix-ui/tindog/commit/628c9710851b1a0ad14760d1ee2a5a91a9e83163"
+    },
+    "stats": {
+      "total": 153,
+      "additions": 145,
+      "deletions": 8,
+      "date": "2025-10-16"
+    },
+    "coverage": 100,
+    "test_count": 6
+  },
+  {
+    "sha": "3e97dec6cf7cbe5bea2e7cfd0a80b6ff1312a469",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T04:42:09.000Z",
+      "message": "feat: Se puden crear mascotas",
+      "url": "https://github.com/Nix-ui/tindog/commit/3e97dec6cf7cbe5bea2e7cfd0a80b6ff1312a469"
+    },
+    "stats": {
+      "total": 66,
+      "additions": 57,
+      "deletions": 9,
+      "date": "2025-10-18"
+    },
+    "coverage": 5.91,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "41b30fa023bd29e3732610e6a57ca02e4a830356",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T04:49:56.000Z",
+      "message": "feat:Se Crean tarjetas para las mascotas",
+      "url": "https://github.com/Nix-ui/tindog/commit/41b30fa023bd29e3732610e6a57ca02e4a830356"
+    },
+    "stats": {
+      "total": 15294,
+      "additions": 5618,
+      "deletions": 9676,
+      "date": "2025-10-18"
+    },
+    "coverage": 23.12,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "635b9b5b222db67c2afcb561f080e24bfb1fbdfb",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T04:57:08.000Z",
+      "message": "feat: Se Creab multiples cartas de mascotas",
+      "url": "https://github.com/Nix-ui/tindog/commit/635b9b5b222db67c2afcb561f080e24bfb1fbdfb"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2025-10-18"
+    },
+    "coverage": 24.19,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "466f5ca8a76034f0add07e90f990da7ce74df388",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T14:17:11.000Z",
+      "message": "feat: Se muestra la carta de la mascota escogida",
+      "url": "https://github.com/Nix-ui/tindog/commit/466f5ca8a76034f0add07e90f990da7ce74df388"
+    },
+    "stats": {
+      "total": 234,
+      "additions": 226,
+      "deletions": 8,
+      "date": "2025-10-18"
+    },
+    "coverage": 26.06,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "787d17c6333505b97ed6ed1ebb0ce268e723e1af",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T14:24:43.000Z",
+      "message": "feat: Se Muestra la informacion Completa de una mascota elegida",
+      "url": "https://github.com/Nix-ui/tindog/commit/787d17c6333505b97ed6ed1ebb0ce268e723e1af"
+    },
+    "stats": {
+      "total": 138,
+      "additions": 130,
+      "deletions": 8,
+      "date": "2025-10-18"
+    },
+    "coverage": 28.21,
+    "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "117d2b164e8351967d45fc27f31d494f54bd656c",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T16:20:14.000Z",
+      "message": "feat:Navegador de rutas funcional y navbar",
+      "url": "https://github.com/Nix-ui/tindog/commit/117d2b164e8351967d45fc27f31d494f54bd656c"
+    },
+    "stats": {
+      "total": 188,
+      "additions": 162,
+      "deletions": 26,
+      "date": "2025-10-18"
+    },
+    "coverage": 28.21,
+    "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d9928711b4f7ec9f13535dc3579ad4d857c83a14",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T16:30:07.000Z",
+      "message": "feat: Se puden crear mascotas",
+      "url": "https://github.com/Nix-ui/tindog/commit/d9928711b4f7ec9f13535dc3579ad4d857c83a14"
+    },
+    "stats": {
+      "total": 200,
+      "additions": 191,
+      "deletions": 9,
+      "date": "2025-10-18"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "41b30fa023bd29e3732610e6a57ca02e4a830356",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T17:14:45.000Z",
+      "message": "feat:Se Crean tarjetas para las mascotas",
+      "url": "https://github.com/Nix-ui/tindog/commit/41b30fa023bd29e3732610e6a57ca02e4a830356"
+    },
+    "stats": {
+      "total": 1975,
+      "additions": 1808,
+      "deletions": 167,
+      "date": "2025-10-18"
+    },
+    "coverage": 31.58,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "fbd195e4b22bb324350d8bbf43f88a1099ecc89e",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T17:17:09.000Z",
+      "message": "rebase: phase 4",
+      "url": "https://github.com/Nix-ui/tindog/commit/fbd195e4b22bb324350d8bbf43f88a1099ecc89e"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2025-10-18"
+    },
+    "coverage": 32.54,
+    "test_count": 9
+  },
+  {
+    "sha": "01dd910658e882d622b192652b50c357c02275ea",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T17:19:24.000Z",
+      "message": "rebase: phase 5",
+      "url": "https://github.com/Nix-ui/tindog/commit/01dd910658e882d622b192652b50c357c02275ea"
+    },
+    "stats": {
+      "total": 234,
+      "additions": 226,
+      "deletions": 8,
+      "date": "2025-10-18"
+    },
+    "coverage": 34.45,
+    "test_count": 11
+  },
+  {
+    "sha": "68cd3c9bebffabba75e112ea7b1965668513f6aa",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T17:20:30.000Z",
+      "message": "rebase: phase 6",
+      "url": "https://github.com/Nix-ui/tindog/commit/68cd3c9bebffabba75e112ea7b1965668513f6aa"
+    },
+    "stats": {
+      "total": 138,
+      "additions": 130,
+      "deletions": 8,
+      "date": "2025-10-18"
+    },
+    "coverage": 34.63,
+    "test_count": 14
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T17:22:29.000Z",
+      "message": "rebase: phase completed",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 188,
+      "additions": 162,
+      "deletions": 26,
+      "date": "2025-10-18"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-18T20:11:46.000Z",
+      "message": "feat: Se puede registrar y ver un cambio en tiempo real",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 148,
+      "additions": 130,
+      "deletions": 18,
+      "date": "2025-10-18"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
