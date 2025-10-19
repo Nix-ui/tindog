@@ -505,12 +505,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e92ceac074ed77b56982b2e33678b8340453e8b0",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T13:38:28.000Z",
       "message": "feat: PetSearchView has been added",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/e92ceac074ed77b56982b2e33678b8340453e8b0"
     },
     "stats": {
       "total": 49,
@@ -535,6 +535,25 @@
       "total": 8,
       "additions": 8,
       "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T13:49:44.000Z",
+      "message": "feat: updated petcollection model",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 38,
+      "deletions": 5,
       "date": "2025-10-19"
     },
     "coverage": 34.63,
