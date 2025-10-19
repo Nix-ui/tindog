@@ -828,12 +828,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a53d214bc1ae45df224d854444ed999b1ab80ce6",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T15:45:23.000Z",
       "message": "feat: updated mypet.js",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/a53d214bc1ae45df224d854444ed999b1ab80ce6"
     },
     "stats": {
       "total": 94,
@@ -858,6 +858,25 @@
       "total": 17,
       "additions": 15,
       "deletions": 2,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:53:15.000Z",
+      "message": "feat: updated various files",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 2,
+      "deletions": 3,
       "date": "2025-10-19"
     },
     "coverage": 37.82,

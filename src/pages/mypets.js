@@ -6,9 +6,9 @@ import PetDetails from './myPetDetails.js';
 const cardGenerator = new CardGenerator();
 
 export default function myPetsTemplate() {
-  // ✅ No modificar petData directamente
+  const basePets = JSON.parse(JSON.stringify(petData)); // ✅ deep clone
   const localPets = JSON.parse(localStorage.getItem('pets')) || [];
-  const allPetsRaw = [...petData, ...localPets]; // copia segura
+  const allPetsRaw = [...basePets, ...localPets];
 
   const pets = allPetsRaw.map(pet => new PetModel(
     pet.id,
@@ -45,7 +45,6 @@ export default function myPetsTemplate() {
       const detail = new PetDetails(pet);
       const mountPoint = document.querySelector('#modal-root') || document.body;
 
-      // ✅ Evita duplicar el modal
       const existingDetail = document.querySelector('.pet-detail-overlay');
       if (existingDetail) existingDetail.remove();
 
