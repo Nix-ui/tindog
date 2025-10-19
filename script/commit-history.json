@@ -486,12 +486,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fb703419df981a4452374c23bcf48cc79cc45aad",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T13:35:34.000Z",
       "message": "feat: Pet model, model instance, and search presenter has been added",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/fb703419df981a4452374c23bcf48cc79cc45aad"
     },
     "stats": {
       "total": 48,
@@ -515,6 +515,25 @@
     "stats": {
       "total": 49,
       "additions": 49,
+      "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T13:42:01.000Z",
+      "message": "feat: PetSearch page has been added",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
       "deletions": 0,
       "date": "2025-10-19"
     },
