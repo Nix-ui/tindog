@@ -581,12 +581,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ff0bf7cd20d62938d0797ee25efe03ec50af9a3c",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T14:14:07.000Z",
       "message": "feat: added jest files",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/ff0bf7cd20d62938d0797ee25efe03ec50af9a3c"
     },
     "stats": {
       "total": 86,
@@ -616,6 +616,25 @@
     "coverage": 32.05,
     "test_count": 14,
     "failed_tests": 4,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T14:22:26.000Z",
+      "message": "fix: reverted PetRegistrationPresenter",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 133,
+      "additions": 28,
+      "deletions": 105,
+      "date": "2025-10-19"
+    },
+    "coverage": 35.4,
+    "test_count": 19,
+    "failed_tests": 6,
     "conclusion": "failure"
   }
 ]
