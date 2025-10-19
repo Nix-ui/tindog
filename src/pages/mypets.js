@@ -1,16 +1,16 @@
 import PetModel from '../models/pet/petModel.js';
 import CardGenerator from '../managers/CardGenerator.js';
-import petData from '../../data/pets.json';
+import rawPetData from '../../data/pets.json';
 import PetDetails from './myPetDetails.js';
 
 const cardGenerator = new CardGenerator();
 
 export default function myPetsTemplate() {
-  const basePets = JSON.parse(JSON.stringify(petData)); // ✅ deep clone
+  // ✅ Load pets from localStorage only
   const localPets = JSON.parse(localStorage.getItem('pets')) || [];
-  const allPetsRaw = [...basePets, ...localPets];
 
-  const pets = allPetsRaw.map(pet => new PetModel(
+  // ✅ Convert local pets to PetModel instances
+  const pets = localPets.map(pet => new PetModel(
     pet.id,
     pet.name,
     pet.address,
@@ -23,10 +23,12 @@ export default function myPetsTemplate() {
     pet.image
   ));
 
+  // ✅ Create container
   const container = document.createElement('div');
   container.id = 'pets-container';
   container.className = 'pets-container flex flex-wrap justify-center gap-4';
 
+  // ✅ Render cards
   cardGenerator.renderMany('pet', pets, container, {
     animate: true,
     showLikeButton: true,
@@ -34,6 +36,7 @@ export default function myPetsTemplate() {
     imageHeight: "12rem"
   });
 
+  // ✅ Handle view details
   const onViewMoreClick = (e) => {
     const btn = e.target.closest('[data-action="view-details"]');
     if (!btn) return;
@@ -52,6 +55,7 @@ export default function myPetsTemplate() {
     }
   };
 
+  // ✅ Attach listener only once
   if (!document.__tindog_view_details_listener) {
     document.addEventListener('click', onViewMoreClick);
     document.__tindog_view_details_listener = true;
