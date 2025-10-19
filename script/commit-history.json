@@ -600,12 +600,12 @@
     "conclusion": "neutral"
   },
   {
-    "sha": "HEAD",
+    "sha": "ec4e4c37b6477f5569d7c328d50cb32675bd1378",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T14:21:11.000Z",
       "message": "feat: updated various things",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/ec4e4c37b6477f5569d7c328d50cb32675bd1378"
     },
     "stats": {
       "total": 137,
@@ -636,5 +636,24 @@
     "test_count": 19,
     "failed_tests": 6,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T14:33:34.000Z",
+      "message": "feat: all jest tests have passed",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 252,
+      "additions": 164,
+      "deletions": 88,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
