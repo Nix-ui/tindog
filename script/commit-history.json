@@ -638,12 +638,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "71f96af61dc372ad85fb746183197093945d6788",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T14:33:34.000Z",
       "message": "feat: all jest tests have passed",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/71f96af61dc372ad85fb746183197093945d6788"
     },
     "stats": {
       "total": 252,
@@ -668,6 +668,25 @@
       "total": 9,
       "additions": 6,
       "deletions": 3,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:11:40.000Z",
+      "message": "feat: updated routes.js to inlucde searchPet",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 148,
+      "additions": 79,
+      "deletions": 69,
       "date": "2025-10-19"
     },
     "coverage": 37.82,
