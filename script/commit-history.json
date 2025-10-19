@@ -999,12 +999,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9510ad5829d70944fb29515338b2307461f0e3be",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T17:33:56.000Z",
       "message": "feat: muestra todas las mascotas cuando no se selecciona raza  (cypress test 2)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/9510ad5829d70944fb29515338b2307461f0e3be"
     },
     "stats": {
       "total": 43,
@@ -1029,6 +1029,25 @@
       "total": 13,
       "additions": 13,
       "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T17:36:59.000Z",
+      "message": "feat: buscar mascota por raza completado",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 0,
+      "deletions": 3,
       "date": "2025-10-19"
     },
     "coverage": 38.52,
