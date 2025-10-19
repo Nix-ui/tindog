@@ -524,12 +524,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1c806609196ef699d26500126db36067a7b0e94c",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T13:42:01.000Z",
       "message": "feat: PetSearch page has been added",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/1c806609196ef699d26500126db36067a7b0e94c"
     },
     "stats": {
       "total": 8,
@@ -558,6 +558,25 @@
     },
     "coverage": 34.63,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T13:52:29.000Z",
+      "message": "feat: updated pet registration presenter",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 14,
+      "deletions": 10,
+      "date": "2025-10-19"
+    },
+    "coverage": 28.21,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }
