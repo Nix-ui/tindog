@@ -448,12 +448,12 @@
     "test_count": 14
   },
   {
-    "sha": "HEAD",
+    "sha": "af8bc3652676c331afe129d0d767183534dd075d",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T17:22:29.000Z",
       "message": "rebase: phase completed",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/af8bc3652676c331afe129d0d767183534dd075d"
     },
     "stats": {
       "total": 188,
@@ -479,6 +479,25 @@
       "additions": 130,
       "deletions": 18,
       "date": "2025-10-18"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T13:35:34.000Z",
+      "message": "feat: Pet model, model instance, and search presenter has been added",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 48,
+      "deletions": 0,
+      "date": "2025-10-19"
     },
     "coverage": 34.63,
     "test_count": 14,
