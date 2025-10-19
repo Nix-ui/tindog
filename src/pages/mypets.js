@@ -1,6 +1,14 @@
+import PetModel from '../models/pet/petModel.js';
+import CardGenerator from '../managers/CardGenerator.js';
+import petData from '../../data/pets.json';
+import PetDetails from './myPetDetails.js';
+
+const cardGenerator = new CardGenerator();
+
 export default function myPetsTemplate() {
+  // ✅ No modificar petData directamente
   const localPets = JSON.parse(localStorage.getItem('pets')) || [];
-  const allPetsRaw = [...petData, ...localPets]; // ✅ copia segura
+  const allPetsRaw = [...petData, ...localPets]; // copia segura
 
   const pets = allPetsRaw.map(pet => new PetModel(
     pet.id,
@@ -36,6 +44,11 @@ export default function myPetsTemplate() {
     if (pet) {
       const detail = new PetDetails(pet);
       const mountPoint = document.querySelector('#modal-root') || document.body;
+
+      // ✅ Evita duplicar el modal
+      const existingDetail = document.querySelector('.pet-detail-overlay');
+      if (existingDetail) existingDetail.remove();
+
       detail.mount(mountPoint);
     }
   };
