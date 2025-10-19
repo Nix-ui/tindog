@@ -1,6 +1,6 @@
 import myPetsTemplate from "../pages/mypets";
 import registerPetTemplate from "../pages/registerPet";
-import searchPetTemplate from "../pages/searchPet"; 
+import searchPetTemplate from "../pages/searchPet";
 import NavBar from "../components/core/navBar";
 
 const routes = {
@@ -16,7 +16,7 @@ const routes = {
     template: () => registerPetTemplate(),
     hasNavbar: true
   },
-  searchpet: { 
+  searchpet: {
     route: '/searchpet',
     component: 'SearchPet',
     template: () => searchPetTemplate(),
@@ -37,7 +37,7 @@ class Router {
     this.navbar = new NavBar(document.querySelector('.tindog-nav'), [
       { path: 'mypets', label: 'Mis mascotas' },
       { path: 'registerpet', label: 'Registrar mascota' },
-      { path: 'searchpet', label: 'Buscar por raza' } 
+      { path: 'searchpet', label: 'Buscar por raza' }
     ]);
   }
 
@@ -84,6 +84,7 @@ class Router {
         ${this.navbar.getTemplate()}
         <main id="page-content">${route.template()}</main>
       `;
+      this.navbar.render();
     } else {
       this.appContainer.innerHTML = route.template();
     }
@@ -92,7 +93,8 @@ class Router {
   }
 
   getRouteKeyByPath(path) {
-    return Object.keys(this.routes).find(key => this.routes[key].route === path);
+    const cleanPath = path.replace(/\/$/, ''); 
+    return Object.keys(this.routes).find(key => this.routes[key].route === cleanPath);
   }
 }
 
