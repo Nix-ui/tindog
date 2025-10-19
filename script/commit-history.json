@@ -904,12 +904,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "452f7def4bcc6eeb7a31bbd84460e86f01aabda3",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T16:11:44.000Z",
       "message": "feat: updated various files",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/452f7def4bcc6eeb7a31bbd84460e86f01aabda3"
     },
     "stats": {
       "total": 11,
@@ -934,6 +934,25 @@
       "total": 89,
       "additions": 62,
       "deletions": 27,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T16:26:27.000Z",
+      "message": "feat: updated various files",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 7,
+      "deletions": 5,
       "date": "2025-10-19"
     },
     "coverage": 38.52,
