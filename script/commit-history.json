@@ -980,12 +980,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1fb2733ed72e43701bd599aa917b3644ea471c49",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T17:30:43.000Z",
       "message": "feat: carga el dropdown de razas (cypress test 1)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/1fb2733ed72e43701bd599aa917b3644ea471c49"
     },
     "stats": {
       "total": 18,
@@ -1010,6 +1010,25 @@
       "total": 43,
       "additions": 38,
       "deletions": 5,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T17:35:27.000Z",
+      "message": "feat: filtra mascota por raza seleccionada (cypress test 3)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
       "date": "2025-10-19"
     },
     "coverage": 38.52,
