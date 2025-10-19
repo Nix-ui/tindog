@@ -942,12 +942,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6a7f8ff2badf871c4feeebfb6913864155c11fff",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T16:26:27.000Z",
       "message": "feat: updated various files",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/6a7f8ff2badf871c4feeebfb6913864155c11fff"
     },
     "stats": {
       "total": 12,
@@ -972,6 +972,25 @@
       "total": 71,
       "additions": 38,
       "deletions": 33,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T17:30:43.000Z",
+      "message": "feat: carga el dropdown de razas (cypress test 1)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
       "date": "2025-10-19"
     },
     "coverage": 38.52,
