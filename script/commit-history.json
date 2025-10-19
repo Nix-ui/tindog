@@ -543,12 +543,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f364364c8ad7b5a005c0cddbbbe77604703f29cf",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T13:49:44.000Z",
       "message": "feat: updated petcollection model",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/f364364c8ad7b5a005c0cddbbbe77604703f29cf"
     },
     "stats": {
       "total": 43,
@@ -579,5 +579,24 @@
     "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T14:14:07.000Z",
+      "message": "feat: added jest files",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 86,
+      "additions": 86,
+      "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
   }
 ]
