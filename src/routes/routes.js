@@ -37,7 +37,7 @@ class Router {
     this.navbar = new NavBar(document.querySelector('.tindog-nav'), [
       { path: 'mypets', label: 'Mis mascotas' },
       { path: 'registerpet', label: 'Registrar mascota' },
-      { path: 'searchpet', label: 'Buscar por raza' } // ✅ Add to navbar
+      { path: 'searchpet', label: 'Buscar por raza' } 
     ]);
   }
 
