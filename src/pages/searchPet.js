@@ -3,9 +3,12 @@ import PetSearchPresenter from '../presenter/PetSearchPresenter.js';
 import PetSearchView from '../view/PetSearchView.js';
 
 export default function searchPetTemplate() {
-  const view = new PetSearchView();
-  const presenter = new PetSearchPresenter(PetCollectionInstance, view);
-  presenter.init();
+  
+  setTimeout(() => {
+    const view = new PetSearchView();
+    const presenter = new PetSearchPresenter(PetCollectionInstance, view);
+    presenter.init();
+  }, 0); 
 
-  return view.getTemplate(); 
+  return `<section id="search-pet-container"></section>`;
 }

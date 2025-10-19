@@ -714,12 +714,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "ebd2e0d69dd60a2d579d7d9b76e821a19e0d03eb",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T15:22:29.000Z",
       "message": "feat: updated navBar.js",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/ebd2e0d69dd60a2d579d7d9b76e821a19e0d03eb"
     },
     "stats": {
       "total": 4,
@@ -744,6 +744,25 @@
       "total": 12,
       "additions": 7,
       "deletions": 5,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:29:23.000Z",
+      "message": "feat: updated searchPet.js",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 7,
+      "deletions": 4,
       "date": "2025-10-19"
     },
     "coverage": 37.82,
