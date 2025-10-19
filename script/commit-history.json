@@ -733,12 +733,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3a7c2523f891ac2e951dfacbdd9ffbf4037b4c1a",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T15:26:28.000Z",
       "message": "feat: updated routes.js",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/3a7c2523f891ac2e951dfacbdd9ffbf4037b4c1a"
     },
     "stats": {
       "total": 12,
@@ -762,6 +762,25 @@
     "stats": {
       "total": 11,
       "additions": 7,
+      "deletions": 4,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:34:29.000Z",
+      "message": "feat: updated searchPet.js again",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 9,
       "deletions": 4,
       "date": "2025-10-19"
     },
