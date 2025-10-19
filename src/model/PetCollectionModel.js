@@ -3,18 +3,28 @@ import PetModel from '../models/pet/petModel.js';
 export default class PetCollectionModel {
   constructor() {
     const rawPets = JSON.parse(localStorage.getItem('pets')) || [];
-    this.pets = rawPets.map(p => new PetModel(
-      p.id ?? 0,
-      p.name ?? '',
-      p.address ?? '',
-      p.isLiked ?? false,
-      p.age ?? 0,
-      p.breed ?? '',
-      p.size ?? '',
-      p.description ?? '',
-      p.owner ?? '',
-      p.image ?? ''
-    ));
+
+    // ✅ Deduplicate by ID during initialization
+    const uniquePetsMap = new Map();
+    rawPets.forEach(p => {
+      const id = p.id ?? 0;
+      if (!uniquePetsMap.has(id)) {
+        uniquePetsMap.set(id, new PetModel(
+          id,
+          p.name ?? '',
+          p.address ?? '',
+          p.isLiked ?? false,
+          p.age ?? 0,
+          p.breed ?? '',
+          p.size ?? '',
+          p.description ?? '',
+          p.owner ?? '',
+          p.image ?? ''
+        ));
+      }
+    });
+
+    this.pets = Array.from(uniquePetsMap.values());
   }
 
   /**
@@ -39,9 +49,17 @@ export default class PetCollectionModel {
   /**
    * Agrega una mascota nueva
    * @param {object|PetModel} petData
-   * @returns {PetModel}
+   * @returns {PetModel|null}
    */
   addPet(petData) {
+    // ✅ Prevent duplicates by checking name + breed + age
+    const isDuplicate = this.pets.some(p =>
+      p.name === petData.name &&
+      p.breed === petData.breed &&
+      p.age === petData.age
+    );
+    if (isDuplicate) return null;
+
     const nextId = this.pets.length > 0
       ? Math.max(...this.pets.map(p => p.id)) + 1
       : 1;

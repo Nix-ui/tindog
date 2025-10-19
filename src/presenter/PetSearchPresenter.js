@@ -7,11 +7,12 @@ export default class PetSearchPresenter {
 
   init() {
     const breeds = this.model.getAllBreeds();
+    this.view.clearBreedOptions();
     this.view.populateBreedOptions(breeds);
-    this.view.removeBreedChangeListener?.(this.handleBreedChange);
+    this.view.removeBreedChangeListener(); 
     this.view.onBreedChange(this.handleBreedChange);
+    this.handleBreedChange(''); 
   }
-
   handleBreedChange(breed) {
     const pets = this.model.filterByBreed(breed);
     this.view.showPets(pets);

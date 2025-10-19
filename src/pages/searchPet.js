@@ -2,11 +2,16 @@ import PetCollectionInstance from '../model/PetCollectionInstance.js';
 import PetSearchPresenter from '../presenter/PetSearchPresenter.js';
 import PetSearchView from '../view/PetSearchView.js';
 
+let presenterInitialized = false;
+
 export default function searchPetTemplate() {
   setTimeout(() => {
-    const view = new PetSearchView();
-    const presenter = new PetSearchPresenter(PetCollectionInstance, view);
-    presenter.init();
+    if (!presenterInitialized) {
+      const view = new PetSearchView();
+      const presenter = new PetSearchPresenter(PetCollectionInstance, view);
+      presenter.init();
+      presenterInitialized = true;
+    }
   }, 0);
 
   return `

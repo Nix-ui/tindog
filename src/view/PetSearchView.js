@@ -4,11 +4,26 @@ export default class PetSearchView {
     this.resultsContainer = document.getElementById('results');
     this.breedChangeHandler = null;
 
-    this.breedSelect.addEventListener('change', () => {
-      if (this.breedChangeHandler) {
-        this.breedChangeHandler(this.breedSelect.value);
-      }
-    });
+    this._boundChangeListener = this._onChange.bind(this);
+    this.breedSelect.addEventListener('change', this._boundChangeListener);
+  }
+
+  _onChange() {
+    if (this.breedChangeHandler) {
+      this.breedChangeHandler(this.breedSelect.value);
+    }
+  }
+
+  clearBreedOptions() {
+    this.breedSelect.innerHTML = '';
+  }
+
+  removeBreedChangeListener() {
+    this.breedChangeHandler = null;
+  }
+
+  onBreedChange(callback) {
+    this.breedChangeHandler = callback;
   }
 
   populateBreedOptions(breeds) {
@@ -43,9 +58,5 @@ export default class PetSearchView {
       `;
       this.resultsContainer.appendChild(div);
     });
-  }
-
-  onBreedChange(callback) {
-    this.breedChangeHandler = callback;
   }
 }
