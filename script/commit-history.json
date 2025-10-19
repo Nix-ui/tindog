@@ -619,12 +619,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "5b5916991d3954616e70696d4bd10b65d8e43494",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T14:22:26.000Z",
       "message": "fix: reverted PetRegistrationPresenter",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/5b5916991d3954616e70696d4bd10b65d8e43494"
     },
     "stats": {
       "total": 133,
@@ -649,6 +649,25 @@
       "total": 252,
       "additions": 164,
       "deletions": 88,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:07:34.000Z",
+      "message": "feat: updated searchpet",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 6,
+      "deletions": 3,
       "date": "2025-10-19"
     },
     "coverage": 37.82,
