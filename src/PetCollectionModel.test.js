@@ -1,4 +1,4 @@
-// Mock localStorage for Jest environment
+// Mock localStorage globally for Jest
 global.localStorage = {
   store: {},
   getItem(key) {
@@ -16,7 +16,7 @@ global.localStorage = {
 };
 
 import PetCollectionModel from './model/PetCollectionModel.js';
-import PetModel from './models/PetModel.js';
+import PetModel from './models/pet/petModel.js'; // ✅ Corrected path
 
 describe('PetCollectionModel', () => {
   let model;

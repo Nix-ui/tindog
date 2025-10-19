@@ -562,12 +562,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c549e7a31642c0d25cee2e6931ee791c2a5f4a6e",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T13:52:29.000Z",
       "message": "feat: updated pet registration presenter",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/c549e7a31642c0d25cee2e6931ee791c2a5f4a6e"
     },
     "stats": {
       "total": 24,
@@ -598,5 +598,24 @@
     "test_count": 0,
     "failed_tests": 0,
     "conclusion": "neutral"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T14:21:11.000Z",
+      "message": "feat: updated various things",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 137,
+      "additions": 107,
+      "deletions": 30,
+      "date": "2025-10-19"
+    },
+    "coverage": 32.05,
+    "test_count": 14,
+    "failed_tests": 4,
+    "conclusion": "failure"
   }
 ]
