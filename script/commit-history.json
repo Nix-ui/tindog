@@ -961,12 +961,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "274884340c5cc94ec4793d1bf53d3a9d4971bbef",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T16:37:09.000Z",
       "message": "feat: updated register pet",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/274884340c5cc94ec4793d1bf53d3a9d4971bbef"
     },
     "stats": {
       "total": 71,
@@ -991,6 +991,25 @@
       "total": 18,
       "additions": 18,
       "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T17:33:56.000Z",
+      "message": "feat: muestra todas las mascotas cuando no se selecciona raza  (cypress test 2)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 38,
+      "deletions": 5,
       "date": "2025-10-19"
     },
     "coverage": 38.52,
