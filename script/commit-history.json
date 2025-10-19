@@ -467,12 +467,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "817bb993c7b72a85fcd8eecfb86f5c6f48b9564c",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T20:11:46.000Z",
       "message": "feat: Se puede registrar y ver un cambio en tiempo real",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/817bb993c7b72a85fcd8eecfb86f5c6f48b9564c"
     },
     "stats": {
       "total": 148,
@@ -496,6 +496,25 @@
     "stats": {
       "total": 48,
       "additions": 48,
+      "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T13:38:28.000Z",
+      "message": "feat: PetSearchView has been added",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 49,
+      "additions": 49,
       "deletions": 0,
       "date": "2025-10-19"
     },
