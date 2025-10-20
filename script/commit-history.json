@@ -1075,12 +1075,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "1dda61f013f0b9802ef5f7b674bc6d1e84149a19",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-20T17:29:22.000Z",
       "message": "feat: Se recuperan los datos de mascotas filtrando por raza",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/1dda61f013f0b9802ef5f7b674bc6d1e84149a19"
     },
     "stats": {
       "total": 5,
@@ -1109,6 +1109,25 @@
     },
     "coverage": 29.84,
     "test_count": 12,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-20T21:24:51.000Z",
+      "message": "feat: se recuperan datos del local storage",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-10-20"
+    },
+    "coverage": 30.24,
+    "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"
   }

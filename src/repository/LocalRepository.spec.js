@@ -7,4 +7,10 @@ describe("LocalRepository", () =>{
         const value = localStorage.getItem('key');
         expect(value).not.toBe(null);
     });
+    it('Deberia obtener un valor ya guardado en el local storage', () => {
+        const data = 'value';
+        localRepository.saveInLocalStorage('key', data);
+        const value = localRepository.getFromLocalStorage('key');
+        expect(value).toBe(data);
+    });
 });
