@@ -1056,12 +1056,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "163e1f24a2916f6a5a769a3385350b01b0fbd9b1",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-20T17:28:40.000Z",
       "message": "feat: Se recuperan los datos de las mascotas correctamente",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/163e1f24a2916f6a5a769a3385350b01b0fbd9b1"
     },
     "stats": {
       "total": 182,
@@ -1090,6 +1090,25 @@
     },
     "coverage": 39.86,
     "test_count": 21,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-20T21:17:19.000Z",
+      "message": "feat: Almacenamiento local funcionando y reorganizacion del codigo",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 581,
+      "additions": 98,
+      "deletions": 483,
+      "date": "2025-10-20"
+    },
+    "coverage": 29.84,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }

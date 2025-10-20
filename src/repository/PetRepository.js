@@ -9,6 +9,9 @@ export default class PetRepository {
     getAllPets() {
         return this.pets;
     }
+    registerPet(pet) {
+        this.pets.push(pet);
+    }
     filterByBreed(breed) {
         return this.pets.filter(pet => pet.breed === breed);
     }
