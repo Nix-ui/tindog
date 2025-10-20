@@ -45,7 +45,7 @@ describe('PetSearch Feature', () => {
   });
   it('muestra todas las mascotas cuando no se selecciona raza', () => {
     cy.get('#breed-select').select('');
-    cy.get('#results .pet-card', { timeout: 5000 }).should('have.length.at.least', 1);
+    cy.get('#pets-container .pet-card', { timeout: 5000 }).should('have.length.at.least', 1);
   });
   it('filtra mascotas por raza seleccionada', () => {
     cy.get('#breed-select')
@@ -53,7 +53,7 @@ describe('PetSearch Feature', () => {
       .then(options => {
         const breed = options[1].value; // omite la opción vacía
         cy.get('#breed-select').select(breed);
-        cy.get('#results .pet-card').each(card => {
+        cy.get('#pets-container .pet-card').each(card => {
           cy.wrap(card).contains(new RegExp(breed, 'i'));
         });
       });

@@ -32,8 +32,8 @@ export default class NavBar {
   }
 
   render() {
+    
     this.element.innerHTML = this.getTemplate();
-
     const links = this.element.querySelectorAll("[data-route]");
     links.forEach(link => {
       link.addEventListener("click", (e) => {

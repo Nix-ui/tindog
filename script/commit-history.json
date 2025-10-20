@@ -1018,12 +1018,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8f76c5591ea216f127ae08366a40c6121c0fd7be",
     "author": "CalebBav234",
     "commit": {
       "date": "2025-10-19T17:35:27.000Z",
       "message": "feat: filtra mascota por raza seleccionada (cypress test 3)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/8f76c5591ea216f127ae08366a40c6121c0fd7be"
     },
     "stats": {
       "total": 13,
@@ -1052,6 +1052,25 @@
     },
     "coverage": 38.52,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-20T17:28:40.000Z",
+      "message": "feat: Se recuperan los datos de las mascotas correctamente",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 182,
+      "additions": 142,
+      "deletions": 40,
+      "date": "2025-10-20"
+    },
+    "coverage": 39.18,
+    "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
   }

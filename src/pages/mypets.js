@@ -1,13 +1,13 @@
 import PetModel from '../models/pet/petModel.js';
 import CardGenerator from '../managers/CardGenerator.js';
-import rawPetData from '../../data/pets.json';
+import PetRepository from '../repository/PetRepository.js';
 import PetDetails from './myPetDetails.js';
 
 const cardGenerator = new CardGenerator();
-
+const petRepository = new PetRepository();
 export default function myPetsTemplate() {
   // ✅ Load pets from localStorage only
-  const localPets = JSON.parse(localStorage.getItem('pets')) || [];
+  const localPets = JSON.parse(localStorage.getItem('pets')) || petRepository.getAllPets();
 
   // ✅ Convert local pets to PetModel instances
   const pets = localPets.map(pet => new PetModel(
