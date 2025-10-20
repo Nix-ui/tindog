@@ -1094,12 +1094,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a8183a650699af0c6da0b2480de151c4d9e499e5",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-20T21:17:19.000Z",
       "message": "feat: Almacenamiento local funcionando y reorganizacion del codigo",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/a8183a650699af0c6da0b2480de151c4d9e499e5"
     },
     "stats": {
       "total": 581,
@@ -1124,6 +1124,25 @@
       "total": 6,
       "additions": 6,
       "deletions": 0,
+      "date": "2025-10-20"
+    },
+    "coverage": 30.24,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-20T21:37:15.000Z",
+      "message": "feat: La barra de navegacion de mis mascotas cumple su funcionamiento",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 7,
+      "deletions": 1,
       "date": "2025-10-20"
     },
     "coverage": 30.24,
