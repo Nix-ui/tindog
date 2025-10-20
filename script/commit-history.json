@@ -1132,12 +1132,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "886808382ab86a39f0a20cb323429beb3df69377",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-20T21:37:15.000Z",
       "message": "feat: La barra de navegacion de mis mascotas cumple su funcionamiento",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/886808382ab86a39f0a20cb323429beb3df69377"
     },
     "stats": {
       "total": 8,
@@ -1162,6 +1162,25 @@
       "total": 43,
       "additions": 8,
       "deletions": 35,
+      "date": "2025-10-20"
+    },
+    "coverage": 30.24,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-20T21:47:55.000Z",
+      "message": "feat: La barra de navegacion de buscar mascota cumple su funcionamiento",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
       "date": "2025-10-20"
     },
     "coverage": 30.24,
