@@ -67,7 +67,7 @@ class Router {
     if (!route) {
       throw new Error(`Ruta "${routeKey}" no encontrada`);
     }
-
+    window.pathname = route.route;
     window.history.pushState({}, '', route.route);
     this.render(routeKey);
   }

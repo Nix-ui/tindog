@@ -1113,12 +1113,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d98248f05e7c73c24024bde448fa251e3cdb0ff6",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-20T21:24:51.000Z",
       "message": "feat: se recuperan datos del local storage",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d98248f05e7c73c24024bde448fa251e3cdb0ff6"
     },
     "stats": {
       "total": 6,
@@ -1143,6 +1143,25 @@
       "total": 8,
       "additions": 7,
       "deletions": 1,
+      "date": "2025-10-20"
+    },
+    "coverage": 30.24,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-20T21:47:21.000Z",
+      "message": "feat: La barra de navegacion de registrar mascota cumple su funcionamiento",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 8,
+      "deletions": 35,
       "date": "2025-10-20"
     },
     "coverage": 30.24,

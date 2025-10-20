@@ -2,9 +2,7 @@ import PetModel from '../models/pet/petModel';
 import CardGenerator from '../managers/CardGenerator';
 import PetDetails from '../pages/myPetDetails';
 import PetRepository from '../repository/PetRepository';
-import PetsData from '../../data/pets.json';
 
-const cardGenerator = new CardGenerator();
 const petRepository = new PetRepository();
 
 const onViewMoreClick = (e) => {
@@ -23,8 +21,7 @@ const onViewMoreClick = (e) => {
     }
   };
 export default class PetSearchPresenter {
-  constructor(model, view) {
-    this.model = model;
+  constructor( view) {
     this.view = view;
     this.handleBreedChange = this.handleBreedChange.bind(this);
   }

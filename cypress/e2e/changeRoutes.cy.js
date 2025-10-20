@@ -4,4 +4,9 @@ describe('Change Routes', () => {
         cy.get('[data-route="mypets"]').click();
         cy.url().should('include', '/mypets');
     });
+    it('Deberia moverme a la vista de registro de mascotas', () => {
+        cy.visit('/');
+        cy.get('[data-route="registerpet"]').click();
+        cy.url().should('include', '/registerpet');
+    });
 })
