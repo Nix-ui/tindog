@@ -448,12 +448,12 @@
     "test_count": 14
   },
   {
-    "sha": "HEAD",
+    "sha": "af8bc3652676c331afe129d0d767183534dd075d",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T17:22:29.000Z",
       "message": "rebase: phase completed",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/af8bc3652676c331afe129d0d767183534dd075d"
     },
     "stats": {
       "total": 188,
@@ -467,12 +467,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "817bb993c7b72a85fcd8eecfb86f5c6f48b9564c",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-18T20:11:46.000Z",
       "message": "feat: Se puede registrar y ver un cambio en tiempo real",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/817bb993c7b72a85fcd8eecfb86f5c6f48b9564c"
     },
     "stats": {
       "total": 148,
@@ -482,6 +482,576 @@
     },
     "coverage": 34.63,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "fb703419df981a4452374c23bcf48cc79cc45aad",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T13:35:34.000Z",
+      "message": "feat: Pet model, model instance, and search presenter has been added",
+      "url": "https://github.com/Nix-ui/tindog/commit/fb703419df981a4452374c23bcf48cc79cc45aad"
+    },
+    "stats": {
+      "total": 48,
+      "additions": 48,
+      "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e92ceac074ed77b56982b2e33678b8340453e8b0",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T13:38:28.000Z",
+      "message": "feat: PetSearchView has been added",
+      "url": "https://github.com/Nix-ui/tindog/commit/e92ceac074ed77b56982b2e33678b8340453e8b0"
+    },
+    "stats": {
+      "total": 49,
+      "additions": 49,
+      "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1c806609196ef699d26500126db36067a7b0e94c",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T13:42:01.000Z",
+      "message": "feat: PetSearch page has been added",
+      "url": "https://github.com/Nix-ui/tindog/commit/1c806609196ef699d26500126db36067a7b0e94c"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f364364c8ad7b5a005c0cddbbbe77604703f29cf",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T13:49:44.000Z",
+      "message": "feat: updated petcollection model",
+      "url": "https://github.com/Nix-ui/tindog/commit/f364364c8ad7b5a005c0cddbbbe77604703f29cf"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 38,
+      "deletions": 5,
+      "date": "2025-10-19"
+    },
+    "coverage": 34.63,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c549e7a31642c0d25cee2e6931ee791c2a5f4a6e",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T13:52:29.000Z",
+      "message": "feat: updated pet registration presenter",
+      "url": "https://github.com/Nix-ui/tindog/commit/c549e7a31642c0d25cee2e6931ee791c2a5f4a6e"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 14,
+      "deletions": 10,
+      "date": "2025-10-19"
+    },
+    "coverage": 28.21,
+    "test_count": 9,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ff0bf7cd20d62938d0797ee25efe03ec50af9a3c",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T14:14:07.000Z",
+      "message": "feat: added jest files",
+      "url": "https://github.com/Nix-ui/tindog/commit/ff0bf7cd20d62938d0797ee25efe03ec50af9a3c"
+    },
+    "stats": {
+      "total": 86,
+      "additions": 86,
+      "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 0,
+    "test_count": 0,
+    "failed_tests": 0,
+    "conclusion": "neutral"
+  },
+  {
+    "sha": "ec4e4c37b6477f5569d7c328d50cb32675bd1378",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T14:21:11.000Z",
+      "message": "feat: updated various things",
+      "url": "https://github.com/Nix-ui/tindog/commit/ec4e4c37b6477f5569d7c328d50cb32675bd1378"
+    },
+    "stats": {
+      "total": 137,
+      "additions": 107,
+      "deletions": 30,
+      "date": "2025-10-19"
+    },
+    "coverage": 32.05,
+    "test_count": 14,
+    "failed_tests": 4,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "5b5916991d3954616e70696d4bd10b65d8e43494",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T14:22:26.000Z",
+      "message": "fix: reverted PetRegistrationPresenter",
+      "url": "https://github.com/Nix-ui/tindog/commit/5b5916991d3954616e70696d4bd10b65d8e43494"
+    },
+    "stats": {
+      "total": 133,
+      "additions": 28,
+      "deletions": 105,
+      "date": "2025-10-19"
+    },
+    "coverage": 35.4,
+    "test_count": 19,
+    "failed_tests": 6,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "71f96af61dc372ad85fb746183197093945d6788",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T14:33:34.000Z",
+      "message": "feat: all jest tests have passed",
+      "url": "https://github.com/Nix-ui/tindog/commit/71f96af61dc372ad85fb746183197093945d6788"
+    },
+    "stats": {
+      "total": 252,
+      "additions": 164,
+      "deletions": 88,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c3622b92a13743dab82868efd4e5dd5176165f0e",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:07:34.000Z",
+      "message": "feat: updated searchpet",
+      "url": "https://github.com/Nix-ui/tindog/commit/c3622b92a13743dab82868efd4e5dd5176165f0e"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 6,
+      "deletions": 3,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "4dc38c7ba96c7de99eb201fdc10c3fd93b42bf4c",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:11:40.000Z",
+      "message": "feat: updated routes.js to inlucde searchPet",
+      "url": "https://github.com/Nix-ui/tindog/commit/4dc38c7ba96c7de99eb201fdc10c3fd93b42bf4c"
+    },
+    "stats": {
+      "total": 148,
+      "additions": 79,
+      "deletions": 69,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "900d38fdddeaf4a42226e8ab9db2addbb7f99d20",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:13:42.000Z",
+      "message": "feat: updated presenter.js",
+      "url": "https://github.com/Nix-ui/tindog/commit/900d38fdddeaf4a42226e8ab9db2addbb7f99d20"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 8,
+      "deletions": 2,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ebd2e0d69dd60a2d579d7d9b76e821a19e0d03eb",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:22:29.000Z",
+      "message": "feat: updated navBar.js",
+      "url": "https://github.com/Nix-ui/tindog/commit/ebd2e0d69dd60a2d579d7d9b76e821a19e0d03eb"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 2,
+      "deletions": 2,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3a7c2523f891ac2e951dfacbdd9ffbf4037b4c1a",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:26:28.000Z",
+      "message": "feat: updated routes.js",
+      "url": "https://github.com/Nix-ui/tindog/commit/3a7c2523f891ac2e951dfacbdd9ffbf4037b4c1a"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 7,
+      "deletions": 5,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "bbf44d4cfb3193f7a0bec1988f6d1a3746e2fe94",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:29:23.000Z",
+      "message": "feat: updated searchPet.js",
+      "url": "https://github.com/Nix-ui/tindog/commit/bbf44d4cfb3193f7a0bec1988f6d1a3746e2fe94"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 7,
+      "deletions": 4,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2287376a38993af2ac26d96f416d46c53d08cdb4",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:34:29.000Z",
+      "message": "feat: updated searchPet.js again",
+      "url": "https://github.com/Nix-ui/tindog/commit/2287376a38993af2ac26d96f416d46c53d08cdb4"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 9,
+      "deletions": 4,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "dd8cc8bfed9de9f2d309afc6a36c88d7c8c2b53c",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:38:39.000Z",
+      "message": "feat: updated PetSearchPresenter",
+      "url": "https://github.com/Nix-ui/tindog/commit/dd8cc8bfed9de9f2d309afc6a36c88d7c8c2b53c"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 1,
+      "deletions": 2,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c306b02216259f8bdee2e660d78499e7927c9335",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:39:39.000Z",
+      "message": "feat: updated PetSearchView",
+      "url": "https://github.com/Nix-ui/tindog/commit/c306b02216259f8bdee2e660d78499e7927c9335"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 6,
+      "deletions": 4,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a53d214bc1ae45df224d854444ed999b1ab80ce6",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:45:23.000Z",
+      "message": "feat: updated mypet.js",
+      "url": "https://github.com/Nix-ui/tindog/commit/a53d214bc1ae45df224d854444ed999b1ab80ce6"
+    },
+    "stats": {
+      "total": 94,
+      "additions": 44,
+      "deletions": 50,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c756767d1a347ca611961060430688eb433eb44b",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:50:26.000Z",
+      "message": "feat: updated various files",
+      "url": "https://github.com/Nix-ui/tindog/commit/c756767d1a347ca611961060430688eb433eb44b"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 15,
+      "deletions": 2,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "458c2698a18cad6daef703b8cc2dc38d4e4b33dc",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:53:15.000Z",
+      "message": "feat: updated various files",
+      "url": "https://github.com/Nix-ui/tindog/commit/458c2698a18cad6daef703b8cc2dc38d4e4b33dc"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 2,
+      "deletions": 3,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "52d7e0c479deeedea4c099b08aad0ae9e8f2be52",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T15:56:03.000Z",
+      "message": "feat: updated various files",
+      "url": "https://github.com/Nix-ui/tindog/commit/52d7e0c479deeedea4c099b08aad0ae9e8f2be52"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 8,
+      "deletions": 4,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "452f7def4bcc6eeb7a31bbd84460e86f01aabda3",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T16:11:44.000Z",
+      "message": "feat: updated various files",
+      "url": "https://github.com/Nix-ui/tindog/commit/452f7def4bcc6eeb7a31bbd84460e86f01aabda3"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 7,
+      "deletions": 4,
+      "date": "2025-10-19"
+    },
+    "coverage": 37.82,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d70404094a1a40c9899b8f62f2e3b5e2b761ad70",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T16:17:50.000Z",
+      "message": "feat: updated various files",
+      "url": "https://github.com/Nix-ui/tindog/commit/d70404094a1a40c9899b8f62f2e3b5e2b761ad70"
+    },
+    "stats": {
+      "total": 89,
+      "additions": 62,
+      "deletions": 27,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "6a7f8ff2badf871c4feeebfb6913864155c11fff",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T16:26:27.000Z",
+      "message": "feat: updated various files",
+      "url": "https://github.com/Nix-ui/tindog/commit/6a7f8ff2badf871c4feeebfb6913864155c11fff"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 7,
+      "deletions": 5,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "274884340c5cc94ec4793d1bf53d3a9d4971bbef",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T16:37:09.000Z",
+      "message": "feat: updated register pet",
+      "url": "https://github.com/Nix-ui/tindog/commit/274884340c5cc94ec4793d1bf53d3a9d4971bbef"
+    },
+    "stats": {
+      "total": 71,
+      "additions": 38,
+      "deletions": 33,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1fb2733ed72e43701bd599aa917b3644ea471c49",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T17:30:43.000Z",
+      "message": "feat: carga el dropdown de razas (cypress test 1)",
+      "url": "https://github.com/Nix-ui/tindog/commit/1fb2733ed72e43701bd599aa917b3644ea471c49"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9510ad5829d70944fb29515338b2307461f0e3be",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T17:33:56.000Z",
+      "message": "feat: muestra todas las mascotas cuando no se selecciona raza  (cypress test 2)",
+      "url": "https://github.com/Nix-ui/tindog/commit/9510ad5829d70944fb29515338b2307461f0e3be"
+    },
+    "stats": {
+      "total": 43,
+      "additions": 38,
+      "deletions": 5,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T17:35:27.000Z",
+      "message": "feat: filtra mascota por raza seleccionada (cypress test 3)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "CalebBav234",
+    "commit": {
+      "date": "2025-10-19T17:36:59.000Z",
+      "message": "feat: buscar mascota por raza completado",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 0,
+      "deletions": 3,
+      "date": "2025-10-19"
+    },
+    "coverage": 38.52,
+    "test_count": 19,
     "failed_tests": 0,
     "conclusion": "success"
   }

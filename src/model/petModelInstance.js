@@ -1,10 +1,12 @@
-import PetModel from './PetModel.js';
+// PetCollectionInstance.js
+import PetCollectionModel from './PetCollectionModel.js';
 
-const modelInstance = new PetModel();
+const modelInstance = new PetCollectionModel();
 
 export default {
-  registerPet: (petData) => modelInstance.registerPet(petData),
+  registerPet: (petData) => modelInstance.addPet(petData),
   getPetsByOwner: (ownerId) => modelInstance.getPetsByOwner(ownerId),
-  getAllPets: () => modelInstance.pets
+  getAllPets: () => modelInstance.getAllPets()
 };
+
 export { modelInstance };
