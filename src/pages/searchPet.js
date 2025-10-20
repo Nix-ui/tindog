@@ -1,12 +1,10 @@
-import PetCollectionInstance from '../model/PetCollectionInstance.js';
 import PetSearchPresenter from '../presenter/PetSearchPresenter.js';
 import PetSearchView from '../view/PetSearchView.js';
-import breedData from '../../data/breeds.json'
 
 export default function searchPetTemplate() {
   setTimeout(() => {
       const view = new PetSearchView('breed-select', 'pets-container');
-      const presenter = new PetSearchPresenter(PetCollectionInstance, view);
+      const presenter = new PetSearchPresenter( view);
       presenter.init();
   }, 0);
   return `
