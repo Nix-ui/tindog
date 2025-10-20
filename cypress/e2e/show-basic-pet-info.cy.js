@@ -48,4 +48,18 @@ describe("Mostrar informacion basica de una mascota", () => {
         cy.get("#pet-description-7").should('contain', pet.description);
         cy.get("#pet-shelter-7").should('contain', pet.owner);
     });
+    it('Deberia ver los detalles si busco por raza', () => {
+        cy.visit('/searchpet');
+        cy.get("#breed-select")
+        .find('option')
+        .then(options => {
+            const breed = options[1].value; // omite la opcion vacia
+            cy.get("#breed-select").select(breed);
+            cy.get("#pets-container .pet-card").each(card => {
+                cy.wrap(card).get(".btn-primary").click();
+                cy.get(".pet-detail-card").should('be.visible');
+            });
+        });
+    });
+
 })

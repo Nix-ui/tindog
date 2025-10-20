@@ -14,7 +14,7 @@ const routes = {
     route: '/registerpet',
     component: 'RegisterPet',
     template: () => registerPetTemplate(),
-    hasNavbar: true
+    hasNavbar: false
   },
   searchpet: {
     route: '/searchpet',
@@ -34,7 +34,7 @@ class Router {
   constructor(routes, appContainer) {
     this.routes = routes;
     this.appContainer = appContainer;
-    this.navbar = new NavBar(document.querySelector('.tindog-nav'), [
+    this.navbar = new NavBar(document.createElement('nav', { is: 'tindog-nav' }), [
       { path: 'mypets', label: 'Mis mascotas' },
       { path: 'registerpet', label: 'Registrar mascota' },
       { path: 'searchpet', label: 'Buscar por raza' }

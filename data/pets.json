@@ -45,7 +45,7 @@
         "size": "Grande",
         "description": "Obediente y protector, excelente perro guardián.",
         "owner": "Luis Vargas",
-        "image": "https://images.unsplash.com/photo-1619983081563-430f63602796"
+        "image": "https://cdn.shopify.com/s/files/1/0268/6861/files/dog-1919406_960_720_grande.jpg?v=1530792114"
     },
     {
         "id": 5,
@@ -129,6 +129,42 @@
         "size": "Mediano",
         "description": "Activo y divertido, siempre listo para jugar o correr.",
         "owner": "Patricia Salazar",
-        "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006"
+        "image": "https://cdn0.uncomo.com/es/posts/8/6/1/como_adiestrar_a_un_dalmata_34168_orig.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Roxy",
+        "address": "Zona Central, Cochabamba",
+        "isLiked": false,
+        "age": 2,
+        "breed": "Pastor Alemán",
+        "size": "Grande",
+        "description": "Obediente y protector, excelente perro guardián.",
+        "owner": "Fernando Rodríguez",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Cane_da_pastore_tedesco_adulto.jpg"
+    },
+    {
+        "id": 67,
+        "name": "Loki",
+        "address": "Calle Los Pinos 234, La Paz",
+        "isLiked": true,
+        "age": 2,
+        "breed": "Dálmata",
+        "size": "Mediano",
+        "description": "Activo y divertido, siempre listo para jugar o correr.",
+        "owner": "Eleonora Rodríguez",
+        "image": "https://misanimales.com/wp-content/uploads/2021/02/dalmata-mira-camara.jpg?auto=webp&quality=7500&width=3840&crop=16:9,smart,safe&format=webp&optimize=medium&dpr=2&fit=cover&fm=webp&q=75&w=3840&h=2160"
+    },
+    {
+        "id": 41,
+        "name": "Loki",
+        "address": "Urbanización Las Flores, Cochabamba",
+        "isLiked": false,
+        "age": 3,
+        "breed": "Dálmata",
+        "size": "Mediano",
+        "description": "Activo y divertido, siempre listo para jugar o correr.",
+        "owner": "Patricia Salazar",
+        "image": "https://cdn0.uncomo.com/es/posts/8/6/1/como_adiestrar_a_un_dalmata_34168_orig.jpg"
     }
 ]
