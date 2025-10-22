@@ -53,6 +53,7 @@ describe('PetSearch Feature', () => {
       .then(options => {
         const breed = options[1].value; // omite la opción vacía
         cy.get('#breed-select').select(breed);
+        cy.get('#search-pet-button').click(); 
         cy.get('#pets-container .pet-card').each(card => {
           cy.wrap(card).contains(new RegExp(breed, 'i'));
         });

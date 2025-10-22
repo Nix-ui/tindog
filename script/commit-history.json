@@ -1170,12 +1170,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d0ffe3db66f9659738f73075082d8a169c97e65c",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-20T21:47:55.000Z",
       "message": "feat: La barra de navegacion de buscar mascota cumple su funcionamiento",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d0ffe3db66f9659738f73075082d8a169c97e65c"
     },
     "stats": {
       "total": 5,
@@ -1200,6 +1200,25 @@
       "total": 231,
       "additions": 183,
       "deletions": 48,
+      "date": "2025-10-22"
+    },
+    "coverage": 29.07,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "RashLop",
+    "commit": {
+      "date": "2025-10-22T18:51:48.000Z",
+      "message": "test: prueba de petsearch  arreglada para usar el search-pet-button",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 1,
+      "deletions": 0,
       "date": "2025-10-22"
     },
     "coverage": 29.07,
