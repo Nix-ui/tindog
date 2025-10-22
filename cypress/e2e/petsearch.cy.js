@@ -59,4 +59,16 @@ describe('PetSearch Feature', () => {
         });
       });
   });
+  it('filtra mascotas por raza seleccionada', () => {
+    cy.get('#address-select')
+      .find('option')
+      .then(options => {
+        const address = options[1].value; 
+        cy.get('#address-select').select(address); 
+        cy.get('#search-pet-button').click(); 
+        cy.get('#pets-container .pet-card').each(card => {
+          cy.wrap(card).contains(new RegExp(address, 'i')); 
+        }); 
+      }); 
+  }); 
 });
