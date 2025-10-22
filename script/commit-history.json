@@ -1151,12 +1151,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "604d6ed9c0172c3d9b31751f74a4cef8458b2ef9",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-20T21:47:21.000Z",
       "message": "feat: La barra de navegacion de registrar mascota cumple su funcionamiento",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/604d6ed9c0172c3d9b31751f74a4cef8458b2ef9"
     },
     "stats": {
       "total": 43,
@@ -1184,6 +1184,25 @@
       "date": "2025-10-20"
     },
     "coverage": 30.24,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-22T04:20:26.000Z",
+      "message": "feat: multifiltro de guia y ejemplo",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 231,
+      "additions": 183,
+      "deletions": 48,
+      "date": "2025-10-22"
+    },
+    "coverage": 29.07,
     "test_count": 13,
     "failed_tests": 0,
     "conclusion": "success"
