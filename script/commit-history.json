@@ -1208,12 +1208,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7994abfcbad642b46cb6d5c4fe39259594fcac01",
     "author": "RashLop",
     "commit": {
       "date": "2025-10-22T18:51:48.000Z",
       "message": "test: prueba de petsearch  arreglada para usar el search-pet-button",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/7994abfcbad642b46cb6d5c4fe39259594fcac01"
     },
     "stats": {
       "total": 1,
@@ -1239,6 +1239,25 @@
       "additions": 12,
       "deletions": 0,
       "date": "2025-10-22"
+    },
+    "coverage": 29.07,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "RashLop",
+    "commit": {
+      "date": "2025-10-23T00:19:56.000Z",
+      "message": "test: detalles si busco por raza pasado",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2025-10-23"
     },
     "coverage": 29.07,
     "test_count": 13,
