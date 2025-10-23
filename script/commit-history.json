@@ -1360,12 +1360,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "dcd7aed9184d78b774f8cf6a83bf99b5ca91ff69",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-23T03:51:06.000Z",
       "message": "Los tipos de filtros tienen un valor por defecto",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/dcd7aed9184d78b774f8cf6a83bf99b5ca91ff69"
     },
     "stats": {
       "total": 6,
@@ -1394,6 +1394,25 @@
     },
     "coverage": 30.86,
     "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-23T04:03:36.000Z",
+      "message": "Se crean Solicitudes para el ffiltrado de datos",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 9,
+      "deletions": 1,
+      "date": "2025-10-23"
+    },
+    "coverage": 32.34,
+    "test_count": 18,
     "failed_tests": 0,
     "conclusion": "success"
   }

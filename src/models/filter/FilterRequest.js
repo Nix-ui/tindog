@@ -10,6 +10,6 @@ export default class FilterRequest {
         this.type = type;
         this.field = field;
         this.value = value;
-        this.callback = callback.bind(this);
+        this.callback = callback === undefined || callback === null || callback === '' ? () => {} : callback.bind(this);
     }
 }
