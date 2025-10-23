@@ -12,7 +12,7 @@ export default function myPetsTemplate() {
   const pets =localRepository.existsInLocalStorage('pets')? localRepository.getPetsFromLocalStorage(): petRepository.getAllPets();
   const container = document.createElement('div');
   container.id = 'pets-container';
-  container.className = 'pets-container flex flex-wrap justify-center gap-4';    
+  container.className = 'pets-container flex flex-wrap justify-center gap-4 p-4';    
   const cards = cardGenerator.renderMany('pet', pets, container, {
     animate: true,
       showLikeButton: true, 

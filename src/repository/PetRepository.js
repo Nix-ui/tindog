@@ -1,5 +1,6 @@
 import petData from '../../data/pets.json';
 import PetModel from '../models/pet/petModel';
+import FilterRequest from '../models/filter/FilterRequest';
 
 export default class PetRepository {
     constructor() {
@@ -15,7 +16,24 @@ export default class PetRepository {
     filterByBreed(breed) {
         return this.pets.filter(pet => pet.breed === breed);
     }
+    filterByAddress(address) {
+        return this.pets.filter(pet => pet.address.includes(address));
+    }
     getBreeds() {
         return this.breeds;
+    }
+    /**
+     * 
+     * @param {[FilterRequest]} filters 
+     * @returns 
+     */
+    filterBy(filters){
+        let filteredPets = this.pets;
+        filters.forEach(filter=>{
+            filteredPets = filteredPets.filter(pet => {
+                return filter.callback(pet,filter.value);
+            });
+        })
+        return filteredPets;
     }
 }

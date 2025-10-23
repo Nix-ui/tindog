@@ -53,9 +53,55 @@ describe('PetSearch Feature', () => {
       .then(options => {
         const breed = options[1].value; // omite la opción vacía
         cy.get('#breed-select').select(breed);
+        cy.get('#search-pet-button').click(); 
         cy.get('#pets-container .pet-card').each(card => {
           cy.wrap(card).contains(new RegExp(breed, 'i'));
         });
       });
   });
+  it('filtra mascotas por ciudad seleccionada', () => {
+    cy.get('#address-select')
+      .find('option')
+      .then(options => {
+        const address = options[1].value; 
+        cy.get('#address-select').select(address); 
+        cy.get('#search-pet-button').click(); 
+        cy.get('#pets-container .pet-card').each(card => {
+          cy.wrap(card).contains(new RegExp(address, 'i')); 
+        }); 
+      }); 
+  }); 
+
+  it('filtra mascotas por tamaño seleccionada', () => {
+    cy.get('#size-select')
+      .find('option')
+      .then(options => {
+        const size = options[1].value; 
+        cy.get('#size-select').select(size); 
+        cy.get('#search-pet-button').click(); 
+        cy.get('#pets-container .pet-card').each(card => {
+          cy.wrap(card).contains(new RegExp(size, 'i')); 
+        }); 
+      }); 
+  }); 
+
+  it('filtra mascotas por ciudad y raza seleccionada', () => {
+    let breed= 'Dálmata'; 
+    let city = "La Paz"
+    cy.get('#breed-select').select(breed); 
+    cy.get('#address-select').select(city); 
+    cy.get('#search-pet-button').click(); 
+    cy.get("#pets-container .pet-card").should("be.visible"); 
+  }); 
+
+    it('filtra mascotas por ciudad y raza seleccionada', () => {
+    let breed= 'Dálmata'; 
+    let city = "La Paz"; 
+    let size = "Mediano"; 
+    cy.get('#breed-select').select(breed); 
+    cy.get('#address-select').select(city);
+    cy.get('#size-select') .select(size); 
+    cy.get('#search-pet-button').click(); 
+    cy.get("#pets-container .pet-card").should("be.visible"); 
+  }); 
 });

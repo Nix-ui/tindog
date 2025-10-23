@@ -55,8 +55,9 @@ describe("Mostrar informacion basica de una mascota", () => {
         .then(options => {
             const breed = options[1].value; // omite la opcion vacia
             cy.get("#breed-select").select(breed);
+            cy.get('#search-pet-button').click(); 
             cy.get("#pets-container .pet-card").each(card => {
-                cy.wrap(card).get(".btn-primary").click();
+                cy.wrap(card).get(`[data-action= 'view-details']`).click();
                 cy.get(".pet-detail-card").should('be.visible');
             });
         });

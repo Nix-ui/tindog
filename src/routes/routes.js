@@ -5,18 +5,24 @@ import NavBar from "../components/core/navBar";
 
 const routes = {
   mypets: {
+    icon: 'assets/icons/mypets.png',
+    name: 'Mis mascotas',
     route: '/mypets',
     component: 'MyPets',
     template: myPetsTemplate,
     hasNavbar: true
   },
   registerpet: {
+    icon: 'assets/icons/register-pet.png',
+    name: 'Registrar mascota',
     route: '/registerpet',
     component: 'RegisterPet',
     template: () => registerPetTemplate(),
     hasNavbar: false
   },
   searchpet: {
+    icon: 'assets/icons/search-pet.png',
+    name: 'Buscar mascota',
     route: '/searchpet',
     component: 'SearchPet',
     template: () => searchPetTemplate(),
@@ -68,6 +74,8 @@ class Router {
       throw new Error(`Ruta "${routeKey}" no encontrada`);
     }
     window.pathname = route.route;
+    document.title = route.name;
+    this.setIcon(route.icon);
     window.history.pushState({}, '', route.route);
     this.render(routeKey);
   }
@@ -88,8 +96,23 @@ class Router {
     } else {
       this.appContainer.innerHTML = route.template();
     }
-
+    this.setIcon(route.icon);
     window.dispatchEvent(new CustomEvent('route-changed', { detail: routeKey }));
+  }
+  setIcon(icon) {
+    const link = document.querySelector('link[rel*="icon"]');
+    if (!link) {
+      const iconLink = document.createElement('link');
+      iconLink.rel = 'icon';
+      iconLink.type = 'image/png';
+      iconLink.href = "./"+icon;
+      console.log(iconLink);
+      document.head.appendChild(iconLink);
+    }
+    else {
+      link.href ="./"+ icon;
+    }
+
   }
 
   getRouteKeyByPath(path) {
