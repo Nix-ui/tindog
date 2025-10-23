@@ -37,3 +37,18 @@ describe("Modelo de Mascotas", () => {
         expect(pet.isLiked).toBe(false);
     });
 })
+
+describe("PetModel - proceso de adopción", () => {
+  let pet;
+
+  beforeEach(() => {
+    pet = new PetModel(1, "Nina", "Santa Cruz", false, 2, "Beagle", "Pequeño", "Energética", "Andrea Pérez", "img.jpg");
+  });
+
+  test("Debería iniciar adopción si está disponible", () => {
+    expect(pet.status).toBe("disponible");
+    const resultado = pet.iniciarAdopcion();
+    expect(resultado).toBe(true);
+    expect(pet.status).toBe("en proceso");
+  });
+});

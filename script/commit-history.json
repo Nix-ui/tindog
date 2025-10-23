@@ -1151,12 +1151,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "604d6ed9c0172c3d9b31751f74a4cef8458b2ef9",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-20T21:47:21.000Z",
       "message": "feat: La barra de navegacion de registrar mascota cumple su funcionamiento",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/604d6ed9c0172c3d9b31751f74a4cef8458b2ef9"
     },
     "stats": {
       "total": 43,
@@ -1185,6 +1185,25 @@
     },
     "coverage": 30.24,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-10-23T05:09:33.000Z",
+      "message": "test: verificar inicio del proceso de adopción para mascota disponible",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 236,
+      "additions": 216,
+      "deletions": 20,
+      "date": "2025-10-23"
+    },
+    "coverage": 28.62,
+    "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
   }

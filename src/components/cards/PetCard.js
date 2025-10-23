@@ -109,12 +109,21 @@ export default class PetCard extends BasicCard {
    * @param {string} size - Tamaño
    * @param {string} description - Descripción
    * @param {string} shelter - Refugio
+   * @param {string} status - Estado de adopción
    * @returns {string} HTML
    */
-    renderContent(breed, size, description, shelter) {
+    renderContent(breed, size, description, shelter, status="disponible") {
         const descriptionText = this.options.maxDescriptionLength 
         ? this.truncate(description, this.options.maxDescriptionLength)
         : description;
+
+    const isAvailable = status === "disponible";
+    const contactLabel = 
+      status === "en proceso"
+        ? "En proceso..."
+        : status === "adoptado"
+        ? "Adoptado"
+        : "Contáctame";
 
         return `
         <div class="card-content">
@@ -142,6 +151,16 @@ export default class PetCard extends BasicCard {
                 Ver más
             </button>
             ` : ''}
+ <button 
+  id="contact-btn-${this.data.id}"
+  class="btn ${isAvailable ? "btn-success" : "btn-disabled"}" 
+  style="margin-top: 0.5rem; width: 100%;"
+  data-action="contact"
+  data-pet-id="${this.data.id}"
+  ${!isAvailable ? "disabled" : ""}
+>
+  ${contactLabel}
+</button>
         </div>
         `;
     }
@@ -164,6 +183,11 @@ export default class PetCard extends BasicCard {
         if(action === 'view-details') {
             this.onViewDetails(petId);
         }
+        if (action === 'contact') {
+        const button = target;
+        this.onContact(petId, button);
+}
+
 
         super.handleClick(e);
     }
@@ -189,6 +213,57 @@ export default class PetCard extends BasicCard {
     onViewDetails(petId) {
         this.events.emit('view-details', petId);
     }
+
+    /**
+   * Maneja el clic del botón “Contáctame”
+   * @param {number} petId 
+   * @param {HTMLElement} button 
+   */
+  onContact(petId, button) {
+    if (this.data.status !== "disponible") {
+      alert(
+        this.data.status === "en proceso"
+          ? "⚠️ Esta mascota ya está en proceso de adopción."
+          : "💛 Esta mascota ya fue adoptada."
+      );
+      return;
+    }
+
+    this.data.status = "en proceso";
+
+  requestAnimationFrame(() => {
+    const btn = document.querySelector(`#contact-btn-${this.data.id}`) 
+             || document.querySelector(`[data-pet-id="${this.data.id}"][data-action="contact"]`);
+
+    if (btn) {
+      btn.textContent = "En proceso...";
+      btn.disabled = true;
+      btn.setAttribute("disabled", "true"); // <--- Hace visible el atributo
+    }
+  });
+
+  // Emitir evento
+    // Emitir evento interno (sistema de eventos de BasicCard)
+  this.events.emit("contact", {
+    id: petId,
+    name: this.data.name,
+    status: this.data.status,
+  });
+
+
+  document.dispatchEvent(
+    new CustomEvent("pet-contact", {
+      detail: {
+        id: petId,
+        name: this.data.name,
+        status: this.data.status,
+      },
+    })
+  );
+
+  alert(`🐶 Has iniciado el proceso de adopción para ${this.data.name}.`);
+
+}
 
     /**
      * 
