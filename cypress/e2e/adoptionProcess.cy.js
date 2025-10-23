@@ -22,4 +22,18 @@ describe('Proceso de Adopción', () => {
     cy.get('.pet-detail-overlay [data-action="contact"]').should('exist');
   });
 
+   it('Debería iniciar el proceso de adopción desde el modal de detalles', () => {
+    cy.visit('/');
+    cy.get('[data-action="view-details"]').first().click();
+    cy.get('.pet-detail-overlay [data-action="contact"]').click();
+
+    cy.on('window:alert', (text) => {
+      expect(text).to.include('Has iniciado el proceso de adopción');
+    });
+
+    cy.get('.pet-detail-overlay [data-action="contact"]')
+      .should('be.disabled')
+      .and('contain.text', 'En proceso');
+  });
+
 });

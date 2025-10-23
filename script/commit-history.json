@@ -1303,12 +1303,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "79fd8dde4d117b61f00e50c6b946f5cd16ba4369",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-10-23T05:34:20.000Z",
       "message": "test(e2e): evitar iniciar adopción si la mascota ya está en proceso",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/79fd8dde4d117b61f00e50c6b946f5cd16ba4369"
     },
     "stats": {
       "total": 11,
@@ -1332,6 +1332,25 @@
     "stats": {
       "total": 8,
       "additions": 8,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 30.43,
+    "test_count": 18,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-10-23T05:35:37.000Z",
+      "message": "test(e2e): iniciar proceso de adopción desde el modal y deshabilitar botón",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
       "deletions": 0,
       "date": "2025-10-23"
     },
