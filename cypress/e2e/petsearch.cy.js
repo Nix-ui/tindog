@@ -84,4 +84,13 @@ describe('PetSearch Feature', () => {
         }); 
       }); 
   }); 
+
+  it('filtra mascotas por ciudad y raza seleccionada', () => {
+    let breed= 'Dálmata'; 
+    let city = "La Paz"
+    cy.get('#breed-select').select(breed); 
+    cy.get('#address-select').select(city); 
+    cy.get('#search-pet-button').click(); 
+    cy.get("#pets-container .pet-card").should("be.visible"); 
+  }); 
 });
