@@ -1,8 +1,7 @@
 {
-  "name": "parcel-jest-base",
+  "name": "tindog",
   "version": "1.0.0",
-  "description": "",
-  "default": "index.html",
+  "description": "Proyecto de registro de usuario con React, Parcel y Cypress",
   "type": "module",
   "scripts": {
     "start": "parcel index.html",
@@ -22,13 +21,22 @@
     "@babel/preset-env": "^7.25.4",
     "babel-jest": "^29.7.0",
     "cross-spawn": "^7.0.6",
-    "cypress": "^13.13.3",
+    "cypress": "^13.17.0",
     "eslint": "^9.10.0",
     "husky": "^9.1.6",
     "jest": "^29.7.0",
     "parcel": "^2.12.0"
   },
   "dependencies": {
-    "parcel-jest-base": "file:"
-  }
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nix-ui/tindog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nix-ui/tindog/issues"
+  },
+  "homepage": "https://github.com/Nix-ui/tindog#readme"
 }

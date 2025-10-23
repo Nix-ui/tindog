@@ -1170,12 +1170,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d9ee0d0c59511204600935333d89701e5254bc7d",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-20T21:47:55.000Z",
       "message": "feat: La barra de navegacion de buscar mascota cumple su funcionamiento",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d9ee0d0c59511204600935333d89701e5254bc7d"
     },
     "stats": {
       "total": 5,
@@ -1201,6 +1201,25 @@
       "additions": 0,
       "deletions": 0,
       "date": "2025-10-22"
+    },
+    "coverage": 30.24,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-10-23T03:25:09.000Z",
+      "message": "feat: módulo de registro de usuario con validación y tests Cypress",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 8627,
+      "additions": 1723,
+      "deletions": 6904,
+      "date": "2025-10-23"
     },
     "coverage": 30.24,
     "test_count": 13,
