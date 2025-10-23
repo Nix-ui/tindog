@@ -5,4 +5,11 @@ describe("Tipo de Filtro", () => {
         const filter = new FilterType();
         expect(filter).toBeInstanceOf(FilterType);
     });
+    it('Deberia tener un callback', () => {
+        const filter = new FilterType('','','',()=>{return 'callback'},'','',()=>{});
+        expect(filter.callback).toBeInstanceOf(Function);
+        const response = filter.callback();
+        expect(response).toBe('callback');
+    });
+    
 })

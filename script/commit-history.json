@@ -1303,12 +1303,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b2ba0a20a7058c46f414d2571f3a3a4183f9e46e",
     "author": "RashLop",
     "commit": {
       "date": "2025-10-23T00:49:07.000Z",
       "message": "test: test para multifiltro entre raza, ciudad y tamaño pasada con exito",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/b2ba0a20a7058c46f414d2571f3a3a4183f9e46e"
     },
     "stats": {
       "total": 11,
@@ -1337,6 +1337,25 @@
     },
     "coverage": 30.34,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-23T03:43:26.000Z",
+      "message": "Los tipos de filtros tienen un callback especifico",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 30.34,
+    "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
   }
