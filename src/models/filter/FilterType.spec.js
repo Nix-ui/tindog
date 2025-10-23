@@ -11,5 +11,8 @@ describe("Tipo de Filtro", () => {
         const response = filter.callback();
         expect(response).toBe('callback');
     });
-    
+    it('Deberia tener un value por defecto', () => {
+        const filter = new FilterType('','','',()=>{return 'callback'},'','');
+        expect(filter.value).toBe('Seleccione una opcion');
+    });
 })

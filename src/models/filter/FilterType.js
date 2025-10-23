@@ -1,5 +1,6 @@
 export default class FilterType {
     constructor(type,name,id,callback,value,fuctionToApply) {
+        if(value === undefined || value === null || value === '') this.value = 'Seleccione una opcion';
         this.type = type;
         this.id = id;
         this.name = name;
