@@ -27,6 +27,7 @@ export default class PetRepository {
             filteredPets = filteredPets.filter(pet => {
                 if(filter.type === 'breed') return pet.breed === filter.value;
                 if(filter.type === 'address') return pet.address.includes(filter.value);
+                if(filter.type === 'size') return pet.size === filter.value; 
             });
         })
         return filteredPets;

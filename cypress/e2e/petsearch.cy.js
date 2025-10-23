@@ -59,7 +59,7 @@ describe('PetSearch Feature', () => {
         });
       });
   });
-  it('filtra mascotas por raza seleccionada', () => {
+  it('filtra mascotas por ciudad seleccionada', () => {
     cy.get('#address-select')
       .find('option')
       .then(options => {
@@ -68,6 +68,19 @@ describe('PetSearch Feature', () => {
         cy.get('#search-pet-button').click(); 
         cy.get('#pets-container .pet-card').each(card => {
           cy.wrap(card).contains(new RegExp(address, 'i')); 
+        }); 
+      }); 
+  }); 
+
+  it('filtra mascotas por tamaño seleccionada', () => {
+    cy.get('#size-select')
+      .find('option')
+      .then(options => {
+        const size = options[1].value; 
+        cy.get('#size-select').select(size); 
+        cy.get('#search-pet-button').click(); 
+        cy.get('#pets-container .pet-card').each(card => {
+          cy.wrap(card).contains(new RegExp(size, 'i')); 
         }); 
       }); 
   }); 
