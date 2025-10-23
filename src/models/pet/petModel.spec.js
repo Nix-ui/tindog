@@ -51,4 +51,11 @@ describe("PetModel - proceso de adopción", () => {
     expect(resultado).toBe(true);
     expect(pet.status).toBe("en proceso");
   });
+
+    test("No debería iniciar adopción si ya está en proceso", () => {
+    pet.status = "en proceso";
+    const resultado = pet.iniciarAdopcion();
+    expect(resultado).toBe(false);
+  });
+  
 });

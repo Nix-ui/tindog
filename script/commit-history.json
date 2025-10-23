@@ -1170,12 +1170,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "34fa06a7cb33ead54e633e3c16aefe048a0abd22",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-20T21:47:55.000Z",
       "message": "feat: La barra de navegacion de buscar mascota cumple su funcionamiento",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/34fa06a7cb33ead54e633e3c16aefe048a0abd22"
     },
     "stats": {
       "total": 5,
@@ -1204,6 +1204,25 @@
     },
     "coverage": 28.62,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-10-23T05:16:59.000Z",
+      "message": "test: evitar reinicio del proceso si la mascota ya está en adopción",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 28.99,
+    "test_count": 15,
     "failed_tests": 0,
     "conclusion": "success"
   }
