@@ -1265,12 +1265,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b93d3746f636a7d3d1be615ef941ba16b0bdfc43",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-10-23T05:23:13.000Z",
       "message": "test: cancelar proceso de adopción y restaurar estado disponible",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/b93d3746f636a7d3d1be615ef941ba16b0bdfc43"
     },
     "stats": {
       "total": 6,
@@ -1294,6 +1294,25 @@
     "stats": {
       "total": 6,
       "additions": 6,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 30.43,
+    "test_count": 18,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-10-23T05:34:20.000Z",
+      "message": "test(e2e): evitar iniciar adopción si la mascota ya está en proceso",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
       "deletions": 0,
       "date": "2025-10-23"
     },
