@@ -1,5 +1,6 @@
 import petData from '../../data/pets.json';
 import PetModel from '../models/pet/petModel';
+import FilterRequest from '../models/filter/FilterRequest';
 
 export default class PetRepository {
     constructor() {
@@ -21,13 +22,16 @@ export default class PetRepository {
     getBreeds() {
         return this.breeds;
     }
+    /**
+     * 
+     * @param {[FilterRequest]} filters 
+     * @returns 
+     */
     filterBy(filters){
         let filteredPets = this.pets;
         filters.forEach(filter=>{
             filteredPets = filteredPets.filter(pet => {
-                if(filter.type === 'breed') return pet.breed === filter.value;
-                if(filter.type === 'address') return pet.address.includes(filter.value);
-                if(filter.type === 'size') return pet.size === filter.value; 
+                return filter.callback(pet,filter.value);
             });
         })
         return filteredPets;

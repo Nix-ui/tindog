@@ -1,5 +1,6 @@
 import CardGenerator from '../managers/CardGenerator';
 import FilterType from '../models/filter/FilterType';
+import FilterRequest from '../models/filter/FilterRequest';
 
 const cardGenerator = new CardGenerator();
 
@@ -69,10 +70,7 @@ export default class PetSearchView {
     let filter = [];
     this.filterTypes.forEach(filterType => {
     if(this[filterType.id].value !== '') {
-      filter.push({
-        type: filterType.name,
-        value: this[filterType.id].value
-      });
+      filter.push(new FilterRequest(filterType.type, filterType.name, this[filterType.id].value,(filterType.fuctionToApply)));
     }
     })
     return filter;

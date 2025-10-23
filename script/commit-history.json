@@ -1284,12 +1284,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "44c1241d2a5545359d8f6468a5845ec23bcf2dbc",
     "author": "RashLop",
     "commit": {
       "date": "2025-10-23T00:46:38.000Z",
       "message": "test: tes multifiltro entre raza y ciudad pasado",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/44c1241d2a5545359d8f6468a5845ec23bcf2dbc"
     },
     "stats": {
       "total": 9,
@@ -1318,6 +1318,25 @@
     },
     "coverage": 28.85,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-23T03:39:43.000Z",
+      "message": "Se Crean Tipos de filtro",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 54,
+      "additions": 43,
+      "deletions": 11,
+      "date": "2025-10-23"
+    },
+    "coverage": 30.34,
+    "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
   }
