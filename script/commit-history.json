@@ -1208,12 +1208,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "aa3df3e56df983943ede9c1772eba4a9d3f89bd0",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-10-23T05:16:59.000Z",
       "message": "test: evitar reinicio del proceso si la mascota ya está en adopción",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/aa3df3e56df983943ede9c1772eba4a9d3f89bd0"
     },
     "stats": {
       "total": 7,
@@ -1242,6 +1242,25 @@
     },
     "coverage": 28.99,
     "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-10-23T05:21:24.000Z",
+      "message": "test: completar adopción correctamente cuando está en proceso",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 29.71,
+    "test_count": 17,
     "failed_tests": 0,
     "conclusion": "success"
   }
