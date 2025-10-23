@@ -13,5 +13,13 @@ describe('Proceso de Adopción', () => {
       expect(text).to.include('ya está en proceso');
     });
   });
+
   
+  it('Debería abrir el modal con los detalles de la mascota', () => {
+    cy.visit('/');
+    cy.get('[data-action="view-details"]').first().click();
+    cy.get('.pet-detail-overlay').should('be.visible');
+    cy.get('.pet-detail-overlay [data-action="contact"]').should('exist');
+  });
+
 });

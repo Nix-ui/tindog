@@ -1284,12 +1284,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4b84a8a81270dce0f2b5a49a2016856c3a8dd5b9",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-10-23T05:33:22.000Z",
       "message": "test(e2e): verificar que las tarjetas muestren el botón Contáctame",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/4b84a8a81270dce0f2b5a49a2016856c3a8dd5b9"
     },
     "stats": {
       "total": 6,
@@ -1313,6 +1313,25 @@
     "stats": {
       "total": 11,
       "additions": 11,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 30.43,
+    "test_count": 18,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-10-23T05:35:03.000Z",
+      "message": "test(e2e): abrir correctamente el modal de detalles de la mascota",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
       "deletions": 0,
       "date": "2025-10-23"
     },
