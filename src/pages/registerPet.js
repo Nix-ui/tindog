@@ -32,7 +32,8 @@ export default function registerPetTemplate() {
         }
         petRepository.registerPet(data);
         localRepository.saveInLocalStorage('pets',petRepository.getAllPets());
-        window.location.href = '/mypets';
+        window.dispatchEvent(new Event('popstate'));
+        window.location.href = '/';
     };
     if(!document.__tindog_registerPetForm){
         document.addEventListener('submit', onRegisterPetClick);

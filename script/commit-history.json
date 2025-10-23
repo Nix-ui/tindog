@@ -1398,12 +1398,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "74c983b8544f354846d3948d54f70fa60c30617f",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-23T04:03:36.000Z",
       "message": "Se crean Solicitudes para el ffiltrado de datos",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/74c983b8544f354846d3948d54f70fa60c30617f"
     },
     "stats": {
       "total": 10,
@@ -1428,6 +1428,25 @@
       "total": 8,
       "additions": 8,
       "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 32.34,
+    "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-23T05:16:59.000Z",
+      "message": "fix: path error",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
       "date": "2025-10-23"
     },
     "coverage": 32.34,
