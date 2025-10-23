@@ -1189,12 +1189,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5991c1d3e69f5635a49d7a208a32556151139d7a",
     "author": "Oliver",
     "commit": {
       "date": "2025-10-22T23:23:13.000Z",
       "message": "feat: inicio del módulo de registro de usuario",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/5991c1d3e69f5635a49d7a208a32556151139d7a"
     },
     "stats": {
       "total": 0,
@@ -1219,6 +1219,25 @@
       "total": 8627,
       "additions": 1723,
       "deletions": 6904,
+      "date": "2025-10-23"
+    },
+    "coverage": 30.24,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-10-23T04:08:49.000Z",
+      "message": "refactor(tests): eliminar prueba de email repetido",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 10,
+      "deletions": 22,
       "date": "2025-10-23"
     },
     "coverage": 30.24,
