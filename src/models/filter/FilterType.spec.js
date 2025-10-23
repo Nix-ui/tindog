@@ -15,4 +15,8 @@ describe("Tipo de Filtro", () => {
         const filter = new FilterType('','','',()=>{return 'callback'},'','');
         expect(filter.value).toBe('Seleccione una opcion');
     });
+    it('Deberia Tener un fucion para aplicar el filtro', () => {
+        const filter = new FilterType('','','',()=>{return 'callback'},'','');
+        expect(filter.fuctionToApply).toBeInstanceOf(Function);
+    });
 })

@@ -1341,12 +1341,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9db588366653e21b10fe900410662bc4e4a4d7b3",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-23T03:43:26.000Z",
       "message": "Los tipos de filtros tienen un callback especifico",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/9db588366653e21b10fe900410662bc4e4a4d7b3"
     },
     "stats": {
       "total": 7,
@@ -1377,5 +1377,24 @@
     "test_count": 16,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-10-23T03:56:22.000Z",
+      "message": "Los tipos de filtros tienen una funcion para aplicar el filtro",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 8,
+      "deletions": 4,
+      "date": "2025-10-23"
+    },
+    "coverage": 30.86,
+    "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
