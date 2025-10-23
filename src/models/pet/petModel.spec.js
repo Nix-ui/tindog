@@ -57,5 +57,11 @@ describe("PetModel - proceso de adopción", () => {
     const resultado = pet.iniciarAdopcion();
     expect(resultado).toBe(false);
   });
-  
+
+  test("No debería iniciar adopción si ya está adoptado", () => {
+    pet.status = "adoptado";
+    const resultado = pet.iniciarAdopcion();
+    expect(resultado).toBe(false);
+  });
+
 });
