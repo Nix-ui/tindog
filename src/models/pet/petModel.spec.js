@@ -70,4 +70,10 @@ describe("PetModel - proceso de adopción", () => {
     expect(pet.status).toBe("adoptado");
   });
 
+   test("Debería cancelar adopción si está en proceso", () => {
+    pet.status = "en proceso";
+    pet.cancelarAdopcion();
+    expect(pet.status).toBe("disponible");
+  });
+
 });
