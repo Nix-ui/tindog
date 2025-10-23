@@ -1246,12 +1246,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2d261e557a1d75b0cbb9bb889b3fd71200b9ac08",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-10-23T05:21:24.000Z",
       "message": "test: completar adopción correctamente cuando está en proceso",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/2d261e557a1d75b0cbb9bb889b3fd71200b9ac08"
     },
     "stats": {
       "total": 6,
@@ -1270,6 +1270,25 @@
     "commit": {
       "date": "2025-10-23T05:23:13.000Z",
       "message": "test: cancelar proceso de adopción y restaurar estado disponible",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 30.43,
+    "test_count": 18,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-10-23T05:33:22.000Z",
+      "message": "test(e2e): verificar que las tarjetas muestren el botón Contáctame",
       "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
     },
     "stats": {
