@@ -1265,12 +1265,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2fada77ae6941e8257dadfdb6282006635e91321",
     "author": "RashLop",
     "commit": {
       "date": "2025-10-23T00:39:42.000Z",
       "message": "feat: filterbysize agregado y prueba pasada",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/2fada77ae6941e8257dadfdb6282006635e91321"
     },
     "stats": {
       "total": 27,
@@ -1294,6 +1294,25 @@
     "stats": {
       "total": 9,
       "additions": 9,
+      "deletions": 0,
+      "date": "2025-10-23"
+    },
+    "coverage": 28.85,
+    "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "RashLop",
+    "commit": {
+      "date": "2025-10-23T00:49:07.000Z",
+      "message": "test: test para multifiltro entre raza, ciudad y tamaño pasada con exito",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 11,
+      "additions": 11,
       "deletions": 0,
       "date": "2025-10-23"
     },
