@@ -1455,12 +1455,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2b26c6ba12a528df5be7a3813909f302e7b65986",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-20T13:14:48.000Z",
       "message": "refactor: Metodo largo y aumento de la cobertura del codigo",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/2b26c6ba12a528df5be7a3813909f302e7b65986"
     },
     "stats": {
       "total": 57841,
@@ -1485,6 +1485,25 @@
       "total": 43695,
       "additions": 7120,
       "deletions": 36575,
+      "date": "2025-11-20"
+    },
+    "coverage": 37.13,
+    "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-20T14:09:26.000Z",
+      "message": "fix: el ingreso manual del path o url ahora renderiza la pagina correcta",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 16,
+      "deletions": 12,
       "date": "2025-11-20"
     },
     "coverage": 37.13,

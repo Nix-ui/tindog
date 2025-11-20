@@ -2,7 +2,6 @@ describe('PetSearch Feature', () => {
   Cypress.on('uncaught:exception', () => false);
 
   beforeEach(() => {
-    // ✅ Inyectar mascotas de prueba en localStorage
     const mockPets = [
       {
         id: 1,
