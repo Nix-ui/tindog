@@ -3,14 +3,12 @@ export default class Component{
         this.element = null;
         this.mounted = false;
     }
-
     /**
      * @returns {string | HTMLElement | DocumentFragment} 
      */
     render(){
         throw new Error('render() method must be implemented');
     }
-
     /**
      * @returns {HTMLElement}
      */
@@ -19,7 +17,6 @@ export default class Component{
         temp.innerHTML = this.render().trim();
         return temp.firstElementChild;
     }
-
     /**
      * 
      * @param {string | HTMLElement} parent 

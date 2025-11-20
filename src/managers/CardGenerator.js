@@ -69,19 +69,15 @@ export default class CardGenerator extends EventEmitter{
         const target = typeof container === 'string' 
         ? document.querySelector(container)
         : container;
-
         if (!target) {
         throw new Error(`Container no encontrado: ${container}`);
         }
-
         target.innerHTML = '';
-
         const cards = dataArray.map((data, index) => {
         const card = this.create(type, data, {
             ...options,
             animationDelay: options.animate ? index * 100 : 0
         });
-
         if (options.animate && card.element) {
             setTimeout(() => {
             card.mount(target);
@@ -90,11 +86,9 @@ export default class CardGenerator extends EventEmitter{
         } else {
             card.mount(target);
         }
-
         return card;
         });
         this.emit('cards:rendered', { type, cards, container: target });
-
         return cards;
     }
 
@@ -107,7 +101,6 @@ export default class CardGenerator extends EventEmitter{
         element.style.opacity = '0';
         element.style.transform = 'translateY(20px)';
         element.style.transition = 'all 0.5s ease';
-
         requestAnimationFrame(() => {
         element.style.opacity = '1';
         element.style.transform = 'translateY(0)';
@@ -122,11 +115,9 @@ export default class CardGenerator extends EventEmitter{
    */
     onCardAction(cardType, action, callback) {
         const key = `${cardType}:${action}`;
-        
         if (!this.globalCallbacks.has(key)) {
         this.globalCallbacks.set(key, []);
         }
-
         this.globalCallbacks.get(key).push(callback);
     }
 
@@ -138,15 +129,11 @@ export default class CardGenerator extends EventEmitter{
     attachGlobalCallbacks(card, type) {
         
         const typeCallbacks = this.globalCallbacks.get(`${type}:*`) || [];
-        const allCallbacks = this.globalCallbacks.get('*:*') || [];
-
-        
+        const allCallbacks = this.globalCallbacks.get('*:*') || [];   
         card.on('action', ({ action, data }) => {
        
         const specificKey = `${type}:${action}`;
         const specificCallbacks = this.globalCallbacks.get(specificKey) || [];
-
-        
         [...specificCallbacks, ...typeCallbacks, ...allCallbacks].forEach(cb => {
             try {
             cb(data, card);
@@ -154,12 +141,9 @@ export default class CardGenerator extends EventEmitter{
             console.error('Error en callback global:', error);
             }
         });
-
-        
         this.emit('card:action', { type, action, data, card });
         });
     }
-
     /**
    * 
    * @param {Object} options 
@@ -167,7 +151,6 @@ export default class CardGenerator extends EventEmitter{
     setGlobalOptions(options) {
         this.globalOptions = { ...this.globalOptions, ...options };
     }
-
     /**
    * 
    * @param {string|HTMLElement} container
@@ -177,13 +160,10 @@ export default class CardGenerator extends EventEmitter{
         const target = typeof container === 'string' 
         ? document.querySelector(container)
         : container;
-
         if (target) {
         target.innerHTML = '';
         }
-
         cards.forEach(card => card.destroy());
-
         this.emit('container:cleared', { container: target });
     }
 }

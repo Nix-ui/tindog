@@ -29,8 +29,6 @@ export default class PetSearchPresenter {
    */
   constructor( view) {
     this.view = view;
-    // this.view.setHandleFilter('address-select', this.handleAddressChange.bind(this));
-    // this.view.setHandleFilter('breed-select', this.handleBreedChange.bind(this));
     this.view.setOnSearch(this.handleFilterSearch.bind(this));
   }
 
@@ -45,34 +43,12 @@ export default class PetSearchPresenter {
 
   /**
    * 
-   * @param {string} event Evento con la direccion
-   */
-
-  // handleAddressChange(event) {
-  //   const address = event.target.value;
-  //   const pets =address === '' ?petRepository.getAllPets() : petRepository.filterByAddress(address);
-  //   console.log(pets);
-  //   this.view.showPets(pets);
-  // }
-
-  /**
-   * 
-   * @param {string} event Evento con la raza 
-   */
-  // handleBreedChange(event) {
-  //   const breed = event.target.value;
-  //   const pets =breed === '' ?petRepository.getAllPets() : petRepository.filterByBreed(breed);
-  //   this.view.showPets(pets);
-  // } 
-
-  /**
-   * 
-   * @param {[Object]} filter  Array con los filtros aplicados
-   * @param {*} event  Evento
+   * @param {[Object]} filter
+   * @param {*} event
    */
   handleFilterSearch(filter,event){
     event.preventDefault();
-    const pets =filter === '' ?petRepository.getAllPets() : petRepository.filterBy(filter);
+    const pets =filter === '' ? petRepository.getAllPets() : petRepository.filterBy(filter);
     this.view.showPets(pets);
   }
 }

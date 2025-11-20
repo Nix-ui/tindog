@@ -27,23 +27,22 @@ const routes = {
     component: 'SearchPet',
     template: () => searchPetTemplate(),
     hasNavbar: true
-  },
-  hello: {
-    route: '/hello',
-    component: 'Hello',
-    hasNavbar: true,
-    template: () => `<h1>Hello World</h1>`
   }
 };
+
+const paths=[routes.mypets.route,
+  routes.registerpet.route,
+  routes.searchpet.route
+]
 
 class Router {
   constructor(routes, appContainer) {
     this.routes = routes;
     this.appContainer = appContainer;
     this.navbar = new NavBar(document.createElement('nav', { is: 'tindog-nav' }), [
-      { path: 'mypets', label: 'Mis mascotas' },
-      { path: 'registerpet', label: 'Registrar mascota' },
-      { path: 'searchpet', label: 'Buscar por raza' }
+      { path: 'mypets', label: 'Mis mascotas', id:"mypets"},
+      { path: 'registerpet', label: 'Registrar mascota', id:"register-pet"},
+      { path: 'searchpet', label: 'Buscar por raza',id: "search-pet"}
     ]);
   }
 
@@ -62,10 +61,13 @@ class Router {
       const routeKey = this.getRouteKeyByPath(currentPath);
       this.render(routeKey || 'mypets');
     });
-
-    const initialPath = window.location.pathname;
-    const initialRoute = this.getRouteKeyByPath(initialPath) || 'mypets';
-    this.render(initialRoute);
+    let actualRoute = window.location.pathname;
+    if(!paths.includes(actualRoute)){
+      actualRoute="mypets";
+    }else{
+      actualRoute= this.getRouteKeyByPath(actualRoute);
+    }
+    this.render(actualRoute);
   }
 
   navigateTo(routeKey) {

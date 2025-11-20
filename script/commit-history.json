@@ -1417,12 +1417,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "47d4de1e956299c2d66c1b60ba426fe5a3fd1841",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-23T04:04:54.000Z",
       "message": "La solicitud cuenta con un callback que filtrara los datos",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/47d4de1e956299c2d66c1b60ba426fe5a3fd1841"
     },
     "stats": {
       "total": 8,
@@ -1436,12 +1436,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3145d85fb3fbdd7b0e445cb3a5f2f3886ac607ab",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-23T05:16:59.000Z",
       "message": "fix: path error",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/3145d85fb3fbdd7b0e445cb3a5f2f3886ac607ab"
     },
     "stats": {
       "total": 3,
@@ -1451,6 +1451,101 @@
     },
     "coverage": 32.34,
     "test_count": 19,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2b26c6ba12a528df5be7a3813909f302e7b65986",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-20T13:14:48.000Z",
+      "message": "refactor: Metodo largo y aumento de la cobertura del codigo",
+      "url": "https://github.com/Nix-ui/tindog/commit/2b26c6ba12a528df5be7a3813909f302e7b65986"
+    },
+    "stats": {
+      "total": 57841,
+      "additions": 47042,
+      "deletions": 10799,
+      "date": "2025-11-20"
+    },
+    "coverage": 37.13,
+    "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ed3b484244940fe5117ebaa016bbbab29b63d991",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-20T13:25:40.000Z",
+      "message": "fix: package-jsno for npm",
+      "url": "https://github.com/Nix-ui/tindog/commit/ed3b484244940fe5117ebaa016bbbab29b63d991"
+    },
+    "stats": {
+      "total": 43695,
+      "additions": 7120,
+      "deletions": 36575,
+      "date": "2025-11-20"
+    },
+    "coverage": 37.13,
+    "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5ea82a882c165ce1e04d8d5c21fbd88fff19a42d",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-20T14:09:26.000Z",
+      "message": "fix: el ingreso manual del path o url ahora renderiza la pagina correcta",
+      "url": "https://github.com/Nix-ui/tindog/commit/5ea82a882c165ce1e04d8d5c21fbd88fff19a42d"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 16,
+      "deletions": 12,
+      "date": "2025-11-20"
+    },
+    "coverage": 37.13,
+    "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-20T14:14:19.000Z",
+      "message": "fix: ejecucion incorrecta en el workflow",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2025-11-20"
+    },
+    "coverage": 37.13,
+    "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-20T14:20:42.000Z",
+      "message": "fix: ejecucion incorrecta en el workflow con pnpm y npm",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-11-20"
+    },
+    "coverage": 37.13,
+    "test_count": 28,
     "failed_tests": 0,
     "conclusion": "success"
   }

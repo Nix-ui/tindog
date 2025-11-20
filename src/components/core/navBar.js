@@ -9,6 +9,7 @@ export default class NavBar {
       <li>
         <a href="/${item.path}" 
            data-route="${item.path}" 
+           id="${item.id}"
            class="nav-tab ${window.location.pathname === `/${item.path}` ? "active" : ""}">
           ${item.label}
         </a>
