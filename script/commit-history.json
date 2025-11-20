@@ -1208,12 +1208,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "708bc1256a0569d97af090a3a6f107459824e578",
     "author": "Oliver",
     "commit": {
       "date": "2025-10-23T03:25:09.000Z",
       "message": "feat: módulo de registro de usuario con validación y tests Cypress",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/708bc1256a0569d97af090a3a6f107459824e578"
     },
     "stats": {
       "total": 8627,
@@ -1242,6 +1242,25 @@
     },
     "coverage": 30.24,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-20T22:13:27.000Z",
+      "message": "test(tdd): agregar lógica y pruebas del registro de usuario",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 54,
+      "additions": 36,
+      "deletions": 18,
+      "date": "2025-11-20"
+    },
+    "coverage": 33.46,
+    "test_count": 17,
     "failed_tests": 0,
     "conclusion": "success"
   }
