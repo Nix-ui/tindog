@@ -1227,12 +1227,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "313f691175d1751b728bba86f9658a436dc303d6",
     "author": "Oliver",
     "commit": {
       "date": "2025-10-23T04:08:49.000Z",
       "message": "refactor(tests): eliminar prueba de email repetido",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/313f691175d1751b728bba86f9658a436dc303d6"
     },
     "stats": {
       "total": 32,
@@ -1257,6 +1257,25 @@
       "total": 54,
       "additions": 36,
       "deletions": 18,
+      "date": "2025-11-20"
+    },
+    "coverage": 33.46,
+    "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-20T22:14:07.000Z",
+      "message": "test(atdd): agregar pruebas iniciales de Cypress para registro de usuario",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 3,
+      "deletions": 2,
       "date": "2025-11-20"
     },
     "coverage": 33.46,

@@ -1,6 +1,6 @@
 describe("Registro de Usuario", () => {
   beforeEach(() => {
-    // Cambia esta URL a la ruta donde está tu formulario
+    
     cy.visit("/registeruser");
   });
 
@@ -13,7 +13,8 @@ describe("Registro de Usuario", () => {
     cy.get("#password").clear().type("Password123", { force: true });
     cy.get("#register-user-button").click({ force: true });
 
-    // Verifica que aparezca el mensaje de éxito
+   
     cy.get("#register-user-message").should("contain", "Registro exitoso");
   });
 });
+
