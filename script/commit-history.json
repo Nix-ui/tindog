@@ -1436,12 +1436,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3145d85fb3fbdd7b0e445cb3a5f2f3886ac607ab",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-10-23T05:16:59.000Z",
       "message": "fix: path error",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/3145d85fb3fbdd7b0e445cb3a5f2f3886ac607ab"
     },
     "stats": {
       "total": 3,
@@ -1466,6 +1466,25 @@
       "total": 57841,
       "additions": 47042,
       "deletions": 10799,
+      "date": "2025-11-20"
+    },
+    "coverage": 37.13,
+    "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-20T13:25:40.000Z",
+      "message": "fix: package-jsno for npm",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 43695,
+      "additions": 7120,
+      "deletions": 36575,
       "date": "2025-11-20"
     },
     "coverage": 37.13,
