@@ -5,17 +5,17 @@ import FilterType from '../models/filter/FilterType.js';
 
 const petRepository = new PetRepository();
 
-let breedFilter =  new FilterType('select', 'breed','breed-select',null,'Seleccione una raza',(pet,value)=>{
+let breedFilter =  new FilterType('select', 'breed',null,'Seleccione una raza',(pet,value)=>{
   return pet.breed === value;
 });
 breedFilter.setValues(petRepository.getBreeds());
-let addressFilter =  new FilterType('select', 'address','address-select',null,'Seleccione una ciudad',(pet,value)=>{
+let addressFilter =  new FilterType('select', 'address',null,'Seleccione una ciudad',(pet,value)=>{
   return pet.address.includes(value);
 });
 addressFilter.setValues([
   "Cochabamba","La Paz","Santa Cruz","Oruro","Potosi","Tarija","Beni","Pando"
 ]);
-let sizeFilter = new FilterType('select', 'size', 'size-select', null, 'Selecciona un tamaño',(pet,value)=>{
+let sizeFilter = new FilterType('select', 'size', null, 'Selecciona un tamaño',(pet,value)=>{
   return pet.size === value;
 }); 
 sizeFilter.setValues([

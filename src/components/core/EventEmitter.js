@@ -4,10 +4,10 @@ class EventEmitter {
   }
 
   /**
-   * Registra un listener para un evento
-   * @param {string} event - Nombre del evento
-   * @param {Function} callback - Función callback
-   * @returns {Function} Función para desuscribirse
+   *
+   * @param {string} event
+   * @param {Function} callback
+   * @returns {Function}
    */
   on(event, callback) {
     if (!this.events.has(event)) {
@@ -15,15 +15,13 @@ class EventEmitter {
     }
 
     this.events.get(event).push(callback);
-
-    // Retornar función para desuscribirse
     return () => this.off(event, callback);
   }
 
   /**
-   * Registra un listener que se ejecuta solo una vez
-   * @param {string} event - Nombre del evento
-   * @param {Function} callback - Función callback
+   * 
+   * @param {string} event
+   * @param {Function} callback
    */
   once(event, callback) {
     const onceWrapper = (...args) => {
@@ -35,30 +33,25 @@ class EventEmitter {
   }
 
   /**
-   * Remueve un listener de un evento
-   * @param {string} event - Nombre del evento
-   * @param {Function} callback - Función callback a remover
+   *
+   * @param {string} event
+   * @param {Function} callback
    */
   off(event, callback) {
     if (!this.events.has(event)) return;
-
     const listeners = this.events.get(event);
     const index = listeners.indexOf(callback);
-
     if (index !== -1) {
       listeners.splice(index, 1);
     }
-
-    // Si no quedan listeners, eliminar el evento
     if (listeners.length === 0) {
       this.events.delete(event);
     }
   }
 
   /**
-   * Emite un evento con datos
-   * @param {string} event - Nombre del evento
-   * @param {...any} args - Argumentos a pasar a los callbacks
+   * @param {string} event
+   * @param {...any} args
    */
   emit(event, ...args) {
     if (!this.events.has(event)) return;
@@ -72,10 +65,8 @@ class EventEmitter {
       }
     });
   }
-
   /**
-   * Remueve todos los listeners de un evento específico
-   * @param {string} event - Nombre del evento
+   * @param {string} event
    */
   removeAllListeners(event) {
     if (event) {
@@ -86,8 +77,7 @@ class EventEmitter {
   }
 
   /**
-   * Obtiene la cantidad de listeners para un evento
-   * @param {string} event - Nombre del evento
+   * @param {string} event
    * @returns {number}
    */
   listenerCount(event) {

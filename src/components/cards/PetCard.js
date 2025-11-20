@@ -11,7 +11,6 @@ export default class PetCard extends BasicCard {
         })
         this.isLiked = petData.isLiked || false;
     }
-
     /**
      * 
      * @returns {string}

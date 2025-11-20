@@ -20,10 +20,6 @@ export default class PetSearchView {
       this[filterType.id].name = filterType.name;
       this[filterType.id].addEventListener('change', filterType.callback);
     })
-    //this.resultsContainer = document.getElementById('pets-container');
-    //this._boundChangeListener = this._onChange.bind(this);
-    //this.breedSelect.addEventListener('change', this._boundChangeListener);
-
   }
   setOnSearch(callback) {
     this.searchButton.addEventListener('click', (e)=>{
@@ -31,25 +27,6 @@ export default class PetSearchView {
       callback(this.onSearch(), e);
     });
   }
-
-  _onChange() {
-    
-  }
-  clearFilter(){
-
-}
-  // clearFilters() {
-  //   this.breedSelect.innerHTML = '';
-  // }
-
-  // removeBreedChangeListener() {
-  //   this.breedChangeHandler = null;
-  // }
-
-  // onBreedChange(callback) {
-  //   this.breedChangeHandler = callback;
-  // }
-
   filterOptions() {
     this.filterTypes.forEach(filterType => {
       this[filterType.id].innerHTML =`<option value="">${filterType.value}</option>`;

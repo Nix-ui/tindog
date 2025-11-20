@@ -19,7 +19,6 @@ export default class PetDetails extends Component{
         this._boundHandleClick = this.handleClick.bind(this);
         this._boundOnKey = this._onKeyDown.bind(this);
     }
-
     render(){
         const {
             id,
@@ -40,73 +39,21 @@ export default class PetDetails extends Component{
         return `
         <div class="pet-detail-overlay" id="pet-detail-card-${id}" role="dialog" aria-modal="true">
             <div class="pet-detail-card p-4">
-                <div class="pet-detail-image-container mb-4">
-                    <img 
-                        src="${this.escapeHtml(image)}" 
-                        alt="${this.escapeHtml(name)}"
-                        class="pet-detail-image"
-                        loading="lazy"
-                        onerror="this.src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800'"
-                    />
-                    <button 
-                        class="pet-detail-like ${this.isLiked ? 'liked' : ''}"
-                        data-action="like"
-                        data-pet-id="${id}"
-                        aria-label="${this.isLiked ? 'Quitar de favoritos' : 'Agregar a favoritos'}"
-                    >
-                        ❤️
-                    </button>
-                    <button 
-                        class="pet-detail-close"
-                        data-action="close"
-                        aria-label="Cerrar"
-                    >
-                        ✕
-                    </button>
-                </div>
-
-                <div class="space-y-3">
-                    <div class="flex items-center justify-between">
-                        <h2 class="text-xl font-medium">${this.escapeHtml(name)}</h2>
-                        <span class="badge badge-amber">
-                            ${age} ${age === 1 ? 'año' : 'años'}
-                        </span>
-                    </div>
-
-                    <p class="text-sm text-gray-600">
-                        📍 ${this.escapeHtml(address)}
-                    </p>
-
-                    <div class="flex gap-2">
-                        <span class="badge badge-primary">${this.escapeHtml(breed)}</span>
-                        ${size ? `<span class="badge badge-outline">${this.escapeHtml(size)}</span>` : ''}
-                    </div>
-
-                    <p class="text-sm text-gray-600">
-                        ${this.escapeHtml(desc)}
-                    </p>
-
-                    ${owner ? `
-                        <div class="border-t border-gray-200 pt-3 mt-3">
-                            <div class="flex items-center gap-2">
-                                <span>🏠</span>
-                                <div>
-                                    <p class="font-medium">${this.escapeHtml(owner)}</p>
-                                    <p class="text-sm text-gray-500">${this.escapeHtml(address)}</p>
-                                </div>
-                            </div>
-                        </div>
-                    ` : ''}
-
-                    <div class="flex justify-center gap-2 mt-3">
-                        <button class="btn btn-primary flex-1" data-action="contact">
-                            Contáctame
-                        </button>
-                        <button class="btn btn-outline" data-action="share">
-                            Compartir
-                        </button>
-                    </div>
-                </div>
+                ${this.#renderPetImage({
+                    id: id,
+                    name: name,
+                    image: image
+                })}
+                ${this.#renderPetContent({
+                    id: id,
+                    name: name,
+                    age:age,
+                    address:address,
+                    breed:breed,
+                    size:size,
+                    desc:desc,
+                    owner:owner
+                })}
             </div>
         </div>
         `;
@@ -167,4 +114,82 @@ export default class PetDetails extends Component{
     _onKeyDown(e){
         if (e.key === 'Escape') this.close();
     }
+    #renderPetImage(info){
+        return `
+        <div class="pet-detail-image-container mb-4">
+            <img 
+                src="${this.escapeHtml(info.image)}" 
+                alt="${this.escapeHtml(info.name)}"
+                class="pet-detail-image"
+                loading="lazy"
+                onerror="this.src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800'"
+            />
+            <button 
+                class="pet-detail-like ${this.isLiked ? 'liked' : ''}"
+                data-action="like"
+                data-pet-id="${info.id}"
+                aria-label="${this.isLiked ? 'Quitar de favoritos' : 'Agregar a favoritos'}"
+            >
+                ❤️
+            </button>
+            <button 
+                class="pet-detail-close"
+                data-action="close"
+                aria-label="Cerrar"
+            >
+                ✕
+            </button>
+        </div>
+        `
+    }
+    #renderPetContent(info){
+        return `
+        <div class="space-y-3">
+            <div class="flex items-center justify-between">
+                <h2 class="text-xl font-medium">${this.escapeHtml(info.name)}</h2>
+                    <span class="badge badge-amber">
+                        ${info.age} ${info.age === 1 ? 'año' : 'años'}
+                    </span>
+            </div>
+            <p class="text-sm text-gray-600">
+                📍 ${this.escapeHtml(info.address)}
+            </p>
+            <div class="flex gap-2">
+                <span class="badge badge-primary">${this.escapeHtml(info.breed)}</span>
+                    ${info.size ? `<span class="badge badge-outline">${this.escapeHtml(info.size)}</span>` : ''}
+            </div>
+            <p class="text-sm text-gray-600">
+                ${this.escapeHtml(info.desc)}
+            </p>
+            ${this.#renderPetOwnerInfo({
+                owner: info.owner,
+                addredd: info.address
+            })}
+        `
+    }
+    #renderPetOwnerInfo(ownerInfo){
+        return `
+        ${ownerInfo.owner ? `
+            <div class="border-t border-gray-200 pt-3 mt-3">
+                <div class="flex items-center gap-2">
+                    <span>🏠</span>
+                    <div>
+                        <p class="font-medium">${this.escapeHtml(ownerInfo.owner)}</p>
+                        <p class="text-sm text-gray-500">${this.escapeHtml(ownerInfo.address)}</p>
+                    </div>
+                </div>
+            </div>
+                    ` : ''}
+                <div class="flex justify-center gap-2 mt-3">
+                    <button class="btn btn-primary flex-1" data-action="contact">
+                        Contáctame
+                    </button>
+                    <button class="btn btn-outline" data-action="share">
+                        Compartir
+                    </button>
+                </div>
+            </div>
+        `
+    }
+
 }

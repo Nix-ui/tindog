@@ -62,9 +62,7 @@ class Router {
       const routeKey = this.getRouteKeyByPath(currentPath);
       this.render(routeKey || 'mypets');
     });
-
-    const initialPath = window.location.pathname;
-    const initialRoute = this.getRouteKeyByPath(initialPath) || 'mypets';
+    const initialRoute = 'mypets';
     this.render(initialRoute);
   }
 

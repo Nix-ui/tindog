@@ -52,7 +52,6 @@ export default class RegisterPetForm extends BaseFormComponent {
                 {name:"owner",type:"text",placeholder:"Nombre del dueño o refugio"},
                 {name:"image",type:"text",placeholder:"link de la imagen"}
             ])}
-
         `
     }
     renderManyFields(filds){
