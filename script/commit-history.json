@@ -1493,12 +1493,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5ea82a882c165ce1e04d8d5c21fbd88fff19a42d",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-20T14:09:26.000Z",
       "message": "fix: el ingreso manual del path o url ahora renderiza la pagina correcta",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/5ea82a882c165ce1e04d8d5c21fbd88fff19a42d"
     },
     "stats": {
       "total": 28,
@@ -1523,6 +1523,25 @@
       "total": 2,
       "additions": 1,
       "deletions": 1,
+      "date": "2025-11-20"
+    },
+    "coverage": 37.13,
+    "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-20T14:20:42.000Z",
+      "message": "fix: ejecucion incorrecta en el workflow con pnpm y npm",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
       "date": "2025-11-20"
     },
     "coverage": 37.13,

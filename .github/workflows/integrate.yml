@@ -17,6 +17,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - name: Install dependencies by pnpm
+        run: pnpm install
       - name: Install dependencies
         run: npm ci
       - name: Run Unit Tests
