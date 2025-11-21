@@ -46,4 +46,25 @@ describe("Registro de Usuario", () => {
       .and("contain", "El usuario ya existe");
   });
 
+  // ATDD – Prueba 3: campos vacíos o inválidos
+it("muestra error si email o password están vacíos", () => {
+  // 1️ Email vacío
+  cy.get("#email").clear();
+  cy.get("#password").clear().type("1234");
+  cy.get("#register-user-button").click();
+
+  cy.get("#register-user-message")
+    .should("be.visible")
+    .and("contain", "Email y password son obligatorios");
+
+  // 2️ Password vacío
+  cy.get("#email").clear().type("test@example.com");
+  cy.get("#password").clear();
+  cy.get("#register-user-button").click();
+
+  cy.get("#register-user-message")
+    .should("be.visible")
+    .and("contain", "Email y password son obligatorios");
+});
+
 });

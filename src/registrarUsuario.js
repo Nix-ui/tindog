@@ -4,7 +4,8 @@ export const usuarios = [];
 
 export function registrarUsuario({ email, password }) {
 
-  if (email === "" || password === "") {
+     if (!email || !password) {
+ 
     return {
       exito: false,
       mensaje: "Email y password son obligatorios",
