@@ -35,3 +35,8 @@ export async function loadPets() {
     ...pet,
   }));
 }
+
+export async function getPetById(id) {
+  const pets = await loadPets();
+  return pets.find((pet) => String(pet.id) === String(id));
+}

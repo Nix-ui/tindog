@@ -1569,12 +1569,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "73711a5cee2660a4893a7edaf01b50f11bbfac84",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-21T23:23:58.000Z",
       "message": "test: debe guardar las mascotas y luego cargarlas",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/73711a5cee2660a4893a7edaf01b50f11bbfac84"
     },
     "stats": {
       "total": 18,
@@ -1602,6 +1602,25 @@
       "date": "2025-11-21"
     },
     "coverage": 39.24,
+    "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-21T23:33:33.000Z",
+      "message": "feat: implementar getPetById en AdoptionManager",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2025-11-21"
+    },
+    "coverage": 38.83,
     "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
