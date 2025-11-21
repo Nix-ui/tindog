@@ -4,7 +4,6 @@ export const usuarios = [];
 
 export function registrarUsuario({ email, password }) {
 
-  // 🔴 CÓDIGO MÍNIMO PARA PASAR EL TEST 3
   if (email === "" || password === "") {
     return {
       exito: false,
@@ -12,7 +11,16 @@ export function registrarUsuario({ email, password }) {
     };
   }
 
-  // Código anterior (no tocar)
+   // 2. Validación mínima de formato de email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return {
+      exito: false,
+      mensaje: "Ingrese un correo válido",
+    };
+  }
+
+  
   const existe = usuarios.find((u) => u.email === email);
 
   if (existe) {

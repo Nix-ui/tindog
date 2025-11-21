@@ -1550,12 +1550,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cb7349403d2b2cbb2f22e4cb5d51d253e818e817",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-21T17:39:11.000Z",
       "message": "test(tdd): añadir prueba para email repetido y mínima lógica para evitar duplicados",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/cb7349403d2b2cbb2f22e4cb5d51d253e818e817"
     },
     "stats": {
       "total": 64,
@@ -1584,6 +1584,25 @@
     },
     "coverage": 39.15,
     "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-21T17:59:46.000Z",
+      "message": "test(add): falla si el email es invalido",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 21,
+      "deletions": 2,
+      "date": "2025-11-21"
+    },
+    "coverage": 39.79,
+    "test_count": 32,
     "failed_tests": 0,
     "conclusion": "success"
   }

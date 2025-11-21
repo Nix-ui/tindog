@@ -56,4 +56,15 @@ describe("Función registrarUsuario", () => {
     expect(sinPassword.exito).toBe(false);
     expect(sinPassword.mensaje).toBe("Email y password son obligatorios");
   });
+
+    test("falla si el email es inválido", () => {
+    const resultado = registrarUsuario({
+      email: "correoMalo",
+      password: "1234",
+    });
+
+    expect(resultado.exito).toBe(false);
+    expect(resultado.mensaje).toBe("Ingrese un correo válido");
+  });
+
 });
