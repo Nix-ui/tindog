@@ -1,5 +1,5 @@
 import petsFromFile from "../../data/pets.json";
-import { loadPets, persistPets, getPetById } from "./AdoptionManager";
+import {loadPets,persistPets,getPetById,initiateAdoption,} from "./AdoptionManager";
 
 beforeEach(() => {
   if (typeof localStorage !== "undefined") {
@@ -33,4 +33,18 @@ test("Debe encontrar una mascota por el id", async () => {
 
   expect(pet).toBeDefined();
   expect(pet.id).toBe(1);
+});
+
+test("Debe iniciar la adopción de una mascota disponible", async () => {
+  await persistPets(petsFromFile);
+
+  const resultado = await initiateAdoption(1, {
+    id: "u1",
+    name: "Usuario 1",
+  });
+
+  expect(resultado.success).toBe(true);
+  expect(resultado.pet.status).toBe("in_process");
+  expect(resultado.pet.adoptionRequest).toBeDefined();
+  expect(resultado.pet.adoptionRequest.userId).toBe("u1");
 });

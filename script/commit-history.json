@@ -1626,12 +1626,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d4087883e5ec715a8c2640f563745258c453a234",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-21T23:36:24.000Z",
       "message": "test: debe encontrar una mascota por id",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d4087883e5ec715a8c2640f563745258c453a234"
     },
     "stats": {
       "total": 21,
@@ -1660,6 +1660,25 @@
     },
     "coverage": 38.67,
     "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-21T23:47:47.000Z",
+      "message": "test: debe iniciar la adopción de una mascota disponible",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 15,
+      "deletions": 1,
+      "date": "2025-11-21"
+    },
+    "coverage": 41.33,
+    "test_count": 32,
     "failed_tests": 0,
     "conclusion": "success"
   }
