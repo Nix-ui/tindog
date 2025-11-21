@@ -1550,12 +1550,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "20bd11a328d0bd9cd17736ca01d8eb330274b75d",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-21T23:12:11.000Z",
       "message": "test: debe existir una mascota real en pets.json",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/20bd11a328d0bd9cd17736ca01d8eb330274b75d"
     },
     "stats": {
       "total": 7,
@@ -1584,6 +1584,25 @@
     },
     "coverage": 37.13,
     "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-21T23:28:03.000Z",
+      "message": "feat: implementar loadPets y persistPets en AdoptionManager",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 37,
+      "deletions": 0,
+      "date": "2025-11-21"
+    },
+    "coverage": 39.24,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }
