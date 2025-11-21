@@ -1607,12 +1607,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3ec2b2295eb3ccf76b0a53684a8f98c4437f8ad6",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-21T18:27:31.000Z",
       "message": "test(atdd): primera prueba de registro de usuario (form visible) y creación de ruta /registeruser",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/3ec2b2295eb3ccf76b0a53684a8f98c4437f8ad6"
     },
     "stats": {
       "total": 39,
@@ -1637,6 +1637,25 @@
       "total": 41,
       "additions": 40,
       "deletions": 1,
+      "date": "2025-11-21"
+    },
+    "coverage": 39.79,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-21T23:27:23.000Z",
+      "message": "test(cypress): email repetido",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 24,
+      "additions": 24,
+      "deletions": 0,
       "date": "2025-11-21"
     },
     "coverage": 39.79,
