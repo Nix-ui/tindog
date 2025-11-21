@@ -1607,12 +1607,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "fe04b6bc2a0645a61cb4b76994a6fa77fda88d0a",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-21T23:33:33.000Z",
       "message": "feat: implementar getPetById en AdoptionManager",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/fe04b6bc2a0645a61cb4b76994a6fa77fda88d0a"
     },
     "stats": {
       "total": 5,
@@ -1640,6 +1640,25 @@
       "date": "2025-11-21"
     },
     "coverage": 39.86,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-21T23:43:25.000Z",
+      "message": "feat: implementar initiateAdoption para mascotas disponibles",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 23,
+      "deletions": 0,
+      "date": "2025-11-21"
+    },
+    "coverage": 38.67,
     "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"

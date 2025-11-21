@@ -40,3 +40,26 @@ export async function getPetById(id) {
   const pets = await loadPets();
   return pets.find((pet) => String(pet.id) === String(id));
 }
+
+export async function initiateAdoption(
+  petId,
+  user = { id: null, name: null }
+) {
+  const pets = await loadPets();
+  const pet = pets.find((p) => String(p.id) === String(petId));
+
+  if (!pet) {
+    return { success: false, reason: "not_found" };
+  }
+
+  pet.status = "in_process";
+  pet.adoptionRequest = {
+    userId: user.id,
+    userName: user.name,
+    startedAt: new Date().toISOString(),
+  };
+
+  await persistPets(pets);
+
+  return { success: true, pet };
+}
