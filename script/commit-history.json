@@ -1645,12 +1645,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d2deb4a11471cabf15086e8fa9e7d4a3314615f5",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-21T23:27:23.000Z",
       "message": "test(cypress): email repetido",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d2deb4a11471cabf15086e8fa9e7d4a3314615f5"
     },
     "stats": {
       "total": 24,
@@ -1675,6 +1675,25 @@
       "total": 24,
       "additions": 23,
       "deletions": 1,
+      "date": "2025-11-21"
+    },
+    "coverage": 39.79,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-21T23:49:04.000Z",
+      "message": "test(cypress): formato invalido",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 23,
+      "deletions": 0,
       "date": "2025-11-21"
     },
     "coverage": 39.79,

@@ -66,5 +66,28 @@ it("muestra error si email o password están vacíos", () => {
     .should("be.visible")
     .and("contain", "Email y password son obligatorios");
 });
+// ATDD – Prueba 4: email con formato inválido
+it("muestra error si el email tiene un formato inválido", () => {
+  const invalidEmails = [
+    "correo",
+    "test@",
+    "@gmail.com",
+    "usuario@com",
+    "1234",
+    "test@@gmail.com",
+    "test.gmail.com",
+  ];
+
+  invalidEmails.forEach((email) => {
+    cy.get("#email").clear().type(email);
+    cy.get("#password").clear().type("1234");
+    cy.get("#register-user-button").click();
+
+    cy.get("#register-user-message")
+      .should("be.visible")
+      .and("contain", "Ingrese un correo válido");
+  });
+});
+
 
 });
