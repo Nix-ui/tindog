@@ -1512,12 +1512,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0cc5a68a0682948a6110f1430d324904cab0a8e4",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-20T14:14:19.000Z",
       "message": "fix: ejecucion incorrecta en el workflow",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/0cc5a68a0682948a6110f1430d324904cab0a8e4"
     },
     "stats": {
       "total": 2,
@@ -1546,6 +1546,25 @@
     },
     "coverage": 37.13,
     "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-21T17:39:11.000Z",
+      "message": "test(tdd): añadir prueba para email repetido y mínima lógica para evitar duplicados",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 64,
+      "additions": 64,
+      "deletions": 0,
+      "date": "2025-11-21"
+    },
+    "coverage": 38.71,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }
