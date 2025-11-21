@@ -1588,12 +1588,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d30b4aeeaf0d04f99dc5d4afe63032a0b050b0d2",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-21T17:59:46.000Z",
       "message": "test(add): falla si el email es invalido",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d30b4aeeaf0d04f99dc5d4afe63032a0b050b0d2"
     },
     "stats": {
       "total": 23,
@@ -1617,6 +1617,25 @@
     "stats": {
       "total": 39,
       "additions": 38,
+      "deletions": 1,
+      "date": "2025-11-21"
+    },
+    "coverage": 39.79,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-21T22:45:03.000Z",
+      "message": "test(cypress): registro un usuario con email y passwor validos",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 41,
+      "additions": 40,
       "deletions": 1,
       "date": "2025-11-21"
     },

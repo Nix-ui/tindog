@@ -11,4 +11,15 @@ describe("Registro de Usuario", () => {
     cy.get("#password").should("be.visible");
     cy.get("#register-user-button").should("be.visible");
   });
+  
+  it("registra un usuario con email y password válidos", () => {
+  cy.get("#email").clear().type("test@example.com");
+  cy.get("#password").clear().type("1234");
+  cy.get("#register-user-button").click();
+
+  cy.get("#register-user-message")
+    .should("be.visible")
+    .and("contain", "Registro exitoso");
+});
+
 });
