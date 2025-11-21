@@ -1,5 +1,11 @@
 import petsFromFile from "../../data/pets.json";
-import { loadPets, persistPets } from "./AdoptionManager";
+import { loadPets, persistPets, getPetById } from "./AdoptionManager";
+
+beforeEach(() => {
+  if (typeof localStorage !== "undefined") {
+    localStorage.clear();
+  }
+});
 
 test("Debe existir una mascota real en pets.json", () => {
   const luna = petsFromFile.find((m) => m.id === 1);
@@ -8,10 +14,6 @@ test("Debe existir una mascota real en pets.json", () => {
 });
 
 test("Debe guardar las mascotas y luego cargarlas", async () => {
-  if (typeof localStorage !== "undefined") {
-    localStorage.clear();
-  }
-
   await persistPets(petsFromFile);
   const loaded = await loadPets();
 
@@ -22,4 +24,13 @@ test("Debe guardar las mascotas y luego cargarlas", async () => {
     expect(pet).toHaveProperty("status");
     expect(pet.status).toBeDefined();
   });
+});
+
+test("Debe encontrar una mascota por el id", async () => {
+  await persistPets(petsFromFile);
+
+  const pet = await getPetById(1);
+
+  expect(pet).toBeDefined();
+  expect(pet.id).toBe(1);
 });

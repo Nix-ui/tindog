@@ -1588,12 +1588,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "034a18f32a171bbb28ad5299a6ab056391239239",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-21T23:28:03.000Z",
       "message": "feat: implementar loadPets y persistPets en AdoptionManager",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/034a18f32a171bbb28ad5299a6ab056391239239"
     },
     "stats": {
       "total": 37,
@@ -1622,6 +1622,25 @@
     },
     "coverage": 38.83,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-21T23:36:24.000Z",
+      "message": "test: debe encontrar una mascota por id",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 16,
+      "deletions": 5,
+      "date": "2025-11-21"
+    },
+    "coverage": 39.86,
+    "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   }
