@@ -1531,12 +1531,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2444f237b09edc61f9b96af63b0b78eed3876c7b",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-20T14:20:42.000Z",
       "message": "fix: ejecucion incorrecta en el workflow con pnpm y npm",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/2444f237b09edc61f9b96af63b0b78eed3876c7b"
     },
     "stats": {
       "total": 6,
@@ -1565,6 +1565,25 @@
     },
     "coverage": 37.13,
     "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-21T23:23:58.000Z",
+      "message": "test: debe guardar las mascotas y luego cargarlas",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2025-11-21"
+    },
+    "coverage": 37.13,
+    "test_count": 28,
     "failed_tests": 0,
     "conclusion": "success"
   }
