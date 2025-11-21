@@ -1512,12 +1512,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0cc5a68a0682948a6110f1430d324904cab0a8e4",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-20T14:14:19.000Z",
       "message": "fix: ejecucion incorrecta en el workflow",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/0cc5a68a0682948a6110f1430d324904cab0a8e4"
     },
     "stats": {
       "total": 2,
@@ -1546,6 +1546,25 @@
     },
     "coverage": 37.13,
     "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-21T23:12:11.000Z",
+      "message": "test: debe existir una mascota real en pets.json",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 7,
+      "deletions": 0,
+      "date": "2025-11-21"
+    },
+    "coverage": 37.13,
+    "test_count": 29,
     "failed_tests": 0,
     "conclusion": "success"
   }
