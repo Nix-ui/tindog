@@ -1531,12 +1531,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "49a0e8c96b5a3e6552390d524261c63ee9a2360a",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-20T14:20:42.000Z",
       "message": "fix: ejecucion incorrecta en el workflow con pnpm y npm",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/49a0e8c96b5a3e6552390d524261c63ee9a2360a"
     },
     "stats": {
       "total": 6,
@@ -1565,6 +1565,25 @@
     },
     "coverage": 38.71,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-21T17:50:12.000Z",
+      "message": "test(tdd): añadir validación mínima para email o password vacíos",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 30,
+      "additions": 28,
+      "deletions": 2,
+      "date": "2025-11-21"
+    },
+    "coverage": 39.15,
+    "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   }

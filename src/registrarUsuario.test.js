@@ -38,4 +38,22 @@ describe("Función registrarUsuario", () => {
     expect(resultado.mensaje).toBe("El usuario ya existe");
     expect(usuarios.length).toBe(1); // solo debe haber un usuario
   });
+
+    test("falla si faltan email o password", () => {
+    const sinEmail = registrarUsuario({
+      email: "",
+      password: "1234",
+    });
+
+    const sinPassword = registrarUsuario({
+      email: "user@mail.com",
+      password: "",
+    });
+
+    expect(sinEmail.exito).toBe(false);
+    expect(sinEmail.mensaje).toBe("Email y password son obligatorios");
+
+    expect(sinPassword.exito).toBe(false);
+    expect(sinPassword.mensaje).toBe("Email y password son obligatorios");
+  });
 });
