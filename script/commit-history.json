@@ -1569,12 +1569,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "358d0fb21e81be5c816d3d3a402481ea2ee38d2a",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-21T17:50:12.000Z",
       "message": "test(tdd): añadir validación mínima para email o password vacíos",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/358d0fb21e81be5c816d3d3a402481ea2ee38d2a"
     },
     "stats": {
       "total": 30,
@@ -1599,6 +1599,25 @@
       "total": 23,
       "additions": 21,
       "deletions": 2,
+      "date": "2025-11-21"
+    },
+    "coverage": 39.79,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-21T18:27:31.000Z",
+      "message": "test(atdd): primera prueba de registro de usuario (form visible) y creación de ruta /registeruser",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 38,
+      "deletions": 1,
       "date": "2025-11-21"
     },
     "coverage": 39.79,

@@ -2,6 +2,8 @@ import myPetsTemplate from "../pages/mypets";
 import registerPetTemplate from "../pages/registerPet";
 import searchPetTemplate from "../pages/searchPet";
 import NavBar from "../components/core/navBar";
+import registerUserTemplate from "../pages/registerUser";
+
 
 const routes = {
   mypets: {
@@ -27,12 +29,22 @@ const routes = {
     component: 'SearchPet',
     template: () => searchPetTemplate(),
     hasNavbar: true
+  },
+    registeruser: {
+    icon: 'assets/icons/register-pet.png', 
+    name: 'Registrar usuario',
+    route: '/registeruser',
+    component: 'RegisterUser',
+    template: () => registerUserTemplate(),
+    hasNavbar: false
   }
 };
 
 const paths=[routes.mypets.route,
   routes.registerpet.route,
-  routes.searchpet.route
+  routes.searchpet.route,
+    routes.registeruser.route
+
 ]
 
 class Router {
