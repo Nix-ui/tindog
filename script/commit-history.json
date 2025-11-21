@@ -1246,12 +1246,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3732ec1e73351e711ba64a877c2f227193a34358",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-20T22:13:27.000Z",
       "message": "test(tdd): agregar lógica y pruebas del registro de usuario",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/3732ec1e73351e711ba64a877c2f227193a34358"
     },
     "stats": {
       "total": 54,
@@ -1277,6 +1277,25 @@
       "additions": 3,
       "deletions": 2,
       "date": "2025-11-20"
+    },
+    "coverage": 33.46,
+    "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-21T14:36:54.000Z",
+      "message": "test(tdd): agregar lógica y pruebas del registro de usuario; test(atdd): iniciar spec de Cypress para formulario de registro",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 85,
+      "additions": 72,
+      "deletions": 13,
+      "date": "2025-11-21"
     },
     "coverage": 33.46,
     "test_count": 17,
