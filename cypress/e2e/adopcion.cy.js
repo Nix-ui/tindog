@@ -12,4 +12,16 @@ describe("Proceso de adopción de mascotas", () => {
       .and("contain", "Iniciar Proceso de Adopción");
   });
 
+  it("Debería mostrar el mensaje 'En proceso de adopción' después de iniciar el proceso", () => {
+  cy.visit('/');
+
+  cy.get("#start-adoption-5").click();
+
+  cy.get("#pet-card-5")
+    .find(".adoption-badge")
+    .should("exist")
+    .and("contain", "En proceso de adopción");
+});
+
+
 });
