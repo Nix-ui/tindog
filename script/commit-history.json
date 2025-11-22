@@ -1740,12 +1740,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "af92e677bac1f2baabd914396994443a9de19a44",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-22T00:54:25.000Z",
       "message": "test: asegurar que se puede cancelar un proceso de adopción",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/af92e677bac1f2baabd914396994443a9de19a44"
     },
     "stats": {
       "total": 13,
@@ -1770,6 +1770,25 @@
       "total": 21,
       "additions": 15,
       "deletions": 6,
+      "date": "2025-11-22"
+    },
+    "coverage": 43.41,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T02:58:57.000Z",
+      "message": "refactor: reubicar adopcion.spec.js y adoptionManager.js a sus respectiva carpeta",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
       "date": "2025-11-22"
     },
     "coverage": 43.41,
