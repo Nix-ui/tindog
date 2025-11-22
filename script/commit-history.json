@@ -1854,12 +1854,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "027e9e7b6ce35d734471eab76b1b32faee84d4d1",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-22T05:30:22.000Z",
       "message": "feat: integrar AdoptionPresenter en la inicialización de presenter.js",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/027e9e7b6ce35d734471eab76b1b32faee84d4d1"
     },
     "stats": {
       "total": 6,
@@ -1884,6 +1884,25 @@
       "total": 8,
       "additions": 6,
       "deletions": 2,
+      "date": "2025-11-22"
+    },
+    "coverage": 42.95,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T15:50:07.000Z",
+      "message": "feat: LocalRepository incluye status y adoptionRequest al reconstruir PetModel",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
       "date": "2025-11-22"
     },
     "coverage": 42.95,
