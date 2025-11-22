@@ -11,8 +11,10 @@ export default class PetModel{
      * @param {string} description 
      * @param {string} owner 
      * @param {string} image
+     * @param {string} status
+     * @param {Object} adoptionRequest
      */
-    constructor(id,name, address, isLiked,age, breed,size,description,owner,image){
+    constructor(id,name, address, isLiked,age, breed,size,description,owner,image,status="available", adoptionRequest=null){
         this.id = id;
         this.name = name;
         this.address = address;
@@ -23,5 +25,7 @@ export default class PetModel{
         this.description = description;
         this.owner = owner;
         this.image = image;
+        this.status = status;
+        this.adoptionRequest = adoptionRequest;
     }
 }

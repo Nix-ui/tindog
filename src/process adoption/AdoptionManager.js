@@ -1,6 +1,6 @@
 import petsFromFile from "../../data/pets.json";
 
-const STORAGE_KEY = "tindog.pets";
+const STORAGE_KEY = "pets";
 
 export async function persistPets(pets) {
   try {
