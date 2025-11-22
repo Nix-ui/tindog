@@ -1778,12 +1778,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "312f97effc507c0bb3615489f0d921fe76c399b9",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-22T02:58:57.000Z",
       "message": "refactor: reubicar adopcion.spec.js y adoptionManager.js a sus respectiva carpeta",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/312f97effc507c0bb3615489f0d921fe76c399b9"
     },
     "stats": {
       "total": 0,
@@ -1808,6 +1808,25 @@
       "total": 57,
       "additions": 57,
       "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 43.41,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T03:32:37.000Z",
+      "message": "feat: completar AdoptionPresenter con funcionalidad de cancelación y visualización de badge",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 91,
+      "additions": 69,
+      "deletions": 22,
       "date": "2025-11-22"
     },
     "coverage": 43.41,
