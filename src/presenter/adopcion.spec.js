@@ -49,3 +49,12 @@ test("Debe iniciar la adopción de una mascota disponible", async () => {
   expect(resultado.pet.adoptionRequest.userId).toBe("u1");
 });
 
+test("Si una mascota ya está en proceso, debe avisar que ya está en proceso", async () => {
+  await persistPets(petsFromFile);
+  await initiateAdoption(1, { id: "u1", name: "Usuario 1" });
+
+  const resultado = await initiateAdoption(1, { id: "u2", name: "Usuario 2" });
+
+  expect(resultado.success).toBe(false);
+  expect(resultado.reason).toBe("in_process");
+});
