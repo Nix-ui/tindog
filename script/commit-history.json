@@ -1797,12 +1797,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3da7ffa60e2b11905a1d4fd2ebe6350587dca8a1",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-22T03:21:14.000Z",
       "message": "feat: crear AdoptionPresenter con inicio de proceso de adopcion",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/3da7ffa60e2b11905a1d4fd2ebe6350587dca8a1"
     },
     "stats": {
       "total": 57,
@@ -1830,6 +1830,25 @@
       "date": "2025-11-22"
     },
     "coverage": 43.41,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T04:14:43.000Z",
+      "message": "feat: añadir botón de adopción/cancelación en PetCard",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 42.59,
     "test_count": 35,
     "failed_tests": 0,
     "conclusion": "success"
