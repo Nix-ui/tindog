@@ -7,13 +7,13 @@ beforeEach(() => {
   }
 });
 
-test("Debe existir una mascota real en pets.json", () => {
+it("Debe existir una mascota real en pets.json", () => {
   const luna = petsFromFile.find((m) => m.id === 1);
   expect(luna).toBeDefined();
   expect(luna.name).toBeDefined();
 });
 
-test("Debe guardar las mascotas y luego cargarlas", async () => {
+it("Debe guardar las mascotas y luego cargarlas", async () => {
   await persistPets(petsFromFile);
   const loaded = await loadPets();
 
@@ -26,7 +26,7 @@ test("Debe guardar las mascotas y luego cargarlas", async () => {
   });
 });
 
-test("Debe encontrar una mascota por el id", async () => {
+it("Debe encontrar una mascota por el id", async () => {
   await persistPets(petsFromFile);
 
   const pet = await getPetById(1);
@@ -35,7 +35,7 @@ test("Debe encontrar una mascota por el id", async () => {
   expect(pet.id).toBe(1);
 });
 
-test("Debe iniciar la adopción de una mascota disponible", async () => {
+it("Debe iniciar la adopción de una mascota disponible", async () => {
   await persistPets(petsFromFile);
 
   const resultado = await initiateAdoption(1, {
@@ -49,7 +49,7 @@ test("Debe iniciar la adopción de una mascota disponible", async () => {
   expect(resultado.pet.adoptionRequest.userId).toBe("u1");
 });
 
-test("Si una mascota ya está en proceso, debe avisar que ya está en proceso", async () => {
+it("Si una mascota ya está en proceso, debe avisar que ya está en proceso", async () => {
   await persistPets(petsFromFile);
   await initiateAdoption(1, { id: "u1", name: "Usuario 1" });
 
@@ -59,7 +59,7 @@ test("Si una mascota ya está en proceso, debe avisar que ya está en proceso", 
   expect(resultado.reason).toBe("in_process");
 });
 
-test("Debe cancelar un proceso de adopción en curso", async () => {
+it("Debe cancelar un proceso de adopción en curso", async () => {
   await persistPets(petsFromFile);
   await initiateAdoption(1, { id: "u1", name: "Usuario 1" });
 
@@ -68,4 +68,13 @@ test("Debe cancelar un proceso de adopción en curso", async () => {
   expect(resultado.success).toBe(true);
   expect(resultado.pet.status).toBe("available");
   expect(resultado.pet.adoptionRequest).toBeUndefined();
+});
+
+test("No debe cancelar adopción si la mascota no está en proceso", async () => {
+  await persistPets(petsFromFile);
+
+  const resultado = await cancelAdoption(1);
+
+  expect(resultado.success).toBe(false);
+  expect(resultado.reason).toBe("not_in_process");
 });
