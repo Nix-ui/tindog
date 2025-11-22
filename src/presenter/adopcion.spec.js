@@ -1,5 +1,5 @@
 import petsFromFile from "../../data/pets.json";
-import {loadPets,persistPets,getPetById,initiateAdoption,} from "./AdoptionManager";
+import {loadPets,persistPets,getPetById,initiateAdoption,cancelAdoption} from "./AdoptionManager";
 
 beforeEach(() => {
   if (typeof localStorage !== "undefined") {
@@ -57,4 +57,15 @@ test("Si una mascota ya está en proceso, debe avisar que ya está en proceso", 
 
   expect(resultado.success).toBe(false);
   expect(resultado.reason).toBe("in_process");
+});
+
+test("Debe cancelar un proceso de adopción en curso", async () => {
+  await persistPets(petsFromFile);
+  await initiateAdoption(1, { id: "u1", name: "Usuario 1" });
+
+  const resultado = await cancelAdoption(1);
+
+  expect(resultado.success).toBe(true);
+  expect(resultado.pet.status).toBe("available");
+  expect(resultado.pet.adoptionRequest).toBeUndefined();
 });

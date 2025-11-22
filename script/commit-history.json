@@ -1702,12 +1702,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3729690e2521bef76dd4edb887f32b53c57fb9bd",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-22T00:16:32.000Z",
       "message": "feat: cancelar proceso de adopción",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/3729690e2521bef76dd4edb887f32b53c57fb9bd"
     },
     "stats": {
       "total": 16,
@@ -1736,6 +1736,25 @@
     },
     "coverage": 40.51,
     "test_count": 33,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T00:54:25.000Z",
+      "message": "test: asegurar que se puede cancelar un proceso de adopción",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2025-11-22"
+    },
+    "coverage": 43.09,
+    "test_count": 34,
     "failed_tests": 0,
     "conclusion": "success"
   }
