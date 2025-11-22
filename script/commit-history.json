@@ -1816,12 +1816,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "23713b892173a53494bf74b3d5fbe96a938a4dee",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-22T03:32:37.000Z",
       "message": "feat: completar AdoptionPresenter con funcionalidad de cancelación y visualización de badge",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/23713b892173a53494bf74b3d5fbe96a938a4dee"
     },
     "stats": {
       "total": 91,
@@ -1845,6 +1845,25 @@
     "stats": {
       "total": 22,
       "additions": 22,
+      "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 42.59,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T05:30:22.000Z",
+      "message": "feat: integrar AdoptionPresenter en la inicialización de presenter.js",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
       "deletions": 0,
       "date": "2025-11-22"
     },
