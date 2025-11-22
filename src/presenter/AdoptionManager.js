@@ -67,3 +67,19 @@ export async function initiateAdoption(
 
   return { success: true, pet };
 }
+
+export async function cancelAdoption(petId) {
+  const pets = await loadPets();
+  const pet = pets.find((p) => String(p.id) === String(petId));
+
+  if (!pet || pet.status !== "in_process") {
+    return { success: false, reason: "not_in_process" };
+  }
+
+  pet.status = "available";
+  delete pet.adoptionRequest;
+
+  await persistPets(pets);
+
+  return { success: true, pet };
+}
