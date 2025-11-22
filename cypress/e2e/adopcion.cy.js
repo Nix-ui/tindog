@@ -23,5 +23,23 @@ describe("Proceso de adopción de mascotas", () => {
     .and("contain", "En proceso de adopción");
 });
 
+it("Debería mostrar el botón de cancelar adopción después de iniciar el proceso", () => {
+  cy.visit('/');
+
+  cy.get("#start-adoption-5").as("adoptBtn");
+
+  cy.get("@adoptBtn")
+    .should("have.attr", "data-action", "start-adoption")
+    .and("contain", "Iniciar Proceso de Adopción");
+
+  // Iniciar adopción
+  cy.get("@adoptBtn").click();
+
+  // Verificar cambio del botón
+  cy.get("@adoptBtn")
+    .should("have.attr", "data-action", "cancel-adoption")
+    .and("contain", "Cancelar proceso");
+});
+
 
 });
