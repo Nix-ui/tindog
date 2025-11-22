@@ -52,6 +52,10 @@ export async function initiateAdoption(
     return { success: false, reason: "not_found" };
   }
 
+  if (pet.status === "in_process") {
+    return { success: false, reason: "in_process", pet };
+  }
+
   pet.status = "in_process";
   pet.adoptionRequest = {
     userId: user.id,

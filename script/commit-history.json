@@ -1645,12 +1645,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "31ed8c8035558028a4f5953422c4a34e9ec25c85",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-21T23:43:25.000Z",
       "message": "feat: implementar initiateAdoption para mascotas disponibles",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/31ed8c8035558028a4f5953422c4a34e9ec25c85"
     },
     "stats": {
       "total": 23,
@@ -1678,6 +1678,25 @@
       "date": "2025-11-21"
     },
     "coverage": 41.33,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T00:12:30.000Z",
+      "message": "feat: evitar iniciar adopción si ya hay un proceso en curso",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
+      "date": "2025-11-22"
+    },
+    "coverage": 41.39,
     "test_count": 32,
     "failed_tests": 0,
     "conclusion": "success"

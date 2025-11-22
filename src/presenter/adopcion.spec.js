@@ -48,3 +48,4 @@ test("Debe iniciar la adopción de una mascota disponible", async () => {
   expect(resultado.pet.adoptionRequest).toBeDefined();
   expect(resultado.pet.adoptionRequest.userId).toBe("u1");
 });
+
