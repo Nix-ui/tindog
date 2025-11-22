@@ -1759,12 +1759,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a47e1e348c884624ccae60c46e0c47724f8875f5",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-22T01:03:33.000Z",
       "message": "test: verificar que no se puede cancelar una adopción si la mascota no está en proceso",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/a47e1e348c884624ccae60c46e0c47724f8875f5"
     },
     "stats": {
       "total": 21,
@@ -1788,6 +1788,25 @@
     "stats": {
       "total": 0,
       "additions": 0,
+      "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 43.41,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T03:21:14.000Z",
+      "message": "feat: crear AdoptionPresenter con inicio de proceso de adopcion",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 57,
+      "additions": 57,
       "deletions": 0,
       "date": "2025-11-22"
     },
