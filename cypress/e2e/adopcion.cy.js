@@ -67,6 +67,33 @@ it("Debería eliminar el badge 'En proceso de adopción' después de cancelar el
     .and("contain", "Iniciar Proceso de Adopción");
 });
 
+it("Debería permitir cancelar la adopción después de ver los detalles y volver", () => {
+  cy.visit('/');
 
+  cy.get("#start-adoption-5").as("adoptBtn");
+
+
+  cy.get("@adoptBtn").click();
+
+  cy.get("#view-pet-details-5").click();
+  cy.get("#pet-detail-card-5").should("be.visible");
+
+  cy.get(".pet-detail-close").click();
+
+  cy.get("#start-adoption-5")
+    .should("have.attr", "data-action", "cancel-adoption")
+    .and("contain", "Cancelar proceso");
+
+  cy.get("#start-adoption-5").click();
+
+
+  cy.get("#pet-card-5")
+    .should("not.contain", "En proceso de adopción");
+
+
+  cy.get("#start-adoption-5")
+    .should("have.attr", "data-action", "start-adoption")
+    .and("contain", "Iniciar Proceso de Adopción");
+});
 
 });

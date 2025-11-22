@@ -1949,12 +1949,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "72005614b91d07dc364418608c92e0c782b0801e",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-22T16:16:09.000Z",
       "message": "test: botón cambia a cancelar adopción (cypress test 3)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/72005614b91d07dc364418608c92e0c782b0801e"
     },
     "stats": {
       "total": 18,
@@ -1979,6 +1979,25 @@
       "total": 33,
       "additions": 30,
       "deletions": 3,
+      "date": "2025-11-22"
+    },
+    "coverage": 42.95,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T16:25:09.000Z",
+      "message": "test: verificar que se pueda cancelar la adopción tras abrir y cerrar los detalles (cypress test 5)",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 27,
+      "deletions": 0,
       "date": "2025-11-22"
     },
     "coverage": 42.95,
