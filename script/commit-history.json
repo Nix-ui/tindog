@@ -1721,12 +1721,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e0c2a059f69806f52add953ac60bacdb2092dc1f",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-25T07:53:01.000Z",
       "message": "fix: remove .parcelrc and update package-lock after rollback",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/e0c2a059f69806f52add953ac60bacdb2092dc1f"
     },
     "stats": {
       "total": 31,
@@ -1751,6 +1751,25 @@
       "total": 104,
       "additions": 104,
       "deletions": 0,
+      "date": "2025-11-25"
+    },
+    "coverage": 39.79,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-25T08:58:55.000Z",
+      "message": "feat(register-user): navegación inicial y router corregido",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 148,
+      "additions": 90,
+      "deletions": 58,
       "date": "2025-11-25"
     },
     "coverage": 39.79,

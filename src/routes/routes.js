@@ -4,81 +4,91 @@ import searchPetTemplate from "../pages/searchPet";
 import NavBar from "../components/core/navBar";
 import registerUserTemplate from "../pages/registerUser";
 
-
 const routes = {
   mypets: {
-    icon: 'assets/icons/mypets.png',
-    name: 'Mis mascotas',
-    route: '/mypets',
-    component: 'MyPets',
+    icon: "assets/icons/mypets.png",
+    name: "Mis mascotas",
+    route: "/mypets",
+    component: "MyPets",
     template: myPetsTemplate,
-    hasNavbar: true
+    hasNavbar: true,
   },
   registerpet: {
-    icon: 'assets/icons/register-pet.png',
-    name: 'Registrar mascota',
-    route: '/registerpet',
-    component: 'RegisterPet',
+    icon: "assets/icons/register-pet.png",
+    name: "Registrar mascota",
+    route: "/registerpet",
+    component: "RegisterPet",
     template: () => registerPetTemplate(),
-    hasNavbar: false
+    hasNavbar: false,
   },
   searchpet: {
-    icon: 'assets/icons/search-pet.png',
-    name: 'Buscar mascota',
-    route: '/searchpet',
-    component: 'SearchPet',
+    icon: "assets/icons/search-pet.png",
+    name: "Buscar mascota",
+    route: "/searchpet",
+    component: "SearchPet",
     template: () => searchPetTemplate(),
-    hasNavbar: true
+    hasNavbar: true,
   },
-    registeruser: {
-    icon: 'assets/icons/register-pet.png', 
-    name: 'Registrar usuario',
-    route: '/registeruser',
-    component: 'RegisterUser',
+  registeruser: {
+    icon: "assets/icons/register-pet.png",
+    name: "Registrar usuario",
+    route: "/registeruser",
+    component: "RegisterUser",
     template: () => registerUserTemplate(),
-    hasNavbar: false
-  }
+    hasNavbar: false,
+  },
 };
 
-const paths=[routes.mypets.route,
+const paths = [
+  routes.mypets.route,
   routes.registerpet.route,
   routes.searchpet.route,
-    routes.registeruser.route
-
-]
+  routes.registeruser.route,
+];
 
 class Router {
   constructor(routes, appContainer) {
     this.routes = routes;
     this.appContainer = appContainer;
-    this.navbar = new NavBar(document.createElement('nav', { is: 'tindog-nav' }), [
-      { path: 'mypets', label: 'Mis mascotas', id:"mypets"},
-      { path: 'registerpet', label: 'Registrar mascota', id:"register-pet"},
-      { path: 'searchpet', label: 'Buscar por raza',id: "search-pet"}
-    ]);
+    this.navbar = new NavBar(
+      document.createElement("nav", { is: "tindog-nav" }),
+      [
+        { path: "mypets", label: "Mis mascotas", id: "mypets" },
+        { path: "registerpet", label: "Registrar mascota", id: "register-pet" },
+        { path: "searchpet", label: "Buscar por raza", id: "search-pet" },
+      ]
+    );
   }
 
   init() {
-    this.appContainer.addEventListener('click', (e) => {
-      const link = e.target.closest('[data-route]');
+    // Manejo de clicks en los links con data-route
+    this.appContainer.addEventListener("click", (e) => {
+      const link = e.target.closest("[data-route]");
       if (link) {
         e.preventDefault();
-        const routeKey = link.getAttribute('data-route');
+        const routeKey = link.getAttribute("data-route");
         this.navigateTo(routeKey);
       }
     });
 
-    window.addEventListener('popstate', () => {
+    // Navegación con botones del navegador (back/forward)
+    window.addEventListener("popstate", () => {
       const currentPath = window.location.pathname;
       const routeKey = this.getRouteKeyByPath(currentPath);
-      this.render(routeKey || 'mypets');
+      this.render(routeKey || "registeruser");
     });
+
+    // Ruta inicial
     let actualRoute = window.location.pathname;
-    if(!paths.includes(actualRoute)){
-      actualRoute="mypets";
-    }else{
-      actualRoute= this.getRouteKeyByPath(actualRoute);
+
+    // Si la ruta NO es válida, arrancamos en registeruser
+    if (!paths.includes(actualRoute)) {
+      this.navigateTo("registeruser");
+      return;
     }
+
+    // Si la ruta sí es válida, convertimos path -> key
+    actualRoute = this.getRouteKeyByPath(actualRoute) || "registeruser";
     this.render(actualRoute);
   }
 
@@ -90,7 +100,7 @@ class Router {
     window.pathname = route.route;
     document.title = route.name;
     this.setIcon(route.icon);
-    window.history.pushState({}, '', route.route);
+    window.history.pushState({}, "", route.route);
     this.render(routeKey);
   }
 
@@ -110,30 +120,33 @@ class Router {
     } else {
       this.appContainer.innerHTML = route.template();
     }
+
     this.setIcon(route.icon);
-    window.dispatchEvent(new CustomEvent('route-changed', { detail: routeKey }));
+    window.dispatchEvent(
+      new CustomEvent("route-changed", { detail: routeKey })
+    );
   }
+
   setIcon(icon) {
     const link = document.querySelector('link[rel*="icon"]');
     if (!link) {
-      const iconLink = document.createElement('link');
-      iconLink.rel = 'icon';
-      iconLink.type = 'image/png';
-      iconLink.href = "./"+icon;
-      console.log(iconLink);
+      const iconLink = document.createElement("link");
+      iconLink.rel = "icon";
+      iconLink.type = "image/png";
+      iconLink.href = "./" + icon;
       document.head.appendChild(iconLink);
+    } else {
+      link.href = "./" + icon;
     }
-    else {
-      link.href ="./"+ icon;
-    }
-
   }
 
   getRouteKeyByPath(path) {
-    const cleanPath = path.replace(/\/$/, ''); 
-    return Object.keys(this.routes).find(key => this.routes[key].route === cleanPath);
+    const cleanPath = path.replace(/\/$/, ""); // quita / final si existe
+    return Object.keys(this.routes).find(
+      (key) => this.routes[key].route === cleanPath
+    );
   }
 }
 
-const router = new Router(routes, document.getElementById('app-container'));
+const router = new Router(routes, document.getElementById("app-container"));
 export default router;

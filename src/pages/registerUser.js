@@ -1,4 +1,5 @@
 // src/pages/registerUser.js
+import router from "../routes/routes.js";
 import { registrarUsuario } from "../registrarUsuario";
 
 export default function registerUserTemplate() {
@@ -73,6 +74,7 @@ export default function registerUserTemplate() {
               >
                 ¿Ya tienes cuenta?
                 <span
+                  id="go-to-login"
                   style="color: var(--tindog-indigo); font-weight: 500; cursor: pointer;"
                 >
                   Inicia sesión
@@ -92,6 +94,7 @@ export function initRegisterUserPage() {
   const passwordInput = document.getElementById("password");
   const button = document.getElementById("register-user-button");
   const messageEl = document.getElementById("register-user-message");
+  const loginLink = document.getElementById("go-to-login");
 
   button.addEventListener("click", () => {
     const resultado = registrarUsuario({
@@ -104,7 +107,23 @@ export function initRegisterUserPage() {
 
     // Colores de feedback visual
     messageEl.style.color = resultado.exito
-      ? "#6b4cc2" 
-      : "#e63946"; 
+      ? "#6b4cc2"  // moradito éxito
+      : "#e63946"; // rojo error
+
+    // Si el registro fue exitoso, pasamos a la siguiente página (buscar mascota)
+    if (resultado.exito) {
+      setTimeout(() => {
+        router.navigateTo("searchpet"); // aquí se va a la página de buscar mascota
+      }, 800);
+    }
   });
+
+  // Link "Inicia sesión"
+  if (loginLink) {
+    loginLink.addEventListener("click", () => {
+      // De momento lo dejamos yendo a la misma pantalla de registro
+      // Cuando tengas una pantalla de login, cambias "registeruser" por "login"
+      router.navigateTo("registeruser");
+    });
+  }
 }
