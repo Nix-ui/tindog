@@ -1683,12 +1683,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f1563c14dc9e63b29df5a92d10924719bd120afc",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-21T23:49:04.000Z",
       "message": "test(cypress): formato invalido",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/f1563c14dc9e63b29df5a92d10924719bd120afc"
     },
     "stats": {
       "total": 23,
@@ -1713,6 +1713,25 @@
       "total": 100,
       "additions": 91,
       "deletions": 9,
+      "date": "2025-11-25"
+    },
+    "coverage": 39.79,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-25T07:53:01.000Z",
+      "message": "fix: remove .parcelrc and update package-lock after rollback",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 2,
+      "deletions": 29,
       "date": "2025-11-25"
     },
     "coverage": 39.79,
