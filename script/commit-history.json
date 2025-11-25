@@ -1987,12 +1987,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "91e8a958d5f9fa7ee2a96dcd4a2cf1242a4d44e3",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-22T16:25:09.000Z",
       "message": "test: verificar que se pueda cancelar la adopción tras abrir y cerrar los detalles (cypress test 5)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/91e8a958d5f9fa7ee2a96dcd4a2cf1242a4d44e3"
     },
     "stats": {
       "total": 27,
@@ -2023,5 +2023,24 @@
     "test_count": 35,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-25T13:55:46.000Z",
+      "message": "fix:Las mascotas ahora se muestran bien en todas las vistas y se mantiene consistencia",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2025-11-25"
+    },
+    "coverage": 44.51,
+    "test_count": 35,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
