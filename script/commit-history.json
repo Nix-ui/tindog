@@ -1968,12 +1968,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "acac738e55d3af0035b8312f072c269e92e09ef2",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-22T16:18:48.000Z",
       "message": "test: eliminar badge después de cancelar adopción (cypress test 4)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/acac738e55d3af0035b8312f072c269e92e09ef2"
     },
     "stats": {
       "total": 33,
@@ -1999,6 +1999,25 @@
       "additions": 27,
       "deletions": 0,
       "date": "2025-11-22"
+    },
+    "coverage": 42.95,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-25T08:04:15.000Z",
+      "message": "test(e2e): refactorizar las pruebas del flujo de adopción en Cypress para mejorar la claridad",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 65,
+      "additions": 26,
+      "deletions": 39,
+      "date": "2025-11-25"
     },
     "coverage": 42.95,
     "test_count": 35,
