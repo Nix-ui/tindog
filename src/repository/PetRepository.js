@@ -10,25 +10,16 @@ export default class PetRepository {
         this.breeds = [...new Set(petData.map(pet => pet.breed))];
     }
     getAllPets() {
-        this.#checkIfPetsInLocalStorage();
         return this.pets;
     }
-    #checkIfPetsInLocalStorage() {
-        if(this.LocalRepository.existsInLocalStorage('pets')){
-            this.pets = this.LocalRepository.getPetsFromLocalStorage();
-        }
-    }
     registerPet(pet) {
-        this.#checkIfPetsInLocalStorage();
         this.pets.push(pet);
         this.LocalRepository.saveInLocalStorage('pets', this.pets);
     }
     filterByBreed(breed) {
-        this.#checkIfPetsInLocalStorage();
         return this.pets.filter(pet => pet.breed === breed);
     }
     filterByAddress(address) {
-        this.#checkIfPetsInLocalStorage();
         return this.pets.filter(pet => pet.address.includes(address));
     }
     getBreeds() {
@@ -40,7 +31,6 @@ export default class PetRepository {
      * @returns 
      */
     filterBy(filters){
-        this.#checkIfPetsInLocalStorage();
         let filteredPets = this.pets;
         filters.forEach(filter=>{
             filteredPets = filteredPets.filter(pet => {

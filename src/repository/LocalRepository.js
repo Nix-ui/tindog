@@ -28,4 +28,13 @@ export default class LocalRepository {
     getPetsFromLocalStorage() {
         return this.getFromLocalStorage('pets').map(pet => new PetModel(pet.id, pet.name, pet.address, pet.isLiked, pet.age, pet.breed, pet.size, pet.description, pet.owner, pet.image,pet.status, pet.adoptionRequest));
     }
+    getPetsFilterBy(filters){
+        let filteredPets = this.getFromLocalStorage('pets').map(pet => new PetModel(pet.id, pet.name, pet.address, pet.isLiked, pet.age, pet.breed, pet.size, pet.description, pet.owner, pet.image,pet.status, pet.adoptionRequest));
+        filters.forEach(filter=>{
+            filteredPets = filteredPets.filter(pet => {
+                return filter.callback(pet,filter.value);
+            });
+        })
+        return filteredPets;
+    }
 }

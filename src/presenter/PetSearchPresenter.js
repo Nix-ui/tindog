@@ -3,9 +3,11 @@ import CardGenerator from '../managers/CardGenerator';
 import PetDetails from '../pages/myPetDetails';
 import PetRepository from '../repository/PetRepository';
 import PetSearchView from '../view/PetSearchView';
+import LocalRepository from '../repository/LocalRepository';
 
 
 const petRepository = new PetRepository();
+const localRepository = new LocalRepository();
 
 const onViewMoreClick = (e) => {
   e.preventDefault();
@@ -38,7 +40,10 @@ export default class PetSearchPresenter {
       document.addEventListener('click', onViewMoreClick);
       document.__tindog_view_details_listener = true;
     }
-    this.view.showPets(petRepository.getAllPets());
+    if(!localRepository.existsInLocalStorage('pets')){
+      localRepository.saveInLocalStorage('pets', petRepository.getAllPets());
+    }
+    this.view.showPets(localRepository.getPetsFromLocalStorage());
   }
 
   /**
@@ -48,7 +53,7 @@ export default class PetSearchPresenter {
    */
   handleFilterSearch(filter,event){
     event.preventDefault();
-    const pets =filter === '' ? petRepository.getAllPets() : petRepository.filterBy(filter);
+    const pets = filter === '' ? localRepository.getPetsFromLocalStorage() : localRepository.getPetsFilterBy(filter);
     this.view.showPets(pets);
   }
 }
