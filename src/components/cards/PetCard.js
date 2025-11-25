@@ -115,6 +115,14 @@ export default class PetCard extends BasicCard {
         ? this.truncate(description, this.options.maxDescriptionLength)
         : description;
 
+        const status = this.data.status || "available";
+        const isInProcess = status === "in_process";
+
+        const adoptionAction = isInProcess ? "cancel-adoption" : "start-adoption"; //////////////////////
+        const adoptionText = isInProcess
+            ? "Cancelar proceso de adopción"
+            : "Iniciar Proceso de Adopción";
+
         return `
         <div class="card-content">
             <p class="text-sm text-gray-600" id="pet-breed-size-${this.data.id}" >
@@ -141,6 +149,17 @@ export default class PetCard extends BasicCard {
                 Ver más
             </button>
             ` : ''}
+
+            <!-- BOTÓN DE ADOPCIÓN -->
+            <button 
+                class="btn btn-secondary"
+                style="margin-top: 0.5rem; width: 100%;"
+                data-action="${adoptionAction}"
+                data-pet-id="${this.data.id}"
+                id="start-adoption-${this.data.id}"
+            >
+                ${adoptionText}
+            </button>
         </div>
         `;
     }
@@ -162,6 +181,9 @@ export default class PetCard extends BasicCard {
         }
         if(action === 'view-details') {
             this.onViewDetails(petId);
+        }
+        if(action === 'start-adoption' || action === 'cancel-adoption') {
+            this.events.emit('action', { action, data: { id: petId }});
         }
 
         super.handleClick(e);
