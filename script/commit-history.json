@@ -1664,12 +1664,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "edeab237e1448454d77aa6b91f6e1fc34a6d2607",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-21T23:43:45.000Z",
       "message": "test(cypress): mostrar error si email y password estan vacio",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/edeab237e1448454d77aa6b91f6e1fc34a6d2607"
     },
     "stats": {
       "total": 24,
@@ -1695,6 +1695,25 @@
       "additions": 23,
       "deletions": 0,
       "date": "2025-11-21"
+    },
+    "coverage": 39.79,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-25T00:00:59.000Z",
+      "message": "feat(register-user): mejora interfaz y mantiene pruebas verdes",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 100,
+      "additions": 91,
+      "deletions": 9,
+      "date": "2025-11-25"
     },
     "coverage": 39.79,
     "test_count": 32,
