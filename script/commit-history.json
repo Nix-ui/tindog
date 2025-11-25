@@ -1702,12 +1702,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a59bf14b3418c987f6e0d0b63cfd6abc75d8417b",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-25T00:00:59.000Z",
       "message": "feat(register-user): mejora interfaz y mantiene pruebas verdes",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/a59bf14b3418c987f6e0d0b63cfd6abc75d8417b"
     },
     "stats": {
       "total": 100,
@@ -1732,6 +1732,25 @@
       "total": 31,
       "additions": 2,
       "deletions": 29,
+      "date": "2025-11-25"
+    },
+    "coverage": 39.79,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-25T08:06:04.000Z",
+      "message": "fix: resolver conflictos en presenter y añadir AdoptionPresenter",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 104,
+      "additions": 104,
+      "deletions": 0,
       "date": "2025-11-25"
     },
     "coverage": 39.79,
