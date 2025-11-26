@@ -1,13 +1,27 @@
-// PRIMER TEST TDD – aún no existe la función real
+// src/registrarUsuario.test.js
 
-import { registrarUsuario, usuarios } from "./registrarUsuario.js";
+import { createRegisterUserUseCase } from "./registrarUsuario";
 
-describe("Función registrarUsuario", () => {
+describe("Función registrarUsuario (caso de uso)", () => {
+  let repoEnMemoria;
+  let registrarUsuario;
+
   beforeEach(() => {
-    // limpiar la lista antes de cada prueba
-    if (usuarios) {
-      usuarios.length = 0;
-    }
+    // Repositorio en memoria para pruebas (no usa localStorage)
+    repoEnMemoria = {
+      _users: [],
+      existsByEmail(email) {
+        return this._users.some((u) => u.email === email);
+      },
+      save({ email, password }) {
+        this._users.push({ email, password });
+      },
+    };
+
+    // Caso de uso construido con nuestro repo en memoria
+    registrarUsuario = createRegisterUserUseCase({
+      userRepository: repoEnMemoria,
+    });
   });
 
   test("registra un usuario con email y password válidos", () => {
@@ -18,53 +32,53 @@ describe("Función registrarUsuario", () => {
 
     expect(resultado.exito).toBe(true);
     expect(resultado.mensaje).toBe("Registro exitoso");
-    expect(usuarios.length).toBe(1);
-    expect(usuarios[0].email).toBe("test@mail.com");
+    expect(repoEnMemoria._users.length).toBe(1);
+    expect(repoEnMemoria._users[0].email).toBe("test@mail.com");
   });
-   test("no permite registrar un email repetido", () => {
+
+  test("no permite registrar un email repetido", () => {
     // Primer registro
     registrarUsuario({
-      email: "repetido@mail.com",
+      email: "test@mail.com",
       password: "1234",
     });
 
     // Segundo intento con el mismo email
     const resultado = registrarUsuario({
-      email: "repetido@mail.com",
-      password: "abcd",
+      email: "test@mail.com",
+      password: "5678",
     });
 
     expect(resultado.exito).toBe(false);
     expect(resultado.mensaje).toBe("El usuario ya existe");
-    expect(usuarios.length).toBe(1); // solo debe haber un usuario
+    expect(repoEnMemoria._users.length).toBe(1); // solo debe haber un usuario
   });
 
-    test("falla si faltan email o password", () => {
-    const sinEmail = registrarUsuario({
-      email: "",
-      password: "1234",
-    });
+  test("falla si faltan email o password", () => {
+    const r1 = registrarUsuario({ email: "", password: "1234" });
+    expect(r1.exito).toBe(false);
+    expect(r1.mensaje).toBe("Email y password son obligatorios");
 
-    const sinPassword = registrarUsuario({
-      email: "user@mail.com",
-      password: "",
-    });
-
-    expect(sinEmail.exito).toBe(false);
-    expect(sinEmail.mensaje).toBe("Email y password son obligatorios");
-
-    expect(sinPassword.exito).toBe(false);
-    expect(sinPassword.mensaje).toBe("Email y password son obligatorios");
+    const r2 = registrarUsuario({ email: "test@mail.com", password: "" });
+    expect(r2.exito).toBe(false);
+    expect(r2.mensaje).toBe("Email y password son obligatorios");
   });
 
-    test("falla si el email es inválido", () => {
-    const resultado = registrarUsuario({
-      email: "correoMalo",
-      password: "1234",
+  test("muestra error si el email tiene un formato inválido", () => {
+    const invalidEmails = [
+      "correo",
+      "test@",
+      "@gmail.com",
+      "usuario@com",
+      "1234",
+      "test@@gmail.com",
+      "test.gmail.com",
+    ];
+
+    invalidEmails.forEach((email) => {
+      const res = registrarUsuario({ email, password: "1234" });
+      expect(res.exito).toBe(false);
+      expect(res.mensaje).toBe("Ingrese un correo válido");
     });
-
-    expect(resultado.exito).toBe(false);
-    expect(resultado.mensaje).toBe("Ingrese un correo válido");
   });
-
 });

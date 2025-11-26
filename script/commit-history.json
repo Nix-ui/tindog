@@ -2006,12 +2006,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d2f040ea9d73a35c3eb55ee3fa3f2d19a4311119",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-25T08:04:15.000Z",
       "message": "test(e2e): refactorizar las pruebas del flujo de adopción en Cypress para mejorar la claridad",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d2f040ea9d73a35c3eb55ee3fa3f2d19a4311119"
     },
     "stats": {
       "total": 65,
@@ -2039,6 +2039,25 @@
       "date": "2025-11-26"
     },
     "coverage": 45.02,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-26T20:32:16.000Z",
+      "message": "refactor(register-user): limpieza del dominio, separación de responsabilidades y mejora de arquitectura",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 301,
+      "additions": 187,
+      "deletions": 114,
+      "date": "2025-11-26"
+    },
+    "coverage": 45.24,
     "test_count": 39,
     "failed_tests": 0,
     "conclusion": "success"
