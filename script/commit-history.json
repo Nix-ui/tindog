@@ -2025,12 +2025,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e9f52ad4f030461ca98adbacead1854eec099031",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-26T17:05:17.000Z",
       "message": "merge: actualizar feat/registro-usuario-v2 con origin/main",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/e9f52ad4f030461ca98adbacead1854eec099031"
     },
     "stats": {
       "total": 322,
@@ -2055,6 +2055,25 @@
       "total": 301,
       "additions": 187,
       "deletions": 114,
+      "date": "2025-11-26"
+    },
+    "coverage": 45.24,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-26T22:10:07.000Z",
+      "message": "refactor(register-user): separar repositorio y mejorar nombres/funciones",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 189,
+      "additions": 71,
+      "deletions": 118,
       "date": "2025-11-26"
     },
     "coverage": 45.24,
