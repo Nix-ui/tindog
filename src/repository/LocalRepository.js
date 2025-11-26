@@ -26,6 +26,6 @@ export default class LocalRepository {
     }
 
     getPetsFromLocalStorage() {
-        return this.getFromLocalStorage('pets').map(pet => new PetModel(pet.id, pet.name, pet.address, pet.isLiked, pet.age, pet.breed, pet.size, pet.description, pet.owner, pet.image));
+        return this.getFromLocalStorage('pets').map(pet => new PetModel(pet.id, pet.name, pet.address, pet.isLiked, pet.age, pet.breed, pet.size, pet.description, pet.owner, pet.image,pet.status, pet.adoptionRequest));
     }
 }

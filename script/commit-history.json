@@ -1531,12 +1531,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "49a0e8c96b5a3e6552390d524261c63ee9a2360a",
+    "sha": "2444f237b09edc61f9b96af63b0b78eed3876c7b",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-20T14:20:42.000Z",
       "message": "fix: ejecucion incorrecta en el workflow con pnpm y npm",
-      "url": "https://github.com/Nix-ui/tindog/commit/49a0e8c96b5a3e6552390d524261c63ee9a2360a"
+      "url": "https://github.com/Nix-ui/tindog/commit/2444f237b09edc61f9b96af63b0b78eed3876c7b"
     },
     "stats": {
       "total": 6,
@@ -1550,192 +1550,477 @@
     "conclusion": "success"
   },
   {
-    "sha": "cb7349403d2b2cbb2f22e4cb5d51d253e818e817",
-    "author": "Oliver",
+    "sha": "20bd11a328d0bd9cd17736ca01d8eb330274b75d",
+    "author": "ERICK1766",
     "commit": {
-      "date": "2025-11-21T17:39:11.000Z",
-      "message": "test(tdd): añadir prueba para email repetido y mínima lógica para evitar duplicados",
-      "url": "https://github.com/Nix-ui/tindog/commit/cb7349403d2b2cbb2f22e4cb5d51d253e818e817"
+      "date": "2025-11-21T23:12:11.000Z",
+      "message": "test: debe existir una mascota real en pets.json",
+      "url": "https://github.com/Nix-ui/tindog/commit/20bd11a328d0bd9cd17736ca01d8eb330274b75d"
     },
     "stats": {
-      "total": 64,
-      "additions": 64,
+      "total": 7,
+      "additions": 7,
       "deletions": 0,
       "date": "2025-11-21"
     },
-    "coverage": 38.71,
+    "coverage": 37.13,
+    "test_count": 29,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "73711a5cee2660a4893a7edaf01b50f11bbfac84",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-21T23:23:58.000Z",
+      "message": "test: debe guardar las mascotas y luego cargarlas",
+      "url": "https://github.com/Nix-ui/tindog/commit/73711a5cee2660a4893a7edaf01b50f11bbfac84"
+    },
+    "stats": {
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2025-11-21"
+    },
+    "coverage": 37.13,
+    "test_count": 28,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "034a18f32a171bbb28ad5299a6ab056391239239",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-21T23:28:03.000Z",
+      "message": "feat: implementar loadPets y persistPets en AdoptionManager",
+      "url": "https://github.com/Nix-ui/tindog/commit/034a18f32a171bbb28ad5299a6ab056391239239"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 37,
+      "deletions": 0,
+      "date": "2025-11-21"
+    },
+    "coverage": 39.24,
     "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   },
   {
-    "sha": "358d0fb21e81be5c816d3d3a402481ea2ee38d2a",
-    "author": "Oliver",
+    "sha": "fe04b6bc2a0645a61cb4b76994a6fa77fda88d0a",
+    "author": "ERICK1766",
     "commit": {
-      "date": "2025-11-21T17:50:12.000Z",
-      "message": "test(tdd): añadir validación mínima para email o password vacíos",
-      "url": "https://github.com/Nix-ui/tindog/commit/358d0fb21e81be5c816d3d3a402481ea2ee38d2a"
+      "date": "2025-11-21T23:33:33.000Z",
+      "message": "feat: implementar getPetById en AdoptionManager",
+      "url": "https://github.com/Nix-ui/tindog/commit/fe04b6bc2a0645a61cb4b76994a6fa77fda88d0a"
     },
     "stats": {
-      "total": 30,
-      "additions": 28,
-      "deletions": 2,
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
       "date": "2025-11-21"
     },
-    "coverage": 39.15,
+    "coverage": 38.83,
+    "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d4087883e5ec715a8c2640f563745258c453a234",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-21T23:36:24.000Z",
+      "message": "test: debe encontrar una mascota por id",
+      "url": "https://github.com/Nix-ui/tindog/commit/d4087883e5ec715a8c2640f563745258c453a234"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 16,
+      "deletions": 5,
+      "date": "2025-11-21"
+    },
+    "coverage": 39.86,
     "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   },
   {
-    "sha": "d30b4aeeaf0d04f99dc5d4afe63032a0b050b0d2",
-    "author": "Oliver",
+    "sha": "31ed8c8035558028a4f5953422c4a34e9ec25c85",
+    "author": "ERICK1766",
     "commit": {
-      "date": "2025-11-21T17:59:46.000Z",
-      "message": "test(add): falla si el email es invalido",
-      "url": "https://github.com/Nix-ui/tindog/commit/d30b4aeeaf0d04f99dc5d4afe63032a0b050b0d2"
+      "date": "2025-11-21T23:43:25.000Z",
+      "message": "feat: implementar initiateAdoption para mascotas disponibles",
+      "url": "https://github.com/Nix-ui/tindog/commit/31ed8c8035558028a4f5953422c4a34e9ec25c85"
     },
     "stats": {
       "total": 23,
-      "additions": 21,
+      "additions": 23,
+      "deletions": 0,
+      "date": "2025-11-21"
+    },
+    "coverage": 38.67,
+    "test_count": 31,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "dad20a50f4537e86c1c1b91775cfe4f160baab8d",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-21T23:47:47.000Z",
+      "message": "test: debe iniciar la adopción de una mascota disponible",
+      "url": "https://github.com/Nix-ui/tindog/commit/dad20a50f4537e86c1c1b91775cfe4f160baab8d"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 15,
+      "deletions": 1,
+      "date": "2025-11-21"
+    },
+    "coverage": 41.33,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "8682a3240d7f90a0aa5b3586e3308c0e7adccaf2",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T00:12:30.000Z",
+      "message": "feat: evitar iniciar adopción si ya hay un proceso en curso",
+      "url": "https://github.com/Nix-ui/tindog/commit/8682a3240d7f90a0aa5b3586e3308c0e7adccaf2"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 6,
+      "deletions": 1,
+      "date": "2025-11-22"
+    },
+    "coverage": 41.39,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3729690e2521bef76dd4edb887f32b53c57fb9bd",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T00:16:32.000Z",
+      "message": "feat: cancelar proceso de adopción",
+      "url": "https://github.com/Nix-ui/tindog/commit/3729690e2521bef76dd4edb887f32b53c57fb9bd"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 40.19,
+    "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "49afb1a5fa1f8ce4478ade0f4f1addf6cd19c647",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T00:19:24.000Z",
+      "message": "test: avisar cuando la mascota ya está en proceso de adopción",
+      "url": "https://github.com/Nix-ui/tindog/commit/49afb1a5fa1f8ce4478ade0f4f1addf6cd19c647"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 9,
+      "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 40.51,
+    "test_count": 33,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "af92e677bac1f2baabd914396994443a9de19a44",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T00:54:25.000Z",
+      "message": "test: asegurar que se puede cancelar un proceso de adopción",
+      "url": "https://github.com/Nix-ui/tindog/commit/af92e677bac1f2baabd914396994443a9de19a44"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2025-11-22"
+    },
+    "coverage": 43.09,
+    "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "a47e1e348c884624ccae60c46e0c47724f8875f5",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T01:03:33.000Z",
+      "message": "test: verificar que no se puede cancelar una adopción si la mascota no está en proceso",
+      "url": "https://github.com/Nix-ui/tindog/commit/a47e1e348c884624ccae60c46e0c47724f8875f5"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 15,
+      "deletions": 6,
+      "date": "2025-11-22"
+    },
+    "coverage": 43.41,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "312f97effc507c0bb3615489f0d921fe76c399b9",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T02:58:57.000Z",
+      "message": "refactor: reubicar adopcion.spec.js y adoptionManager.js a sus respectiva carpeta",
+      "url": "https://github.com/Nix-ui/tindog/commit/312f97effc507c0bb3615489f0d921fe76c399b9"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 43.41,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3da7ffa60e2b11905a1d4fd2ebe6350587dca8a1",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T03:21:14.000Z",
+      "message": "feat: crear AdoptionPresenter con inicio de proceso de adopcion",
+      "url": "https://github.com/Nix-ui/tindog/commit/3da7ffa60e2b11905a1d4fd2ebe6350587dca8a1"
+    },
+    "stats": {
+      "total": 57,
+      "additions": 57,
+      "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 43.41,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "23713b892173a53494bf74b3d5fbe96a938a4dee",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T03:32:37.000Z",
+      "message": "feat: completar AdoptionPresenter con funcionalidad de cancelación y visualización de badge",
+      "url": "https://github.com/Nix-ui/tindog/commit/23713b892173a53494bf74b3d5fbe96a938a4dee"
+    },
+    "stats": {
+      "total": 91,
+      "additions": 69,
+      "deletions": 22,
+      "date": "2025-11-22"
+    },
+    "coverage": 43.41,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1a87af82cd300832a9f2e6ee2ada40c843181701",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T04:14:43.000Z",
+      "message": "feat: añadir botón de adopción/cancelación en PetCard",
+      "url": "https://github.com/Nix-ui/tindog/commit/1a87af82cd300832a9f2e6ee2ada40c843181701"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 42.59,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "027e9e7b6ce35d734471eab76b1b32faee84d4d1",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T05:30:22.000Z",
+      "message": "feat: integrar AdoptionPresenter en la inicialización de presenter.js",
+      "url": "https://github.com/Nix-ui/tindog/commit/027e9e7b6ce35d734471eab76b1b32faee84d4d1"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 6,
+      "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 42.59,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "56101f3f6ecfc94406dc8fe628341d6cb63629d0",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T15:45:06.000Z",
+      "message": "feat: extender PetModel para soportar status y adoptionRequest",
+      "url": "https://github.com/Nix-ui/tindog/commit/56101f3f6ecfc94406dc8fe628341d6cb63629d0"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 6,
       "deletions": 2,
-      "date": "2025-11-21"
+      "date": "2025-11-22"
     },
-    "coverage": 39.79,
-    "test_count": 32,
+    "coverage": 42.95,
+    "test_count": 35,
     "failed_tests": 0,
     "conclusion": "success"
   },
   {
-    "sha": "3ec2b2295eb3ccf76b0a53684a8f98c4437f8ad6",
-    "author": "Oliver",
+    "sha": "05485d8b9237b0ada6b522f0280118bade86e18c",
+    "author": "ERICK1766",
     "commit": {
-      "date": "2025-11-21T18:27:31.000Z",
-      "message": "test(atdd): primera prueba de registro de usuario (form visible) y creación de ruta /registeruser",
-      "url": "https://github.com/Nix-ui/tindog/commit/3ec2b2295eb3ccf76b0a53684a8f98c4437f8ad6"
+      "date": "2025-11-22T15:50:07.000Z",
+      "message": "feat: LocalRepository incluye status y adoptionRequest al reconstruir PetModel",
+      "url": "https://github.com/Nix-ui/tindog/commit/05485d8b9237b0ada6b522f0280118bade86e18c"
     },
     "stats": {
-      "total": 39,
-      "additions": 38,
+      "total": 2,
+      "additions": 1,
       "deletions": 1,
-      "date": "2025-11-21"
+      "date": "2025-11-22"
     },
-    "coverage": 39.79,
-    "test_count": 32,
+    "coverage": 42.95,
+    "test_count": 35,
     "failed_tests": 0,
     "conclusion": "success"
   },
   {
-    "sha": "fb006dfb17f9a8d5da727a8eac93943bcd385d8a",
-    "author": "Oliver",
+    "sha": "ee349b4a4f022cf206f5c898ca1d7278db23917a",
+    "author": "ERICK1766",
     "commit": {
-      "date": "2025-11-21T22:45:03.000Z",
-      "message": "test(cypress): registro un usuario con email y passwor validos",
-      "url": "https://github.com/Nix-ui/tindog/commit/fb006dfb17f9a8d5da727a8eac93943bcd385d8a"
+      "date": "2025-11-22T16:11:28.000Z",
+      "message": "test: mostrar botón inicial de adopción (cypress test 1)",
+      "url": "https://github.com/Nix-ui/tindog/commit/ee349b4a4f022cf206f5c898ca1d7278db23917a"
     },
     "stats": {
-      "total": 41,
-      "additions": 40,
-      "deletions": 1,
-      "date": "2025-11-21"
-    },
-    "coverage": 39.79,
-    "test_count": 32,
-    "failed_tests": 0,
-    "conclusion": "success"
-  },
-  {
-    "sha": "d2deb4a11471cabf15086e8fa9e7d4a3314615f5",
-    "author": "Oliver",
-    "commit": {
-      "date": "2025-11-21T23:27:23.000Z",
-      "message": "test(cypress): email repetido",
-      "url": "https://github.com/Nix-ui/tindog/commit/d2deb4a11471cabf15086e8fa9e7d4a3314615f5"
-    },
-    "stats": {
-      "total": 24,
-      "additions": 24,
+      "total": 15,
+      "additions": 15,
       "deletions": 0,
-      "date": "2025-11-21"
+      "date": "2025-11-22"
     },
-    "coverage": 39.79,
-    "test_count": 32,
+    "coverage": 42.95,
+    "test_count": 35,
     "failed_tests": 0,
     "conclusion": "success"
   },
   {
-    "sha": "edeab237e1448454d77aa6b91f6e1fc34a6d2607",
-    "author": "Oliver",
+    "sha": "3c0625c59dac8657197c8d919638966fd0d2c69d",
+    "author": "ERICK1766",
     "commit": {
-      "date": "2025-11-21T23:43:45.000Z",
-      "message": "test(cypress): mostrar error si email y password estan vacio",
-      "url": "https://github.com/Nix-ui/tindog/commit/edeab237e1448454d77aa6b91f6e1fc34a6d2607"
+      "date": "2025-11-22T16:13:38.000Z",
+      "message": "test: mostrar badge en proceso de adopción tras iniciar (cypress test 2)",
+      "url": "https://github.com/Nix-ui/tindog/commit/3c0625c59dac8657197c8d919638966fd0d2c69d"
     },
     "stats": {
-      "total": 24,
-      "additions": 23,
-      "deletions": 1,
-      "date": "2025-11-21"
-    },
-    "coverage": 39.79,
-    "test_count": 32,
-    "failed_tests": 0,
-    "conclusion": "success"
-  },
-  {
-    "sha": "f1563c14dc9e63b29df5a92d10924719bd120afc",
-    "author": "Oliver",
-    "commit": {
-      "date": "2025-11-21T23:49:04.000Z",
-      "message": "test(cypress): formato invalido",
-      "url": "https://github.com/Nix-ui/tindog/commit/f1563c14dc9e63b29df5a92d10924719bd120afc"
-    },
-    "stats": {
-      "total": 23,
-      "additions": 23,
+      "total": 12,
+      "additions": 12,
       "deletions": 0,
-      "date": "2025-11-21"
+      "date": "2025-11-22"
     },
-    "coverage": 39.79,
-    "test_count": 32,
+    "coverage": 42.95,
+    "test_count": 35,
     "failed_tests": 0,
     "conclusion": "success"
   },
   {
-    "sha": "a59bf14b3418c987f6e0d0b63cfd6abc75d8417b",
-    "author": "Oliver",
+    "sha": "72005614b91d07dc364418608c92e0c782b0801e",
+    "author": "ERICK1766",
     "commit": {
-      "date": "2025-11-25T00:00:59.000Z",
-      "message": "feat(register-user): mejora interfaz y mantiene pruebas verdes",
-      "url": "https://github.com/Nix-ui/tindog/commit/a59bf14b3418c987f6e0d0b63cfd6abc75d8417b"
+      "date": "2025-11-22T16:16:09.000Z",
+      "message": "test: botón cambia a cancelar adopción (cypress test 3)",
+      "url": "https://github.com/Nix-ui/tindog/commit/72005614b91d07dc364418608c92e0c782b0801e"
     },
     "stats": {
-      "total": 100,
-      "additions": 91,
-      "deletions": 9,
+      "total": 18,
+      "additions": 18,
+      "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 42.95,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "acac738e55d3af0035b8312f072c269e92e09ef2",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T16:18:48.000Z",
+      "message": "test: eliminar badge después de cancelar adopción (cypress test 4)",
+      "url": "https://github.com/Nix-ui/tindog/commit/acac738e55d3af0035b8312f072c269e92e09ef2"
+    },
+    "stats": {
+      "total": 33,
+      "additions": 30,
+      "deletions": 3,
+      "date": "2025-11-22"
+    },
+    "coverage": 42.95,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3839ccacae0b86ee3fcb58d0efb5a970c608172d",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-22T16:25:09.000Z",
+      "message": "test: verificar que se pueda cancelar la adopción tras abrir y cerrar los detalles (cypress test 5)",
+      "url": "https://github.com/Nix-ui/tindog/commit/3839ccacae0b86ee3fcb58d0efb5a970c608172d"
+    },
+    "stats": {
+      "total": 27,
+      "additions": 27,
+      "deletions": 0,
+      "date": "2025-11-22"
+    },
+    "coverage": 42.95,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "ERICK1766",
+    "commit": {
+      "date": "2025-11-25T08:04:15.000Z",
+      "message": "test(e2e): refactorizar las pruebas del flujo de adopción en Cypress para mejorar la claridad",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 65,
+      "additions": 26,
+      "deletions": 39,
       "date": "2025-11-25"
     },
-    "coverage": 39.79,
-    "test_count": 32,
-    "failed_tests": 0,
-    "conclusion": "success"
-  },
-  {
-    "sha": "e0c2a059f69806f52add953ac60bacdb2092dc1f",
-    "author": "Oliver",
-    "commit": {
-      "date": "2025-11-25T07:53:01.000Z",
-      "message": "fix: remove .parcelrc and update package-lock after rollback",
-      "url": "https://github.com/Nix-ui/tindog/commit/e0c2a059f69806f52add953ac60bacdb2092dc1f"
-    },
-    "stats": {
-      "total": 31,
-      "additions": 2,
-      "deletions": 29,
-      "date": "2025-11-25"
-    },
-    "coverage": 39.79,
-    "test_count": 32,
+    "coverage": 42.95,
+    "test_count": 35,
     "failed_tests": 0,
     "conclusion": "success"
   },
@@ -1743,37 +2028,18 @@
     "sha": "HEAD",
     "author": "Oliver",
     "commit": {
-      "date": "2025-11-25T08:06:04.000Z",
-      "message": "fix: resolver conflictos en presenter y añadir AdoptionPresenter",
+      "date": "2025-11-26T17:05:17.000Z",
+      "message": "merge: actualizar feat/registro-usuario-v2 con origin/main",
       "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
     },
     "stats": {
-      "total": 104,
-      "additions": 104,
-      "deletions": 0,
-      "date": "2025-11-25"
+      "total": 322,
+      "additions": 312,
+      "deletions": 10,
+      "date": "2025-11-26"
     },
-    "coverage": 39.79,
-    "test_count": 32,
-    "failed_tests": 0,
-    "conclusion": "success"
-  },
-  {
-    "sha": "HEAD",
-    "author": "Oliver",
-    "commit": {
-      "date": "2025-11-25T08:58:55.000Z",
-      "message": "feat(register-user): navegación inicial y router corregido",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
-    },
-    "stats": {
-      "total": 148,
-      "additions": 90,
-      "deletions": 58,
-      "date": "2025-11-25"
-    },
-    "coverage": 39.79,
-    "test_count": 32,
+    "coverage": 45.02,
+    "test_count": 39,
     "failed_tests": 0,
     "conclusion": "success"
   }
