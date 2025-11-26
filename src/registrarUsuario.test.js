@@ -1,6 +1,8 @@
 // src/registrarUsuario.test.js
 
-import { createRegisterUserUseCase } from "./registrarUsuario";
+
+import { createRegisterUserUseCase } from "./usecases/user/registerUserUseCase.js";
+
 
 describe("Función registrarUsuario (caso de uso)", () => {
   let repoEnMemoria;

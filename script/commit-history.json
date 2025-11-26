@@ -2044,12 +2044,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d733df9bd9575afa387572eb4995b72f7972d204",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-26T20:32:16.000Z",
       "message": "refactor(register-user): limpieza del dominio, separación de responsabilidades y mejora de arquitectura",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d733df9bd9575afa387572eb4995b72f7972d204"
     },
     "stats": {
       "total": 301,
@@ -2077,6 +2077,25 @@
       "date": "2025-11-26"
     },
     "coverage": 45.24,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-26T23:02:02.000Z",
+      "message": "refactor(register-user): extraer dominio, caso de uso e infraestructura",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 132,
+      "additions": 80,
+      "deletions": 52,
+      "date": "2025-11-26"
+    },
+    "coverage": 45.18,
     "test_count": 39,
     "failed_tests": 0,
     "conclusion": "success"

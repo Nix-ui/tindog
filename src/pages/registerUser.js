@@ -1,7 +1,8 @@
 // src/pages/registerUser.js
 
 import router from "../routes/routes.js";
-import { registrarUsuario } from "../registrarUsuario";
+import { registrarUsuario } from "../../registrarUsuario.js";
+
 
 export default function registerUserTemplate() {
   return `
