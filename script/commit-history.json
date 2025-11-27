@@ -2044,12 +2044,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a2fa141de51de8ab5940a77bffef74923b83b2c0",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-25T14:13:51.000Z",
       "message": "refsactor: Mejor uso de los repositories para la percistencia de los datos",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/a2fa141de51de8ab5940a77bffef74923b83b2c0"
     },
     "stats": {
       "total": 28,
@@ -2074,6 +2074,25 @@
       "total": 80,
       "additions": 54,
       "deletions": 26,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T03:08:06.000Z",
+      "message": "feat:Integracion con el backend y haciendo persistencia de datos",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 82,
+      "additions": 82,
+      "deletions": 0,
       "date": "2025-11-27"
     },
     "coverage": 41.99,
