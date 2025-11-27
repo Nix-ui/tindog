@@ -2101,12 +2101,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d1f84af789470401c9fbc6d64f4afc84357e3612",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-27T04:22:21.000Z",
       "message": "feat: Se registran los usuarios de forma exitosa",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d1f84af789470401c9fbc6d64f4afc84357e3612"
     },
     "stats": {
       "total": 126,
@@ -2131,6 +2131,25 @@
       "total": 645,
       "additions": 611,
       "deletions": 34,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T18:34:22.000Z",
+      "message": "feat: Se dockerizo la base de datos y el backend",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 8358,
+      "additions": 8358,
+      "deletions": 0,
       "date": "2025-11-27"
     },
     "coverage": 41.99,
