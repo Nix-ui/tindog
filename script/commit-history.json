@@ -2234,12 +2234,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "dbca54a09118528da30ff2738839d6a778ee3f06",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-27T19:01:45.000Z",
       "message": "fix: environment on actions",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/dbca54a09118528da30ff2738839d6a778ee3f06"
     },
     "stats": {
       "total": 2,
@@ -2264,6 +2264,25 @@
       "total": 1,
       "additions": 1,
       "deletions": 0,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:13:53.000Z",
+      "message": "fix: environment on actions",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 5,
+      "deletions": 4,
       "date": "2025-11-27"
     },
     "coverage": 41.99,

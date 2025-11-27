@@ -24,6 +24,7 @@ jobs:
         working-directory: backend
         run: |
           echo "DATABASE_HOST=mariadb" >> .env
+          echo "DATABASE_ROOT_PASSWORD=${{ secrets.DB_ROOT_PASSWORD }}" >> .env
           echo "DATABASE_USER=${{ secrets.DB_USER }}" >> .env
           echo "DATABASE_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env
           echo "DATABASE_NAME=${{ secrets.DATABASE_NAME }}" >> .env
