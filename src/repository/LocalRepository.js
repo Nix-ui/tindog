@@ -37,4 +37,11 @@ export default class LocalRepository {
         })
         return filteredPets;
     }
+
+    getBreeds(){
+        if(this.existsInLocalStorage('breeds')){
+            return this.getFromLocalStorage('breeds');
+        }
+        return [...new Set(this.getFromLocalStorage('pets').map(pet => pet.breed))];
+    }
 }

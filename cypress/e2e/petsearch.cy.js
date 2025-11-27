@@ -6,10 +6,10 @@ describe('PetSearch Feature', () => {
       {
         id: 1,
         name: 'Firulais',
-        address: 'Calle 123',
+        address: 'Calle 123,Cochabamba',
         isLiked: false,
         age: 3,
-        breed: 'Labrador',
+        breed: 'Dálmata',
         size: 'Grande',
         description: 'Amigable y juguetón',
         owner: 'user1',
@@ -18,11 +18,11 @@ describe('PetSearch Feature', () => {
       {
         id: 2,
         name: 'Pelusa',
-        address: 'Avenida 456',
+        address: 'Avenida 456, Tarija',
         isLiked: false,
         age: 2,
-        breed: 'Persa',
-        size: 'Pequeño',
+        breed: 'Pasta Aleman',
+        size: 'Mediano',
         description: 'Tranquila y peluda',
         owner: 'user2',
         image: ''
@@ -47,10 +47,10 @@ describe('PetSearch Feature', () => {
     cy.get('#pets-container .pet-card', { timeout: 5000 }).should('have.length.at.least', 1);
   });
   it('filtra mascotas por raza seleccionada', () => {
+    const breed = 'Dálmata';
     cy.get('#breed-select')
       .find('option')
       .then(options => {
-        const breed = options[1].value; // omite la opción vacía
         cy.get('#breed-select').select(breed);
         cy.get('#search-pet-button').click(); 
         cy.get('#pets-container .pet-card').each(card => {
@@ -59,10 +59,10 @@ describe('PetSearch Feature', () => {
       });
   });
   it('filtra mascotas por ciudad seleccionada', () => {
+    const address = 'Cochabamba';
     cy.get('#address-select')
       .find('option')
       .then(options => {
-        const address = options[1].value; 
         cy.get('#address-select').select(address); 
         cy.get('#search-pet-button').click(); 
         cy.get('#pets-container .pet-card').each(card => {
@@ -86,7 +86,7 @@ describe('PetSearch Feature', () => {
 
   it('filtra mascotas por ciudad y raza seleccionada', () => {
     let breed= 'Dálmata'; 
-    let city = "La Paz"
+    let city = "Cochabamba";
     cy.get('#breed-select').select(breed); 
     cy.get('#address-select').select(city); 
     cy.get('#search-pet-button').click(); 
@@ -95,12 +95,12 @@ describe('PetSearch Feature', () => {
 
     it('filtra mascotas por ciudad y raza seleccionada', () => {
     let breed= 'Dálmata'; 
-    let city = "La Paz"; 
+    let city = "Tarija"; 
     let size = "Mediano"; 
     cy.get('#breed-select').select(breed); 
     cy.get('#address-select').select(city);
     cy.get('#size-select') .select(size); 
     cy.get('#search-pet-button').click(); 
-    cy.get("#pets-container .pet-card").should("be.visible"); 
+    cy.get("#pets-container").should("contain", "No hay mascotas disponibles para el seleccionada."); 
   }); 
 });

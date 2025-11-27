@@ -2025,12 +2025,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5c966db95ac5b1638dabe3cfe9f0c7082d8923f4",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-25T13:55:46.000Z",
       "message": "fix:Las mascotas ahora se muestran bien en todas las vistas y se mantiene consistencia",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/5c966db95ac5b1638dabe3cfe9f0c7082d8923f4"
     },
     "stats": {
       "total": 14,
@@ -2058,6 +2058,25 @@
       "date": "2025-11-25"
     },
     "coverage": 42.51,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T03:07:02.000Z",
+      "message": "feat:Integracion con el backend y haciendo persistencia de datos",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 80,
+      "additions": 54,
+      "deletions": 26,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
     "test_count": 35,
     "failed_tests": 0,
     "conclusion": "success"

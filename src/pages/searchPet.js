@@ -23,7 +23,7 @@ sizeFilter.setValues([
 ]); 
 let filters = [breedFilter, addressFilter,sizeFilter]
 
-export default function searchPetTemplate() {
+export default async function searchPetTemplate() {
   setTimeout(() => {
     const view = new PetSearchView(filters, 'pets-container');
     const presenter = new PetSearchPresenter( view);

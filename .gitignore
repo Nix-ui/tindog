@@ -9,3 +9,4 @@ report.json
 tdd_log.json
 .husky/.commit-state
 data
+.env

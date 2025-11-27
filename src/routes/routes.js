@@ -82,21 +82,32 @@ class Router {
     this.render(routeKey);
   }
 
-  render(routeKey) {
+  async render(routeKey) {
     const route = this.routes[routeKey];
     if (!route) {
       this.appContainer.innerHTML = `<h2>Error 404: Ruta "${routeKey}" no encontrada</h2>`;
       return;
     }
+    let templateHtml = '';
+    try {
+      if (typeof route.template === 'function') {
+        templateHtml = await Promise.resolve(route.template());
+      } else {
+        templateHtml = await Promise.resolve(route.template);
+      }
+    } catch (err) {
+      console.error('Error al renderizar plantilla:', err);
+      templateHtml = `<h2>Error al renderizar ruta: ${err.message}</h2>`;
+    }
 
     if (route.hasNavbar) {
       this.appContainer.innerHTML = `
         ${this.navbar.getTemplate()}
-        <main id="page-content">${route.template()}</main>
+        <main id="page-content">${templateHtml}</main>
       `;
       this.navbar.render();
     } else {
-      this.appContainer.innerHTML = route.template();
+      this.appContainer.innerHTML = templateHtml;
     }
     this.setIcon(route.icon);
     window.dispatchEvent(new CustomEvent('route-changed', { detail: routeKey }));

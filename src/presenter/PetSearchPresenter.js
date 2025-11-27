@@ -4,14 +4,14 @@ import PetDetails from '../pages/myPetDetails';
 import PetRepository from '../repository/PetRepository';
 import PetSearchView from '../view/PetSearchView';
 import LocalRepository from '../repository/LocalRepository';
+import { PetService } from '../service/pets.service';
 
-
-const petRepository = new PetRepository();
+const petService = new PetService();
 const localRepository = new LocalRepository();
 
-const onViewMoreClick = (e) => {
+const onViewMoreClick = async (e) => {
   e.preventDefault();
-  const pets = petRepository.getAllPets();
+  let pets = await petService.getAllPets();
   const btn = e.target.closest('[data-action="view-details"]');
   if (!btn) return;  
   const petId = btn.dataset.petId;
@@ -34,16 +34,14 @@ export default class PetSearchPresenter {
     this.view.setOnSearch(this.handleFilterSearch.bind(this));
   }
 
-  init() {
+  async init() {
     this.view.filterOptions();
     if (!document.__tindog_view_details_listener) {
       document.addEventListener('click', onViewMoreClick);
       document.__tindog_view_details_listener = true;
     }
-    if(!localRepository.existsInLocalStorage('pets')){
-      localRepository.saveInLocalStorage('pets', petRepository.getAllPets());
-    }
-    this.view.showPets(localRepository.getPetsFromLocalStorage());
+    let pets = await petService.getAllPets();
+    this.view.showPets(pets);
   }
 
   /**

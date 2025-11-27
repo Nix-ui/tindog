@@ -28,4 +28,5 @@ export default class PetModel{
         this.status = status;
         this.adoptionRequest = adoptionRequest;
     }
+
 }
