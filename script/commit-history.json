@@ -2139,12 +2139,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "642f4f1ff1d75641cbcd84b118bec8538a89c66d",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-27T18:34:22.000Z",
       "message": "feat: Se dockerizo la base de datos y el backend",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/642f4f1ff1d75641cbcd84b118bec8538a89c66d"
     },
     "stats": {
       "total": 8358,
@@ -2169,6 +2169,25 @@
       "total": 37,
       "additions": 25,
       "deletions": 12,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T18:44:42.000Z",
+      "message": "fix: actions",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 10,
+      "deletions": 10,
       "date": "2025-11-27"
     },
     "coverage": 41.99,
