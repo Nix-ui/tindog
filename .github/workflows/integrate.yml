@@ -42,11 +42,11 @@ jobs:
           echo "=== Backend logs ==="
           docker compose -f docker-compose.ci.yml logs backend || true
 
-      - name: Wait for MariaDB to be ready
-        working-directory: backend
-        run: |
-          # Esperar explícitamente a que MariaDB esté lista
-          timeout 120s bash -c 'until docker compose -f docker-compose.ci.yml exec mariadb mysqladmin ping -u root -p${{ secrets.DB_ROOT_PASSWORD }} --silent; do sleep 5; echo "Waiting for MariaDB..."; done'
+      # - name: Wait for MariaDB to be ready
+      #   working-directory: backend
+      #   run: |
+      #     # Esperar explícitamente a que MariaDB esté lista
+      #     timeout 120s bash -c 'until docker compose -f docker-compose.ci.yml exec mariadb mysqladmin ping -u root -p${{ secrets.DB_ROOT_PASSWORD }} --silent; do sleep 5; echo "Waiting for MariaDB..."; done'
       - name: Wait for backend to be ready
         run: npx wait-on http://localhost:3000
       - name: Install pnpm

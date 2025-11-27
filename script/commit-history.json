@@ -2272,12 +2272,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cc9cba97b0ee9b3c8c6011315c543a913322e572",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-27T19:13:53.000Z",
       "message": "fix: environment on actions",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/cc9cba97b0ee9b3c8c6011315c543a913322e572"
     },
     "stats": {
       "total": 9,
@@ -2302,6 +2302,25 @@
       "total": 32,
       "additions": 29,
       "deletions": 3,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:26:11.000Z",
+      "message": "fix: docker isues",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 5,
+      "deletions": 5,
       "date": "2025-11-27"
     },
     "coverage": 41.99,
