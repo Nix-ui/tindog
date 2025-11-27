@@ -2,28 +2,84 @@ import PetSearchPresenter from '../presenter/PetSearchPresenter.js';
 import PetSearchView from '../view/PetSearchView.js';
 import PetRepository from '../repository/PetRepository.js';
 import FilterType from '../models/filter/FilterType.js';
+import BreedService from '../service/breed.service.js';
 
 const petRepository = new PetRepository();
-
+const breedService = new BreedService();
 let breedFilter =  new FilterType('select', 'breed',null,'Seleccione una raza',(pet,value)=>{
   return pet.breed === value;
 });
-breedFilter.setValues(petRepository.getBreeds());
+const chargeBreed = async () => {
+  try {
+    let response = await breedService.getAllBreed();
+    response = response.map((breed) => {
+      return {
+        "id": breed.name,
+        "name": breed.name.toUpperCase()
+      }
+    })
+
+    console.log(response);
+    breedFilter.setValues(response);
+  } catch (error) {
+    console.log(error);
+  }
+}
 let addressFilter =  new FilterType('select', 'address',null,'Seleccione una ciudad',(pet,value)=>{
   return pet.address.includes(value);
 });
-addressFilter.setValues([
-  "Cochabamba","La Paz","Santa Cruz","Oruro","Potosi","Tarija","Beni","Pando"
-]);
+addressFilter.setValues([{
+  "id": "Cochabamba",
+  "name": "Cochabamba"
+},
+{
+  "id": "La Paz",
+  "name": "La Paz"
+},
+{
+  "id": "Santa Cruz",
+  "name": "Santa Cruz"
+},
+{
+  "id": "Oruro",
+  "name": "Oruro"
+},
+{
+  "id": "Potosi",
+  "name": "Potosi"
+},
+{
+  "id": "Tarija",
+  "name": "Tarija"
+},
+{
+  "id": "Beni",
+  "name": "Beni"
+},
+{
+  "id": "Pando",
+  "name": "Pando"
+}]);
 let sizeFilter = new FilterType('select', 'size', null, 'Selecciona un tamaño',(pet,value)=>{
   return pet.size === value;
 }); 
-sizeFilter.setValues([
-  "Grande", "Mediano", "Pequeño"
+sizeFilter.setValues([{
+  "id": "Chico",
+  "name": "Chico"
+},
+{
+  "id": "Mediano",
+  "name": "Mediano"
+},
+{
+  "id": "Grande",
+  "name": "Grande"
+}
 ]); 
 let filters = [breedFilter, addressFilter,sizeFilter]
 
-export default function searchPetTemplate() {
+export default async function searchPetTemplate() {
+  await chargeBreed();
   setTimeout(() => {
     const view = new PetSearchView(filters, 'pets-container');
     const presenter = new PetSearchPresenter( view);

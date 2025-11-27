@@ -3,13 +3,23 @@ import CardGenerator from '../managers/CardGenerator.js';
 import PetRepository from '../repository/PetRepository.js';
 import LocalRepository from '../repository/LocalRepository.js';
 import PetDetails from './myPetDetails.js';
+import { PetService } from '../service/pets.service.js';
 
+const petService = new PetService();
 const cardGenerator = new CardGenerator();
 const petRepository = new PetRepository();
 const localRepository = new LocalRepository();
 
-export default function myPetsTemplate() {
-  const pets =localRepository.existsInLocalStorage('pets')? localRepository.getPetsFromLocalStorage(): petRepository.getAllPets();
+export default async function myPetsTemplate() {
+  // const pets =localRepository.existsInLocalStorage('pets')? localRepository.getPetsFromLocalStorage(): petRepository.getAllPets();
+  let pets = [];
+  try {
+    const response = await petService.getAllPets();
+    pets = response;
+  } catch (err) {
+    console.error('Error al obtener mascotas:', err);
+    pets = [];
+  }
   const container = document.createElement('div');
   container.id = 'pets-container';
   container.className = 'pets-container flex flex-wrap justify-center gap-4 p-4';    

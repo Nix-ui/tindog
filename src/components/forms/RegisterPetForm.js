@@ -34,7 +34,6 @@ export default class RegisterPetForm extends BaseFormComponent {
     renderFields(){
         return `    
             ${this.renderManyFields([
-                {name:"id",type:"number",placeholder:"Id de la mascota"},
                 {name:"name",type:"text",placeholder:"Nombre de la mascota"}
             ])}
             ${this.renderManyFields([
@@ -49,7 +48,6 @@ export default class RegisterPetForm extends BaseFormComponent {
                 {name:"description",type:"text",placeholder:"Descripción de la mascota"}
             ])}
             ${this.renderManyFields([
-                {name:"owner",type:"text",placeholder:"Nombre del dueño o refugio"},
                 {name:"image",type:"text",placeholder:"link de la imagen"}
             ])}
         `
@@ -67,14 +65,12 @@ export default class RegisterPetForm extends BaseFormComponent {
         `
     }
     clearFields(){
-        document.getElementById('id').value = '';
         document.getElementById('name').value = '';
         document.getElementById('address').value = '';
         document.getElementById('age').value = '';
         document.getElementById('breed').value = '';
         document.getElementById('size').value = '';
         document.getElementById('description').value = '';
-        document.getElementById('owner').value = '';
         document.getElementById('image').value = '';
     }
 }
