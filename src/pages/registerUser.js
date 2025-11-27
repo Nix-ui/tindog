@@ -2,6 +2,8 @@ import FormGenerator from "../managers/FormGenerator";
 import PetRepository from "../repository/PetRepository";
 import LocalRepository from "../repository/LocalRepository";
 import UserService from "../service/user.service";
+import { JwtService } from "../service/jwt.service";
+
 
 const localRepository = new LocalRepository();
 const formGenerator = new FormGenerator();

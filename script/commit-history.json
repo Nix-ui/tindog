@@ -2082,12 +2082,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e89af56083197e1a89b7ef115f76756832adb2c5",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-27T03:08:06.000Z",
       "message": "feat:Integracion con el backend y haciendo persistencia de datos",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/e89af56083197e1a89b7ef115f76756832adb2c5"
     },
     "stats": {
       "total": 82,
@@ -2112,6 +2112,25 @@
       "total": 126,
       "additions": 121,
       "deletions": 5,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T18:03:54.000Z",
+      "message": "feat: Se registran y se pueden logear los usuarios permitiendo el registro de mascotas",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 645,
+      "additions": 611,
+      "deletions": 34,
       "date": "2025-11-27"
     },
     "coverage": 41.99,

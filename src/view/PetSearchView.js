@@ -30,10 +30,11 @@ export default class PetSearchView {
   filterOptions() {
     this.filterTypes.forEach(filterType => {
       this[filterType.id].innerHTML =`<option value="">${filterType.value}</option>`;
+      if(!filterType.values || filterType.values.length === 0) return;
       filterType.values.forEach(value => {
         const option = document.createElement('option');
-        option.value = value;
-        option.textContent = value;
+        option.value = value.name;
+        option.textContent = value.name;
         this[filterType.id].appendChild(option);
     });
     })
@@ -50,6 +51,7 @@ export default class PetSearchView {
       filter.push(new FilterRequest(filterType.type, filterType.name, this[filterType.id].value,(filterType.fuctionToApply)));
     }
     })
+    console.log(filter);
     return filter;
   }
 

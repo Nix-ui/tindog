@@ -835,6 +835,18 @@ label { font-size: 1rem; font-weight: 500; line-height: 1.5; }
     backdrop-filter: blur(4px);
 }
 
+.overlay{
+  position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
+
 .pet-detail-card {
     max-width: 36rem; /* Reducido de 48rem */
     width: 95%;

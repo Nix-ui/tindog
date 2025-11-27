@@ -49,9 +49,9 @@ export default class PetSearchPresenter {
    * @param {[Object]} filter
    * @param {*} event
    */
-  handleFilterSearch(filter,event){
+  async handleFilterSearch(filter,event){
     event.preventDefault();
-    const pets = filter === '' ? localRepository.getPetsFromLocalStorage() : localRepository.getPetsFilterBy(filter);
+    const pets = filter === '' ? await petService.getAllPets() : await petService.filterBy(filter);
     this.view.showPets(pets);
   }
 }

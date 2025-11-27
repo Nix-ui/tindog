@@ -3,6 +3,7 @@ import registerPetTemplate from "../pages/registerPet";
 import searchPetTemplate from "../pages/searchPet";
 import NavBar from "../components/core/navBar";
 import registerUserTemplate from "../pages/registerUser";
+import loginTemplate from "../pages/login";
 
 const routes = {
   mypets: {
@@ -36,13 +37,22 @@ const routes = {
     component: 'RegisterUser',
     template: () => registerUserTemplate(),
     hasNavbar: false
+  },
+  login: {
+    icon: 'assets/icons/login.png',
+    name: 'Iniciar Sesión',
+    route: '/login',
+    component: 'Login',
+    template: () => loginTemplate(),
+    hasNavbar: false
   }
 };
 
 const paths=[routes.mypets.route,
   routes.registerpet.route,
   routes.searchpet.route,
-  routes.register_user.route
+  routes.register_user.route,
+  routes.login.route
 ]
 
 class Router {
@@ -53,7 +63,7 @@ class Router {
       { path: 'mypets', label: 'Mis mascotas', id:"mypets"},
       { path: 'registerpet', label: 'Registrar mascota', id:"register-pet"},
       { path: 'searchpet', label: 'Buscar por raza',id: "search-pet"},
-      { path: 'register_user', label: 'Registrar Usuario', id:"register-user"}
+      { path: 'login', label: 'Iniciar Sesión',id:'"login" class="nav-tab btn-primary"'},
     ]);
   }
 
