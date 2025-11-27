@@ -2063,12 +2063,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3cab4a3cd969a520a7243740468f3eb430d15d54",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-26T22:10:07.000Z",
       "message": "refactor(register-user): separar repositorio y mejorar nombres/funciones",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/3cab4a3cd969a520a7243740468f3eb430d15d54"
     },
     "stats": {
       "total": 189,
@@ -2094,6 +2094,25 @@
       "additions": 80,
       "deletions": 52,
       "date": "2025-11-26"
+    },
+    "coverage": 45.18,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T03:26:57.000Z",
+      "message": "fix:import on the register user",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 3,
+      "deletions": 2,
+      "date": "2025-11-27"
     },
     "coverage": 45.18,
     "test_count": 39,
