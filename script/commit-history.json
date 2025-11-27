@@ -1987,12 +1987,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "3839ccacae0b86ee3fcb58d0efb5a970c608172d",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-22T16:25:09.000Z",
       "message": "test: verificar que se pueda cancelar la adopción tras abrir y cerrar los detalles (cypress test 5)",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/3839ccacae0b86ee3fcb58d0efb5a970c608172d"
     },
     "stats": {
       "total": 27,
@@ -2006,12 +2006,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d2f040ea9d73a35c3eb55ee3fa3f2d19a4311119",
     "author": "ERICK1766",
     "commit": {
       "date": "2025-11-25T08:04:15.000Z",
       "message": "test(e2e): refactorizar las pruebas del flujo de adopción en Cypress para mejorar la claridad",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d2f040ea9d73a35c3eb55ee3fa3f2d19a4311119"
     },
     "stats": {
       "total": 65,
@@ -2021,6 +2021,120 @@
     },
     "coverage": 42.95,
     "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e9f52ad4f030461ca98adbacead1854eec099031",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-26T17:05:17.000Z",
+      "message": "merge: actualizar feat/registro-usuario-v2 con origin/main",
+      "url": "https://github.com/Nix-ui/tindog/commit/e9f52ad4f030461ca98adbacead1854eec099031"
+    },
+    "stats": {
+      "total": 322,
+      "additions": 312,
+      "deletions": 10,
+      "date": "2025-11-26"
+    },
+    "coverage": 45.02,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d733df9bd9575afa387572eb4995b72f7972d204",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-26T20:32:16.000Z",
+      "message": "refactor(register-user): limpieza del dominio, separación de responsabilidades y mejora de arquitectura",
+      "url": "https://github.com/Nix-ui/tindog/commit/d733df9bd9575afa387572eb4995b72f7972d204"
+    },
+    "stats": {
+      "total": 301,
+      "additions": 187,
+      "deletions": 114,
+      "date": "2025-11-26"
+    },
+    "coverage": 45.24,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3cab4a3cd969a520a7243740468f3eb430d15d54",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-26T22:10:07.000Z",
+      "message": "refactor(register-user): separar repositorio y mejorar nombres/funciones",
+      "url": "https://github.com/Nix-ui/tindog/commit/3cab4a3cd969a520a7243740468f3eb430d15d54"
+    },
+    "stats": {
+      "total": 189,
+      "additions": 71,
+      "deletions": 118,
+      "date": "2025-11-26"
+    },
+    "coverage": 45.24,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "19d2d7eac4dd8b6565f785e2df30f09facff54ec",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-26T23:02:02.000Z",
+      "message": "refactor(register-user): extraer dominio, caso de uso e infraestructura",
+      "url": "https://github.com/Nix-ui/tindog/commit/19d2d7eac4dd8b6565f785e2df30f09facff54ec"
+    },
+    "stats": {
+      "total": 132,
+      "additions": 80,
+      "deletions": 52,
+      "date": "2025-11-26"
+    },
+    "coverage": 45.18,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-27T04:20:52.000Z",
+      "message": "fix(register-user): habilitar redirección en cypress y estabilizar flujo",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 54,
+      "additions": 29,
+      "deletions": 25,
+      "date": "2025-11-27"
+    },
+    "coverage": 45.18,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-27T04:39:06.000Z",
+      "message": "ultimos cambios",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 58,
+      "additions": 29,
+      "deletions": 29,
+      "date": "2025-11-27"
+    },
+    "coverage": 45.18,
+    "test_count": 39,
     "failed_tests": 0,
     "conclusion": "success"
   }
