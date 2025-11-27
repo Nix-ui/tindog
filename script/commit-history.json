@@ -2310,12 +2310,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7765f320ebd53d77d7731f1fb647ab2b59a78852",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-27T19:26:11.000Z",
       "message": "fix: docker isues",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/7765f320ebd53d77d7731f1fb647ab2b59a78852"
     },
     "stats": {
       "total": 10,
@@ -2340,6 +2340,25 @@
       "total": 5,
       "additions": 5,
       "deletions": 0,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:37:16.000Z",
+      "message": "fix: jest exclude backend and node_modules",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 3,
+      "deletions": 3,
       "date": "2025-11-27"
     },
     "coverage": 41.99,
