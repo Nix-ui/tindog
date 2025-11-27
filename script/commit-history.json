@@ -2082,12 +2082,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "19d2d7eac4dd8b6565f785e2df30f09facff54ec",
     "author": "Oliver",
     "commit": {
       "date": "2025-11-26T23:02:02.000Z",
       "message": "refactor(register-user): extraer dominio, caso de uso e infraestructura",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/19d2d7eac4dd8b6565f785e2df30f09facff54ec"
     },
     "stats": {
       "total": 132,
@@ -2102,16 +2102,35 @@
   },
   {
     "sha": "HEAD",
-    "author": "Matheo Quiroga",
+    "author": "Oliver",
     "commit": {
-      "date": "2025-11-27T03:26:57.000Z",
-      "message": "fix:import on the register user",
+      "date": "2025-11-27T04:20:52.000Z",
+      "message": "fix(register-user): habilitar redirección en cypress y estabilizar flujo",
       "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
     },
     "stats": {
-      "total": 5,
-      "additions": 3,
-      "deletions": 2,
+      "total": 54,
+      "additions": 29,
+      "deletions": 25,
+      "date": "2025-11-27"
+    },
+    "coverage": 45.18,
+    "test_count": 39,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Oliver",
+    "commit": {
+      "date": "2025-11-27T04:39:06.000Z",
+      "message": "ultimos cambios",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 58,
+      "additions": 29,
+      "deletions": 29,
       "date": "2025-11-27"
     },
     "coverage": 45.18,

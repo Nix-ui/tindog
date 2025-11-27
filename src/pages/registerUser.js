@@ -1,8 +1,6 @@
 // src/pages/registerUser.js
-
 import router from "../routes/routes.js";
 import { registrarUsuario } from "../registrarUsuario.js";
-
 
 export default function registerUserTemplate() {
   return `
@@ -35,7 +33,11 @@ export default function registerUserTemplate() {
                 Registrarme
               </button>
 
-              <p id="feedback-message" style="margin-top: .5rem; font-size: .875rem; text-align: center;"></p>
+              <!-- MUY IMPORTANTE: este id debe coincidir con Cypress -->
+              <p
+                id="register-user-message"
+                style="margin-top: .5rem; font-size: .875rem; text-align: center;"
+              ></p>
 
               <p style="margin-top: .75rem; font-size: .875rem; text-align: center;">
                 ¿Ya tienes cuenta?
@@ -53,28 +55,27 @@ export default function registerUserTemplate() {
   `;
 }
 
-// --- Helpers (Funciones pequeñas y claras) --------------------------
-
+// Helpers
 function showFeedbackMessage(element, { mensaje, exito }) {
   element.textContent = mensaje;
   element.style.color = exito ? "#6b4cc2" : "#e63946";
 }
 
 function navigateToLogin() {
-  router.navigateTo("registeruser"); 
+  router.navigateTo("registeruser");
 }
 
 function navigateToSearchAfterSuccess() {
   setTimeout(() => router.navigateTo("searchpet"), 800);
 }
 
-// --- Inicializador de página ---------------------------------------
-
+// Inicializador
 export function initRegisterUserPage() {
   const emailInput = document.getElementById("email");
   const passwordInput = document.getElementById("password");
   const submitButton = document.getElementById("register-user-button");
-  const feedbackElement = document.getElementById("feedback-message");
+  // TAMBIÉN IMPORTANTE: usar el mismo id aquí
+  const feedbackElement = document.getElementById("register-user-message");
   const loginLink = document.getElementById("go-to-login");
 
   submitButton.addEventListener("click", () => {
