@@ -14,10 +14,10 @@ export default class UserService {
      * @param {RegisterUserModel} user 
      */
     async registerUser(user) {
-        const response = await fetch(`${config.API_URL}/users`, {
+        const response = await fetch(`${config().API_URL}/users`, {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify(user)
         });

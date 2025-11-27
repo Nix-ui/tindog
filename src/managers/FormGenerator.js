@@ -1,11 +1,13 @@
 import EventEmitter from "../components/core/EventEmitter";
 import RegisterPetForm from "../components/forms/RegisterPetForm";
+import RegisterUserForm from "../components/forms/RegisterUserForm";
 
 export default class FormGenerator extends EventEmitter {
     constructor() {
         super();
         this.formTypes = new Map([
-            ['register-pet', RegisterPetForm]
+            ['register-pet', RegisterPetForm],
+            ['register-user', RegisterUserForm]
         ]);
         this.globalOptions = {};
         this.globalCallbacks = new Map();

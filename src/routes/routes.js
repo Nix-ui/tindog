@@ -2,6 +2,7 @@ import myPetsTemplate from "../pages/mypets";
 import registerPetTemplate from "../pages/registerPet";
 import searchPetTemplate from "../pages/searchPet";
 import NavBar from "../components/core/navBar";
+import registerUserTemplate from "../pages/registerUser";
 
 const routes = {
   mypets: {
@@ -27,12 +28,21 @@ const routes = {
     component: 'SearchPet',
     template: () => searchPetTemplate(),
     hasNavbar: true
+  },
+  register_user:{
+    icon: 'assets/icons/register-pet.png',
+    name: 'Registrar Usuario',
+    route: '/register_user',
+    component: 'RegisterUser',
+    template: () => registerUserTemplate(),
+    hasNavbar: false
   }
 };
 
 const paths=[routes.mypets.route,
   routes.registerpet.route,
-  routes.searchpet.route
+  routes.searchpet.route,
+  routes.register_user.route
 ]
 
 class Router {
@@ -42,7 +52,8 @@ class Router {
     this.navbar = new NavBar(document.createElement('nav', { is: 'tindog-nav' }), [
       { path: 'mypets', label: 'Mis mascotas', id:"mypets"},
       { path: 'registerpet', label: 'Registrar mascota', id:"register-pet"},
-      { path: 'searchpet', label: 'Buscar por raza',id: "search-pet"}
+      { path: 'searchpet', label: 'Buscar por raza',id: "search-pet"},
+      { path: 'register_user', label: 'Registrar Usuario', id:"register-user"}
     ]);
   }
 
