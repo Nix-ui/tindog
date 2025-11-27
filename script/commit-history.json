@@ -2329,12 +2329,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "388ed2e4533757bcccd85d6218e29c352ebd285a",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-27T19:33:38.000Z",
       "message": "exclude backend test because they write in typescript",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/388ed2e4533757bcccd85d6218e29c352ebd285a"
     },
     "stats": {
       "total": 5,
@@ -2359,6 +2359,25 @@
       "total": 6,
       "additions": 3,
       "deletions": 3,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:43:29.000Z",
+      "message": "fix: jest exclude backend and node_modules",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
       "date": "2025-11-27"
     },
     "coverage": 41.99,
