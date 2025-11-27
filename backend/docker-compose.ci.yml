@@ -1,0 +1,50 @@
+version: "3.9"
+
+services:
+  mariadb:
+    image: mariadb:11
+    environment:
+      MARIADB_ROOT_USER: root
+      MARIADB_ROOT_PASSWORD: ${DATABASE_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${DATABASE_NAME}
+      MARIADB_USER: ${DATABASE_USER}
+      MARIADB_PASSWORD: ${DATABASE_PASSWORD}
+    ports:
+      - "3306:3306"
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      start_period: 30s
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    # Agregar restart policy
+    restart: unless-stopped
+    # Agregar configuración para evitar problemas de inicialización
+    command: 
+      - --innodb-buffer-pool-size=64M
+      - --skip-innodb-use-native-aio
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_HOST: mariadb
+      DATABASE_USER: ${DATABASE_USER}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_TYPE: ${DATABASE_TYPE}
+      DATABASE_PORT: ${DATABASE_PORT}
+      JWT_SECRET: ${JWT_SECRET}
+    depends_on:
+      mariadb:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+    # Agregar healthcheck al backend también
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/breeds"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s

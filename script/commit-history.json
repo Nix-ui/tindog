@@ -2101,12 +2101,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d1f84af789470401c9fbc6d64f4afc84357e3612",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-27T04:22:21.000Z",
       "message": "feat: Se registran los usuarios de forma exitosa",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/d1f84af789470401c9fbc6d64f4afc84357e3612"
     },
     "stats": {
       "total": 126,
@@ -2120,17 +2120,264 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8bcbef9014fe0e6139923b4e31c3f41d154dd490",
     "author": "Matheo Quiroga",
     "commit": {
       "date": "2025-11-27T18:03:54.000Z",
       "message": "feat: Se registran y se pueden logear los usuarios permitiendo el registro de mascotas",
-      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+      "url": "https://github.com/Nix-ui/tindog/commit/8bcbef9014fe0e6139923b4e31c3f41d154dd490"
     },
     "stats": {
       "total": 645,
       "additions": 611,
       "deletions": 34,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "642f4f1ff1d75641cbcd84b118bec8538a89c66d",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T18:34:22.000Z",
+      "message": "feat: Se dockerizo la base de datos y el backend",
+      "url": "https://github.com/Nix-ui/tindog/commit/642f4f1ff1d75641cbcd84b118bec8538a89c66d"
+    },
+    "stats": {
+      "total": 8358,
+      "additions": 8358,
+      "deletions": 0,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "d9a19f84da06a73e9f096b97902b9d072b852bb3",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T18:42:09.000Z",
+      "message": "feat: Se dockerizo la base de datos y el backend",
+      "url": "https://github.com/Nix-ui/tindog/commit/d9a19f84da06a73e9f096b97902b9d072b852bb3"
+    },
+    "stats": {
+      "total": 37,
+      "additions": 25,
+      "deletions": 12,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "ae23621773587727fa1b52d41071a9edeea05ae5",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T18:44:42.000Z",
+      "message": "fix: actions",
+      "url": "https://github.com/Nix-ui/tindog/commit/ae23621773587727fa1b52d41071a9edeea05ae5"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 10,
+      "deletions": 10,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "facc409c37ae165199104f5667dbe05b60b73001",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T18:53:42.000Z",
+      "message": "fix: actions",
+      "url": "https://github.com/Nix-ui/tindog/commit/facc409c37ae165199104f5667dbe05b60b73001"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 6,
+      "deletions": 9,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "3726e5237c3c0cf2db81ed705d78b4430032a66e",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T18:59:21.000Z",
+      "message": "fix: environment on actions",
+      "url": "https://github.com/Nix-ui/tindog/commit/3726e5237c3c0cf2db81ed705d78b4430032a66e"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 1,
+      "deletions": 0,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "dbca54a09118528da30ff2738839d6a778ee3f06",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:01:45.000Z",
+      "message": "fix: environment on actions",
+      "url": "https://github.com/Nix-ui/tindog/commit/dbca54a09118528da30ff2738839d6a778ee3f06"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "976098ff75447b1634c45694fae5f5ec251a9882",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:10:31.000Z",
+      "message": "fix: environment on actions",
+      "url": "https://github.com/Nix-ui/tindog/commit/976098ff75447b1634c45694fae5f5ec251a9882"
+    },
+    "stats": {
+      "total": 1,
+      "additions": 1,
+      "deletions": 0,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cc9cba97b0ee9b3c8c6011315c543a913322e572",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:13:53.000Z",
+      "message": "fix: environment on actions",
+      "url": "https://github.com/Nix-ui/tindog/commit/cc9cba97b0ee9b3c8c6011315c543a913322e572"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 5,
+      "deletions": 4,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "85735bc46107ff65d1c1af907b44e897d533fcd6",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:22:23.000Z",
+      "message": "fix: docker isues",
+      "url": "https://github.com/Nix-ui/tindog/commit/85735bc46107ff65d1c1af907b44e897d533fcd6"
+    },
+    "stats": {
+      "total": 32,
+      "additions": 29,
+      "deletions": 3,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "7765f320ebd53d77d7731f1fb647ab2b59a78852",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:26:11.000Z",
+      "message": "fix: docker isues",
+      "url": "https://github.com/Nix-ui/tindog/commit/7765f320ebd53d77d7731f1fb647ab2b59a78852"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 5,
+      "deletions": 5,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "388ed2e4533757bcccd85d6218e29c352ebd285a",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:33:38.000Z",
+      "message": "exclude backend test because they write in typescript",
+      "url": "https://github.com/Nix-ui/tindog/commit/388ed2e4533757bcccd85d6218e29c352ebd285a"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:37:16.000Z",
+      "message": "fix: jest exclude backend and node_modules",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 3,
+      "deletions": 3,
+      "date": "2025-11-27"
+    },
+    "coverage": 41.99,
+    "test_count": 35,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Matheo Quiroga",
+    "commit": {
+      "date": "2025-11-27T19:43:29.000Z",
+      "message": "fix: jest exclude backend and node_modules",
+      "url": "https://github.com/Nix-ui/tindog/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
       "date": "2025-11-27"
     },
     "coverage": 41.99,
