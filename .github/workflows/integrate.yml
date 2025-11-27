@@ -26,7 +26,7 @@ jobs:
           echo "DATABASE_HOST=mariadb" >> .env
           echo "DATABASE_USER=${{ secrets.DB_USER }}" >> .env
           echo "DATABASE_PASSWORD=${{ secrets.DB_PASSWORD }}" >> .env
-          echo "DATABASE_NAME=${{ secrets.DB_NAME }}" >> .env
+          echo "DATABASE_NAME=${{ secrets.DATABASE_NAME }}" >> .env
           echo "DATABASE_TYPE=mysql" >> .env
           echo "DATABASE_PORT=3306" >> .env
           echo "JWT_SECRET=${{ secrets.JWT_SECRET }}" >> .env
